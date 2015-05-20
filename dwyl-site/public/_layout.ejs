@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <!--design option 1 -->
+    <title>dwyl - saves you time so you can do what you love</title>
+    <script src="/javascripts/jquery.js">
+    </script><script src="/javascripts/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <!--Header and nav will go here-->
+    </header>
+    <%- yield %>
+    <footer>
+      <!-- Contact form and feeds -->
+      
+      <form id="contact">
+          <label class="sr-only" for="email">Email address</label>
+            <input type="email" required placeholder="Your email address" name="email" id="email"/>
+          <label class="sr-only" for="text">Your message</label>
+            <textarea name="textarea" rows="10" cols="50" placeholder="How can we help?"></textarea>
+          <button type="submit">Send</button>
+      </form>
+  
+    </footer>
+  </body>
+</html>
