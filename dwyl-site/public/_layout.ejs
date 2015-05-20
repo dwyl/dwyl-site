@@ -1,13 +1,18 @@
 <html>
-  <head>
+  <head>    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/main.css">
     <!--design option 1 -->
     <title>dwyl - saves you time so you can do what you love</title>
-    <script src="/javascripts/jquery.js">
-    </script><script src="/javascripts/app.js"></script>
   </head>
   <body>
     <header>
-      <!--Header and nav will go here-->
+      <img src="/images/dwyl-logo.png"/>
+      <div id="nav">
+        <ul>
+          <li>Blog</li>
+        </ul>
+      </div>
     </header>
     <%- yield %>
     <footer>
@@ -20,7 +25,19 @@
             <textarea name="textarea" rows="10" cols="50" placeholder="How can we help?"></textarea>
           <button type="submit">Send</button>
       </form>
-  
+      
+      <div id="blogreel">
+        <h3>Latest blog articles</h3>
+        <ul>
+          <li>Article 1</li>
+          <li>Article 2</li>
+          <li>Article 3</li>
+        </ul>
+      </div>
+      
     </footer>
+    
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/app.js"></script>  
   </body>
 </html>
