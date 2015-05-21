@@ -1,22 +1,57 @@
+/*==============================
+  GENERAL STYLES
+================================*/
+
+/*https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
-  font-family: "Helvetica";
-  text-align: center;
-  padding: 50px 20px 0;
-  background: #f4f4f7;
-  color: #444;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #FCFCFC;
+  color: #403f3f;
+  font-size:1em;
+}
+
+p, ul {
   margin: 0;
 }
 
-h1{
-  font-size: 65px;
-  line-height: 1.2em;
-  border-bottom: #CCC solid 1px;
-  padding: 20px 0;
+/*==============================
+  Header
+================================*/
+header{
+  background: #4bc0a9;
+  border-bottom: 2px solid #43b59f;
+  padding: 1em;
+  position: relative;
 }
 
-h3{
-  font-weight: 300;
+#logo{
+  max-width: 12em;
 }
+
+#nav{
+  color: #fff;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+  #nav ul li{
+    list-style-type: none;
+  }
+  
+    #nav ul li a{
+      color: #fff;
+      text-decoration: none;
+    }
+
 
 
 /*==============================

@@ -1,20 +1,33 @@
-<html>
-  <head>    
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/main.css">
+<html lang=”en-GB”>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        
+    <link rel="stylesheet" href="/main.css" type='text/css'>
+    
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Adding google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <!--favicon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    
     <!--design option 1 -->
     <title>dwyl - saves you time so you can do what you love</title>
   </head>
   <body>
     <header>
-      <img src="/images/dwyl-logo.png"/>
+      <img id='logo' alt='dwyl logo' src="/images/dwyl-logo-pure-white.png"/>
       <div id="nav">
         <ul>
-          <li>Blog</li>
+          <li><a href="/blog">Blog</a></li>
         </ul>
       </div>
     </header>
+    
+    
     <%- yield %>
+    
+    
     <footer>
       <!-- Contact form and feeds -->
       
@@ -37,7 +50,7 @@
       
     </footer>
     
-    <script src="/javascripts/jquery.js"></script>
-    <script src="/javascripts/app.js"></script>  
+    <!-- <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/app.js"></script>   -->
   </body>
 </html>
