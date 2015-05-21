@@ -29,30 +29,67 @@ header{
   background: #4bc0a9;
   border-bottom: 2px solid #43b59f;
   padding: 1em;
-  position: relative;
+  position: relative; /*To accommodate nav absolute positioning*/
+  width: 100%;
 }
 
-#logo{
-  max-width: 12em;
-}
-
-#nav{
-  color: #fff;
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-}
-
-  #nav ul li{
-    list-style-type: none;
+  #logo{
+    max-width: 12em;
   }
-  
-    #nav ul li a{
-      color: #fff;
-      text-decoration: none;
+
+  #nav{
+    color: #fff;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+  }
+
+    #nav ul li{
+      list-style-type: none;
     }
+    
+      #nav ul li a{
+        color: #fff;
+        text-decoration: none;
+      }
 
+/*==============================
+  TAG LINE
+================================*/
+h1{
+  font-size: 1.8em;
+  padding: 0.5em 0 0 0.5em;
+  margin: 0;
+}
 
+h2{
+  font-size: 1.2em;
+  padding: 0 0 0 2em;
+  margin: 0;
+}
+
+/*Styles for desktop media query (still need playing around with)
+h1{
+  font-size:3em;
+  position:relative;
+  top: 2em
+  left: 2em;
+  margin: 0;
+}
+
+h2{
+  font-size:2em;
+  position:relative;
+  left: 4em;
+  margin: 0;
+}*/
+
+/*==============================
+  MAIN
+================================*/
+#signup{
+  
+}
 
 /*==============================
   SCREEN READERS
