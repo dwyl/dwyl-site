@@ -5,6 +5,7 @@
 /*https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/*/
 html {
   box-sizing: border-box;
+  margin:0;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -87,9 +88,34 @@ h2{
 /*==============================
   MAIN
 ================================*/
-#signup{
+form #signup{
+  
   
 }
+
+/*==============================
+  Contact
+================================*/
+#say-hello{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-item: baseline;
+    /*TODO: Figure out why using the webkit stuff pushes content off the page in Chrome*/
+    display: -webkit-flex;
+    -webkit-flex-direction:row;
+    -webkit-flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -webkit-align-item: baseline
+    width: 100%;
+    padding:0.5em;
+}
+
+#social a{
+  color: #43b59f;
+}
+
 
 /*==============================
   SCREEN READERS
