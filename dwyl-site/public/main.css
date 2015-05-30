@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
   margin:0;
+  padding:0;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -13,10 +14,15 @@ html {
 
 body{
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  padding:0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #FCFCFC;
   color: #403f3f;
   font-size:1em;
+}
+
+html, body{
+  width: 100%;
 }
 
 p, ul {
@@ -32,35 +38,42 @@ header{
   padding: 1em;
   position: relative; /*To accommodate nav absolute positioning*/
   width: 100%;
+  margin: 0;
 }
 
   #logo{
-    max-width: 12em;
+    max-width: 11em;
   }
 
   #nav{
     color: #fff;
     position: absolute;
-    bottom: 1em;
-    right: 1em;
+    bottom: 0;
+    right: 0;
+    padding: 0 1em 1em 0;
   }
 
-    #nav ul li{
-      list-style-type: none;
+    #nav ul{
+      padding: 0.3em 0 0 0; /*neutralises typical list padding*/
+      float: right;
     }
-    
-      #nav ul li a{
-        color: #fff;
-        text-decoration: none;
+      #nav ul li{
+        list-style-type: none;
       }
+      
+        #nav a{
+          color: #fff;
+          text-decoration: none;
+        }
 
 /*==============================
   TAG LINE
 ================================*/
 h1{
-  font-size: 1.8em;
+  font-size: 2em;
   padding: 0.5em 0 0 0.5em;
   margin: 0;
+  text-align: center;
 }
 
 h2{
@@ -88,10 +101,35 @@ h2{
 /*==============================
   MAIN
 ================================*/
-form #signup{
-  
-  
+form#signup{
+  border: solid 1px red;
 }
+
+  #signup input{
+    border: 0;
+    border-bottom: solid 1px #403f3f;
+    border-radius: 0;
+    background:none;
+    font-family: 'OpenSans', sans-serif;
+    color: #403f3f;
+    font: 1em;
+    display: block;
+    margin: 0.2em auto;
+    padding: 0.5em;
+  }
+  
+  #signup button{
+    /*outline: transparent;*/
+    border: solid 1px #4bc0a9;
+    border-radius: 0;
+    background:none;
+    font-family: 'OpenSans', sans-serif;
+    color: #4bc0a9;
+    font: 1em;
+    display: block;
+    margin: 0.2em auto;
+    padding: 0.5em;
+  }
 
 /*==============================
   Contact
@@ -102,7 +140,6 @@ form #signup{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-item: baseline;
-    /*TODO: Figure out why using the webkit stuff pushes content off the page in Chrome*/
     display: -webkit-flex;
     -webkit-flex-direction:row;
     -webkit-flex-wrap: nowrap;
