@@ -21,10 +21,6 @@ body{
   font-size:1em;
 }
 
-html, body{
-  width: 100%;
-}
-
 p, ul {
   margin: 0;
 }
@@ -61,25 +57,26 @@ header{
         list-style-type: none;
       }
       
-        #nav a{
-          color: #fff;
-          text-decoration: none;
-        }
+      #nav a{
+        color: #fff;
+        text-decoration: none;
+      }
 
 /*==============================
-  TAG LINE
+  HEADLINE
 ================================*/
 h1{
   font-size: 2em;
-  padding: 0.5em 0 0 0.5em;
+  padding: 1em 0.5em 0.3em 0.5em;
   margin: 0;
   text-align: center;
 }
 
 h2{
-  font-size: 1.2em;
-  padding: 0 0 0 2em;
+  font-size: 1.3em;
+  padding: 0 0.5em 0 0.5em;
   margin: 0;
+  text-align:center;
 }
 
 /*Styles for desktop media query (still need playing around with)
@@ -102,33 +99,36 @@ h2{
   MAIN
 ================================*/
 form#signup{
-  border: solid 1px red;
+  /*border: solid 1px red;*/
+  padding: 1.5em;
+  text-align: center;
 }
 
-  #signup input{
-    border: 0;
-    border-bottom: solid 1px #403f3f;
-    border-radius: 0;
+  form#signup input{
+    border: solid 1px #01579B;
     background:none;
-    font-family: 'OpenSans', sans-serif;
+    font-size: 1em;
     color: #403f3f;
-    font: 1em;
-    display: block;
-    margin: 0.2em auto;
+    display: inline-block;
+    margin: 0.2em;
     padding: 0.5em;
   }
   
-  #signup button{
-    /*outline: transparent;*/
-    border: solid 1px #4bc0a9;
+  form#signup button{
+    border: solid 1px #004D40;
     border-radius: 0;
-    background:none;
-    font-family: 'OpenSans', sans-serif;
-    color: #4bc0a9;
-    font: 1em;
-    display: block;
-    margin: 0.2em auto;
+    background:#01579B;
+    font-size: 1em;
+    color: #ffffff;
+    /*display: block;*/
+    margin: 0.2em;
     padding: 0.5em;
+  }
+  
+  form#signup p{
+    font-size:0.5em;
+    width:100%;
+    text-align: center;
   }
 
 /*==============================
