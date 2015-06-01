@@ -29,7 +29,7 @@ p, ul {
   Header
 ================================*/
 header{
-  background: #4bc0a9;
+  background-color: #4bc0a9;
   border-bottom: 2px solid #43b59f;
   padding: 1em;
   position: relative; /*To accommodate nav absolute positioning*/
@@ -132,9 +132,22 @@ form#signup{
   }
 
 /*==============================
-  Contact
+  FEATURES
 ================================*/
-/*TODO Figure out colour scheme*/
+#features {
+  background-color: #4bc0a9;
+  color: #ffffff;
+}
+
+  #features .feature{
+    
+  }
+
+
+/*==============================
+  SAY HELLO
+================================*/
+/*TODO git Figure out colour scheme*/
 
 #say-hello{
     text-align: center;
@@ -182,3 +195,12 @@ form#signup{
   overflow:hidden;
   clip: rect(0,0,0,0);
 }
+
+
+/*==============================
+  COLOUR REFERENCE
+================================
++ teal: #4bc0a9
++ dark blue: #01579B
+
+*/
