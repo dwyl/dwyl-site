@@ -134,24 +134,36 @@ form#signup{
 /*==============================
   Contact
 ================================*/
+/*TODO Figure out colour scheme*/
+
 #say-hello{
+    text-align: center;
     display: flex;
     flex-direction:row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-item: baseline;
+    align-item: center;
     display: -webkit-flex;
     -webkit-flex-direction:row;
     -webkit-flex-wrap: nowrap;
     -webkit-justify-content: space-between;
-    -webkit-align-item: baseline
+    -webkit-align-item: center;
     width: 100%;
     padding:0.5em;
 }
 
-#social a{
-  color: #43b59f;
-}
+  #say-hello p{
+    padding-top: 0.5em;
+  }
+
+    #social p{
+      padding-top: 0;
+    }
+
+    #social a{
+      color: #43b59f;
+    }
+
 
 
 /*==============================
