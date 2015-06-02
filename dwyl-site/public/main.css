@@ -29,8 +29,8 @@ p, ul {
   Header
 ================================*/
 header{
-  background-color: #4bc0a9;
-  border-bottom: 2px solid #43b59f;
+  background-color: #ffffff;
+  border-bottom: 2px solid #00897B;
   padding: 1em;
   position: relative; /*To accommodate nav absolute positioning*/
   width: 100%;
@@ -42,7 +42,7 @@ header{
   }
 
   #nav{
-    color: #fff;
+    color: #4DB6AC;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -58,84 +58,87 @@ header{
       }
       
       #nav a{
-        color: #fff;
+        color: #4DB6AC;
+        text-transform: uppercase;
         text-decoration: none;
       }
 
 /*==============================
-  HEADLINE
-================================*/
-h1{
-  font-size: 2em;
-  padding: 1em 0.5em 0.3em 0.5em;
-  margin: 0;
-  text-align: center;
-}
-
-h2{
-  font-size: 1.3em;
-  padding: 0 0.5em 0 0.5em;
-  margin: 0;
-  text-align:center;
-}
-
-/*Styles for desktop media query (still need playing around with)
-h1{
-  font-size:3em;
-  position:relative;
-  top: 2em
-  left: 2em;
-  margin: 0;
-}
-
-h2{
-  font-size:2em;
-  position:relative;
-  left: 4em;
-  margin: 0;
-}*/
-
-/*==============================
   MAIN
 ================================*/
-form#signup{
-  /*border: solid 1px red;*/
-  padding: 1.5em;
-  text-align: center;
+#main{
+  background-color: #4DB6AC;
+  border-bottom: 2px solid #00897B;
 }
-
-  form#signup input{
-    border: solid 1px #01579B;
-    background:none;
-    font-size: 1em;
-    color: #403f3f;
-    display: inline-block;
-    margin: 0.2em;
-    padding: 0.5em;
-  }
-  
-  form#signup button{
-    border: solid 1px #004D40;
-    border-radius: 0;
-    background:#01579B;
-    font-size: 1em;
+  #headline h1{
+    font-size: 2em;
+    padding: 1em 0.5em 0.3em 0.5em;
+    margin: 0;
+    text-align: center;
     color: #ffffff;
-    /*display: block;*/
-    margin: 0.2em;
-    padding: 0.5em;
   }
-  
-  form#signup p{
-    font-size:0.5em;
-    width:100%;
+
+  #headline h2{
+    font-size: 1.3em;
+    padding: 0 0.5em 0 0.5em;
+    margin: 0;
+    text-align:center;
+    color: #ffffff;
+  }
+
+  /*Styles for desktop media query (still need playing around with)
+  h1{
+    font-size:3em;
+    position:relative;
+    top: 2em
+    left: 2em;
+    margin: 0;
+  }
+
+  h2{
+    font-size:2em;
+    position:relative;
+    left: 4em;
+    margin: 0;
+  }*/
+
+
+  form#signup{
+    padding: 1.5em;
     text-align: center;
   }
+
+    form#signup input{
+      border: solid 1px #ffffff;
+      background:none;
+      font-size: 1em;
+      color: #fafafa;
+      display: inline-block;
+      margin: 0.2em;
+      padding: 0.5em;
+    }
+    
+    form#signup button{
+      border: solid 1px #fafafa;
+      border-radius: 0;
+      background:#ffffff;
+      font-size: 1em;
+      color: #616161;
+      margin: 0.2em;
+      padding: 0.5em;
+    }
+    
+    form#signup p{
+      font-size:0.5em;
+      width:100%;
+      text-align: center;
+    }
 
 /*==============================
   FEATURES
 ================================*/
 #features {
-  background-color: #4bc0a9;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
@@ -200,7 +203,7 @@ form#signup{
 /*==============================
   COLOUR REFERENCE
 ================================
-+ teal: #4bc0a9
-+ dark blue: #01579B
++ teal: #4DB6AC;
++ dark blue: #00897B;
 
 */
