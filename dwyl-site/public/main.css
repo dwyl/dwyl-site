@@ -21,7 +21,7 @@ body{
   font-size:1em;
 }
 
-p, ul {
+h1, h2, h3, p, ul {
   margin: 0;
 }
 
@@ -73,7 +73,6 @@ header{
   #headline h1{
     font-size: 2em;
     padding: 1em 0.5em 0.3em 0.5em;
-    margin: 0;
     text-align: center;
     color: #ffffff;
   }
@@ -81,7 +80,6 @@ header{
   #headline h2{
     font-size: 1.3em;
     padding: 0 0.5em 0 0.5em;
-    margin: 0;
     text-align:center;
     color: #ffffff;
   }
@@ -148,18 +146,33 @@ header{
 #features {
   background-color: #ffffff;
   color: #ffffff;
+  padding: 1em;
 }
 
   #features h3, i, p{
-    color: #616161;    
+    color: #616161;
+    margin:0; 
+    padding-top: 0.4em; 
   }
+  
+    .feature i, h3 {
+      display: inline-block;
+      padding-right: 0.4em;
+    }
+    
+    .feature p{
+      padding-bottom: 1.3em;
+    }
+    
+    .feature a{
+      color: #00897B;
+    }
+    
 
 
 /*==============================
   SAY HELLO
 ================================*/
-/*TODO git Figure out colour scheme*/
-
 #say-hello{
     text-align: center;
     display: flex;
@@ -212,7 +225,9 @@ header{
   COLOUR REFERENCE
 ================================
 + teal: #4DB6AC;
-+ dark blue: #00897B;
++ dark teal: #00897B;
++ dark blue: #
 + logo grey: #616161;
++ light grey: #F9FBE7
 
 */
