@@ -174,6 +174,7 @@ header{
   SAY HELLO
 ================================*/
 #say-hello{
+    background-color: #F9FBE7;
     text-align: center;
     display: flex;
     flex-direction:row;
@@ -226,8 +227,8 @@ header{
 ================================
 + teal: #4DB6AC;
 + dark teal: #00897B;
-+ dark blue: #
++ dark blue: #00897B;
 + logo grey: #616161;
-+ light grey: #F9FBE7
++ light grey: #F9FBE7;
 
 */
