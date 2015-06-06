@@ -30,7 +30,7 @@ p, ul {
 ================================*/
 header{
   background-color: #ffffff;
-  border-bottom: 2px solid #00897B;
+  border-bottom: 1px solid #00897B;
   padding: 1em;
   position: relative; /*To accommodate nav absolute positioning*/
   width: 100%;
@@ -68,7 +68,7 @@ header{
 ================================*/
 #main{
   background-color: #4DB6AC;
-  border-bottom: 2px solid #00897B;
+  border-bottom: 1px solid #00897B;
 }
   #headline h1{
     font-size: 2em;
@@ -112,16 +112,24 @@ header{
       border: solid 1px #ffffff;
       background:none;
       font-size: 1em;
-      color: #fafafa;
+      color: #ffffff;
       display: inline-block;
       margin: 0.2em;
       padding: 0.5em;
     }
     
+      /*Only way to change placeholder text color*/
+      #main ::-webkit-input-placeholder {
+        color: #fafafa;
+      }
+      #main ::-moz-placeholder {
+        color: #fafafa;
+      }
+    
     form#signup button{
       border: solid 1px #fafafa;
       border-radius: 0;
-      background:#ffffff;
+      background:#FEFDFB;
       font-size: 1em;
       color: #616161;
       margin: 0.2em;
@@ -142,8 +150,8 @@ header{
   color: #ffffff;
 }
 
-  #features .feature{
-    
+  #features h3, i, p{
+    color: #616161;    
   }
 
 
@@ -205,5 +213,6 @@ header{
 ================================
 + teal: #4DB6AC;
 + dark blue: #00897B;
++ logo grey: #616161;
 
 */
