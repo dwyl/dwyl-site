@@ -1,4 +1,3 @@
-<script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
 
 var contact_form = (function (){
     var reveal = {
@@ -23,7 +22,7 @@ var contact_form = (function (){
      *  TODO
      *  
      */
-    m = new mandrill.Mandrill('qBeG3hIvdNoKYId0w6K-DQ');
+    m = new Mandrill('qBeG3hIvdNoKYId0w6K-DQ');
      /**
      *  Send params with input value
      *  from contact form to Madrill
