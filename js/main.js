@@ -1,3 +1,5 @@
+<script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
+
 var contact_form = (function (){
     var reveal = {
         sendMail:sendMail
