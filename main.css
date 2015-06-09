@@ -1,0 +1,234 @@
+/*==============================
+  GENERAL STYLES
+================================*/
+
+/*https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/*/
+html {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding:0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #FCFCFC;
+  color: #403f3f;
+  font-size:1em;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+/*==============================
+  Header
+================================*/
+header{
+  background-color: #ffffff;
+  border-bottom: 1px solid #00897B;
+  padding: 1em;
+  position: relative; /*To accommodate nav absolute positioning*/
+  width: 100%;
+  margin: 0;
+}
+
+  #logo{
+    max-width: 11em;
+  }
+
+  #nav{
+    color: #4DB6AC;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 1em 1em 0;
+  }
+
+    #nav ul{
+      padding: 0.3em 0 0 0; /*neutralises typical list padding*/
+      float: right;
+    }
+      #nav ul li{
+        list-style-type: none;
+      }
+      
+      #nav a{
+        color: #4DB6AC;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+/*==============================
+  MAIN
+================================*/
+#main{
+  background-color: #4DB6AC;
+  border-bottom: 1px solid #00897B;
+}
+  #headline h1{
+    font-size: 2em;
+    padding: 1em 0.5em 0.3em 0.5em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  #headline h2{
+    font-size: 1.3em;
+    padding: 0 0.5em 0 0.5em;
+    text-align:center;
+    color: #ffffff;
+  }
+
+  /*Styles for desktop media query (still need playing around with)
+  h1{
+    font-size:3em;
+    position:relative;
+    top: 2em
+    left: 2em;
+    margin: 0;
+  }
+
+  h2{
+    font-size:2em;
+    position:relative;
+    left: 4em;
+    margin: 0;
+  }*/
+
+
+  form#signup{
+    padding: 1.5em;
+    text-align: center;
+  }
+
+    form#signup input{
+      border: solid 1px #ffffff;
+      background:none;
+      font-size: 1em;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0.2em;
+      padding: 0.5em;
+    }
+    
+      /*Only way to change placeholder text color*/
+      #main ::-webkit-input-placeholder {
+        color: #fafafa;
+      }
+      #main ::-moz-placeholder {
+        color: #fafafa;
+      }
+    
+    form#signup button{
+      border: solid 1px #fafafa;
+      border-radius: 0;
+      background:#FEFDFB;
+      font-size: 1em;
+      color: #616161;
+      margin: 0.2em;
+      padding: 0.5em;
+    }
+    
+    form#signup p{
+      font-size:0.5em;
+      width:100%;
+      text-align: center;
+    }
+
+/*==============================
+  FEATURES
+================================*/
+#features {
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 1em;
+}
+
+  #features h3, i, p{
+    color: #616161;
+    margin:0; 
+    padding-top: 0.4em; 
+  }
+  
+    .feature i, h3 {
+      display: inline-block;
+      padding-right: 0.4em;
+    }
+    
+    .feature p{
+      padding-bottom: 1.3em;
+    }
+    
+    .feature a{
+      color: #00897B;
+    }
+    
+
+
+/*==============================
+  SAY HELLO
+================================*/
+#say-hello{
+    background-color: #F5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-item: center;
+    display: -webkit-flex;
+    -webkit-flex-direction:row;
+    -webkit-flex-wrap: nowrap;
+    -webkit-justify-content: space-between;
+    -webkit-align-item: center;
+    width: 100%;
+    padding:0.5em;
+}
+
+  #say-hello p{
+    padding-top: 0.5em;
+  }
+
+    #social p{
+      padding-top: 0;
+    }
+
+    #social a{
+      color: #43b59f;
+    }
+
+
+
+/*==============================
+  SCREEN READERS
+================================*/
+
+/*Hides labels from sighted-users without hiding from screen readers*/
+.sr-only{
+  color: red;
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  border:0;
+  overflow:hidden;
+  clip: rect(0,0,0,0);
+}
+
+
+/*==============================
+  COLOUR REFERENCE
+================================
++ teal: #4DB6AC;
++ dark teal: #00897B;
++ dark blue: #00897B;
++ logo grey: #616161;
++ light grey: #F5f5f5;
+
+*/
