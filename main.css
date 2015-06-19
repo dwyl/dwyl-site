@@ -65,7 +65,7 @@ header{
       
   @media only screen and (min-device-width : 700px){
     #logo{
-      max-width: 17em;
+      max-width: 18em;
     }
     
     nav{
@@ -98,22 +98,11 @@ header{
     color: #004D40;
   }
 
-
-  /*Styles for desktop media query (still need playing around with)
-  h1{
-    font-size:3em;
-    position:relative;
-    top: 2em
-    left: 2em;
-    margin: 0;
+  h2#thanks {
+    display: none;
+    padding-bottom:0.5em;
+    color:#004D40;
   }
-
-  h2{
-    font-size:2em;
-    position:relative;
-    left: 4em;
-    margin: 0;
-  }*/
 
 
   #signup{
@@ -154,6 +143,26 @@ header{
       width:100%;
       text-align: center;
     }
+
+@media only screen and (min-device-width : 700px){
+
+  #headline h1{
+    font-size:3.5em;
+    margin:0;
+  }
+
+  #headline h2{
+    font-size:2em;
+    /*position:relative;
+    left: 4em;
+    margin: 0;*/
+  }
+  
+  #signup{
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+}
 
 /*==============================
   FEATURES
@@ -241,9 +250,6 @@ header{
       color: #43b59f;
     }
 
-#thanks {
-  display: none;
-}
 
 /*==============================
   SCREEN READERS
