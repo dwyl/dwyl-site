@@ -89,7 +89,7 @@ header{
 
   #headline h2{
     font-size: 1.3em;
-    padding: 0.3em 0.5em 0.8em 0.5em;
+    padding: 0.3em 0.5em;
     text-align:center;
     color: #ffffff;
   }
@@ -116,12 +116,12 @@ header{
   }*/
 
 
-  form#signup{
-    padding: 1.5em;
+  #signup{
+    padding: 0.5em 1.5em 1.5em 1.5em;
     text-align: center;
   }
 
-    form#signup input{
+    #signup input{
       border: solid 1px #ffffff;
       background:none;
       font-size: 1em;
@@ -139,7 +139,7 @@ header{
         color: #fafafa;
       }
 
-    form#signup button{
+    #signup button{
       border: solid 1px #fafafa;
       border-radius: 0;
       background:#FEFDFB;
@@ -149,7 +149,7 @@ header{
       padding: 0.5em;
     }
 
-    form#signup p{
+    #signup p{
       font-size:0.5em;
       width:100%;
       text-align: center;
