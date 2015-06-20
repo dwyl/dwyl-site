@@ -2,22 +2,21 @@
   <head>
     <!--TODO Something in this meta tag causes a thin white line to appear to the right in iPhone5 only - ok on all other iPhones: http://www.kylejlarson.com/blog/2012/iphone-5-web-design/ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        
+
     <link rel="stylesheet" href="./main.css" type='text/css'>
-    
+
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Adding google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    
+
     <!--favicon -->
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <!--TODO MISSING A TON OF FAVICONS -->
-    
+
         <title>dwyl - saves you time so you can do what you love</title>
-    
+
     <!--Google Analytics-->
-    <script type="text/javascript" src="https://mandrillapp.com/api/docs/js/mandrill.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,7 +26,7 @@
       ga('create', 'UA-63938505-1', 'auto');
       ga('send', 'pageview');
     </script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -43,21 +42,30 @@
         </ul>
       </nav>
     </header>
-    
+
   <section id='main'>
     <div id='headline'>
       <h1>dwyl saves you time </h1>
       <h2>so you can do what you love </h2>
-      <h2>Please drop us an email at <a href="mailto:hello@dwyl.io">hello@dwyl.io</a></h2>
+      <h2 id='thanks'>Thanks for registering your interest! <br /> Please check your inbox for an email from us!</h2>
 
     </div>
-    
-    <!-- <form id="signup">
+
+    <form id="signup" action="https://dwylapi.herokuapp.com/email"  method="post">
         <label class="sr-only" for="email">Email address</label>
           <input type="email" required placeholder="Your email address" name="email" id="email"/>
-        <button onclick="contact_form.sendMail(); return false;" type"submit">Start saving time</button>
+        <button id='email-submit'>Start saving time</button>
         <p>We don't share your email with anyone, ever.</p>
-    </form> -->
+    </form>
+
+    <script>
+    $('#email-submit').click(function(event){
+      event.preventDefault(); // http://api.jquery.com/event.preventdefault/
+      $.post("https://dwylapi.herokuapp.com/email", { email: $('#email').val() });
+      $('#signup').fadeOut();
+      $('#thanks').fadeIn();
+    })
+    </script>
 
   </section> <!--End 'main' section -->
 
@@ -76,17 +84,17 @@
     <div class=feature>
       <i class="fa fa-lock"></i>
       <h3>Your data is Yours</h3>
-      <p>We don't sell it. And only the people you want to see it.</p> 
+      <p>We don't sell it. And only the people you want to see it.</p>
     </div>
     <div class=feature>
       <i class="fa fa-github"></i>
       <h3>Fully Open Source</h3>
-      <p>We're developing dwyl <a href="https://github.com/dwyl/time">completely out in the open on Github</a> so anyone can use it and contribute.</p> 
+      <p>We're developing dwyl <a href="https://github.com/dwyl/time">completely out in the open on Github</a> so anyone can use it and contribute.</p>
     </div>
     <div class=feature>
       <i class="fa fa-tree"></i>
       <h3>Environmental Love</h3>
-      <p>We <i class="fa fa-heart-o"></i> the environment and aim to be carbon positive.</p> 
+      <p>We <i class="fa fa-heart-o"></i> the environment and aim to be carbon positive.</p>
     </div>
   </section>
 
@@ -102,10 +110,10 @@
 
     <p id="hashtag">#dwyl</p>
   </section>
-  
+
   <footer>
     <!-- Contact form and feeds -->
-      
+
   </footer>
 
 </body>

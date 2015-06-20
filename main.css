@@ -93,9 +93,9 @@ header{
     text-align:center;
     color: #ffffff;
   }
-  
+
   #headline h2 a{
-    color: #004D40;    
+    color: #004D40;
   }
 
 
@@ -130,7 +130,7 @@ header{
       margin: 0.2em;
       padding: 0.5em;
     }
-    
+
       /*Only way to change placeholder text color*/
       #main ::-webkit-input-placeholder {
         color: #fafafa;
@@ -138,7 +138,7 @@ header{
       #main ::-moz-placeholder {
         color: #fafafa;
       }
-    
+
     form#signup button{
       border: solid 1px #fafafa;
       border-radius: 0;
@@ -148,7 +148,7 @@ header{
       margin: 0.2em;
       padding: 0.5em;
     }
-    
+
     form#signup p{
       font-size:0.5em;
       width:100%;
@@ -166,21 +166,21 @@ header{
 
   #features h3, i, p{
     color: #616161;
-    margin:0; 
-    padding-top: 0.4em; 
+    margin:0;
+    padding-top: 0.4em;
   }
-  
+
     .feature i, h3 {
       display: inline-block;
       padding-right: 0.4em;
       font-size: 1.2em;
     }
-    
+
     .feature p{
       padding-bottom: 1.3em;
       font-size: 1em;
     }
-    
+
     .feature a{
       color: #00897B;
     }
@@ -241,7 +241,9 @@ header{
       color: #43b59f;
     }
 
-
+#thanks {
+  display: none;
+}
 
 /*==============================
   SCREEN READERS
