@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang=”en-GB”>
   <head>
     <!--TODO Something in this meta tag causes a thin white line to appear to the right in iPhone5 only - ok on all other iPhones: http://www.kylejlarson.com/blog/2012/iphone-5-web-design/ -->
@@ -14,7 +15,7 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <!--TODO MISSING A TON OF FAVICONS -->
 
-        <title>dwyl - saves you time so you can do what you love</title>
+    <title>dwyl - saves you time so you can do what you love</title>
 
     <!--Google Analytics-->
     <script>
@@ -48,22 +49,25 @@
       <h1>dwyl saves you time </h1>
       <h2>so you can do what you love </h2>
       <h2 id='thanks'>Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
-
     </div>
 
     <form id="signup" action="https://dwylapi.herokuapp.com/email"  method="post">
-        <label class="sr-only" for="email">Email address</label>
-          <input type="email" required placeholder="Your email address" name="email" id="email"/>
-        <button id='email-submit'>Start saving time</button>
-        <p>We don't share your email with anyone, ever.</p>
+      <label class="sr-only" for="email">Email address</label>
+      <input type="email" required placeholder="Your email address" name="email" id="email"/>
+      <button type="submit">Start saving time</button>
+      <p>We don't share your email with anyone, ever.</p>
     </form>
 
     <script>
-    $('#email-submit').click(function(event){
+    $('#signup').on('submit', function(event) {
       event.preventDefault(); // http://api.jquery.com/event.preventdefault/
-      $.post("https://dwylapi.herokuapp.com/email", { email: $('#email').val() });
-      $('#signup').fadeOut();
-      $('#thanks').fadeIn();
+      var $form = $(this);
+      var action = $form.attr('action');
+      if (action) {
+        $.post(action, { email: $('#email').val() });
+        $form.fadeOut();
+        $('#thanks').fadeIn();
+      }
     })
     </script>
 
