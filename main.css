@@ -19,7 +19,18 @@ body{
   background: #ffffff;
   color: #403f3f;
   font-size:1em;
+  height: 100%;
 }
+
+#main-content {
+  min-height: 100%;
+  margin-bottom:-5em;
+}
+  .main-content:after {
+    content: "";
+    display: block;
+    height: 5em;
+  }
 
 h1, h2, h3, p, ul {
   margin: 0;
@@ -223,32 +234,23 @@ header{
 ================================*/
 #say-hello{
     background-color: #F5f5f5;
-    text-align: center;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-item: center;
-    display: -webkit-flex;
-    -webkit-flex-direction:row;
-    -webkit-flex-wrap: nowrap;
-    -webkit-justify-content: space-between;
-    -webkit-align-item: center;
+    height: 5em;
     width: 100%;
-    padding:0.5em;
+    padding:0.5em 1em;
 }
 
-  #say-hello p{
-    padding-top: 0.5em;
-  }
-
-    #social p{
-      padding-top: 0;
+    #social{
+      float: right;
+      text-align:center;
     }
 
-    #social a{
-      color: #43b59f;
-    }
+      #social p{
+        padding-top: 0;
+      }
+
+      #social a{
+        color: #43b59f;
+      }
 
 
 /*==============================
