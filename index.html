@@ -1,18 +1,18 @@
+<!DOCTYPE
 <html lang="en-gb">
 <head>
     <meta charset="utf-8">
-    <title>DWYL - Do What You Love!</title>
+    <title>dwyl - do what you love</title>
 
     <meta name="author" content="@dwyl">
     <meta name="keywords" content="do, what, you, love, dwyl, time, tracking, help, developers, code, frontend, backend, tooling, tools">
-    <meta name="description" content="DWYL is community doing its bit to make its tasks easier.">
+    <meta name="description" content="dwyl is community dedicated to helping you do what you love, with a focus on saving you time and making tasks easier.">
     <meta name="robots" content="index, follow, noarchive">
     <meta name="base" content="http://www.dwyl.io">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1">
     <!--[if ie]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta http-equiv="imagetoolbar" content="false" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <![endif]-->
 	
     <link rel="shortcut icon" href="/images/favicon.ico">
@@ -22,6 +22,7 @@
 
     <!--FontAwesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
     <!-- Adding google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
@@ -38,11 +39,11 @@
 
   </head>
   <body>
-    <div id="main-content">
+    <div class="main-content">
       <header>
-        <img id='logo' alt='dwyl logo' src="./images/dwyl-logo-grey-solidheart-tagline.png"/>
+        <img class='logo' alt='dwyl logo' src="./images/dwyl-logo-grey-solidheart-tagline.png"/>
         <nav>
-          <div id="social-header">
+          <div class="social-header">
             <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
             <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
             <a href="https://instagram.com/dwylhq"><i class="fa fa-instagram"></i></a>
@@ -53,35 +54,35 @@
         </nav>
       </header>
 
-    <section id='main'>
-      <div id='headline'>
+    <section class='main'>
+      <div class='headline'>
         <h1>dwyl saves you time </h1>
         <h2>so you can do what you love </h2>
-        <h2 id='thanks'>Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
+        <h2 class='thanks'>Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
 
       </div>
 
-      <form id="signup" action="https://dwylapi.herokuapp.com/email" method="post">
+      <form class="signup" action="https://dwylapi.herokuapp.com/email" method="post">
         <label class="sr-only" for="email">Email address</label>
-        <input type="email" required placeholder="Your email address" name="email" id="email"/>
+        <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
         <button type="submit">Start saving time</button>
         <p>We don't share your email with anyone, ever.</p>
       </form>
 
       <script>
-      $('#signup').on('submit', function(event) {
+      $('.signup').on('submit', function(event) {
         event.preventDefault(); // http://api.jquery.com/event.preventdefault/
         var $form = $(this);
-        $.post($form.attr('action'), { email: $('#email').val() });
+        $.post($form.attr('action'), { email: $('#input-email').val() });
         $form.fadeOut();
-        $('#thanks').fadeIn();
+        $('.thanks').fadeIn();
       })     
       </script>
 
     </section> <!--End 'main' section -->
 
-    <section id=features>
-      <!--style with :before for icons? May need individual ids -->
+    <section class=features>
+      <!--style with :before for icons? May need individual classs -->
       <div class=feature>
         <i class="fa fa-check"></i>
         <h3>Simplicity</h3>
@@ -110,9 +111,9 @@
     </section>
   </div>
     
-    <section id='say-hello'>
+    <section class='say-hello'>
 
-      <div id="social">
+      <div class="social">
         <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
         <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
         <a href="https://instagram.com/dwylhq"><i class="fa fa-instagram"></i></a>
