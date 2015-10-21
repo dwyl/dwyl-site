@@ -175,35 +175,35 @@ header{
 /*==============================
   FEATURES
 ================================*/
-.features-list {
+.homepage-features-list {
   background-color: #ffffff;
   color: #ffffff;
   padding: 1em;
 }
 
-  .feature h3, i, p{
+  .homepage-feature h3, i, p{
     color: #616161;
     margin:0;
     padding-top: 0.4em;
   }
 
-    .feature i, h3 {
+    .homepage-feature i, h3 {
       display: inline-block;
       padding-right: 0.4em;
       font-size: 1.2em;
     }
 
-    .feature p{
+    .homepage-feature p{
       padding-bottom: 1.3em;
       font-size: 1em;
     }
 
-    .feature a{
+    .homepage-feature a{
       color: #00897B;
     }
     
 @media only screen and (min-device-width : 700px){
-  .features-list{
+  .homepage-features-list{
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -219,7 +219,7 @@ header{
   }
   
   
-  .feature{
+  .homepage-feature{
     width: 20em;
     flex-grow: 1;
     padding: 1.2em 1em;
