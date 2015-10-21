@@ -37,7 +37,7 @@ h1, h2, h3, p, ul {
 }
 
 /*==============================
-  Header
+  Header / Navigation
 ================================*/
 header{
   background-color: #ffffff;
@@ -60,20 +60,20 @@ header{
     padding: 0 1em 1em 0;
   }
 
-    nav ul{
-      padding: 0.3em 0 0 0; /*neutralises typical list padding*/
-      float: right;
+    nav a{
+      color: #4DB6AC;
+      text-decoration: none;
     }
-      nav ul li{
-        list-style-type: none;
+    
+      .nav-links{
+        padding: 0.3em 0 0 0; /*neutralises typical list padding*/
+        float: right;
       }
-      
-      nav a{
-        color: #4DB6AC;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-      
+        .nav-links li{
+          list-style-type: none;
+          text-transform: uppercase;
+        }
+  
   @media only screen and (min-device-width : 700px){
     .logo{
       max-width: 18em;
@@ -91,6 +91,8 @@ header{
   background-color: #4DB6AC;
   border-bottom: 1px solid #00897B;
 }
+
+/*-- Headline message --*/
   .headline h1{
     font-size: 2em;
     padding: 1em 0.5em 0.3em 0.5em;
@@ -102,20 +104,18 @@ header{
     font-size: 1.3em;
     padding: 0.3em 0.5em;
     text-align:center;
-    color: #ffffff;
   }
+  
+    .sub-headline {
+      color: #ffffff;
+    }
+    
+    .thanks {
+      display: none;
+      color:#004D40;
+    }
 
-  .headline h2 a{
-    color: #004D40;
-  }
-
-  h2.thanks {
-    display: none;
-    padding-bottom:0.5em;
-    color:#004D40;
-  }
-
-
+/*-- Sign up form --*/
   .signup{
     padding: 0.5em 1.5em 1.5em 1.5em;
     text-align: center;
@@ -133,13 +133,13 @@ header{
 
       /*Only way to change placeholder text color*/
       .main ::-webkit-input-placeholder {
-        color: .fafafa;
+        color: #fafafa;
       }
       .main ::-moz-placeholder {
         color: #fafafa;
       }
 
-    .signup button{
+    .submit-email{
       border: solid 1px #fafafa;
       border-radius: 0;
       background:#FEFDFB;
@@ -164,9 +164,6 @@ header{
 
   .headline h2{
     font-size:2em;
-    /*position:relative;
-    left: 4em;
-    margin: 0;*/
   }
   
   .signup{
@@ -178,13 +175,13 @@ header{
 /*==============================
   FEATURES
 ================================*/
-.features {
+.features-list {
   background-color: #ffffff;
   color: #ffffff;
   padding: 1em;
 }
 
-  .features h3, i, p{
+  .feature h3, i, p{
     color: #616161;
     margin:0;
     padding-top: 0.4em;
@@ -206,7 +203,7 @@ header{
     }
     
 @media only screen and (min-device-width : 700px){
-  .features{
+  .features-list{
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -280,5 +277,5 @@ header{
 + dark blue: #00897B;
 + logo grey: #616161;
 + light grey: #F5f5f5;
-
++ off-white: #FAFAFA;
 */

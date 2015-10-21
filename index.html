@@ -48,7 +48,7 @@
             <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
             <a href="https://instagram.com/dwylhq"><i class="fa fa-instagram"></i></a>
           </div>
-          <ul>
+          <ul class="nav-links">
             <li><a href="/blog">Alpha!</a></li>
           </ul>
         </nav>
@@ -57,7 +57,7 @@
     <section class='main'>
       <div class='headline'>
         <h1>dwyl saves you time </h1>
-        <h2>so you can do what you love </h2>
+        <h2 class='sub-headline'>so you can do what you love </h2>
         <h2 class='thanks'>Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
 
       </div>
@@ -65,7 +65,7 @@
       <form class="signup" action="https://dwylapi.herokuapp.com/email" method="post">
         <label class="sr-only" for="email">Email address</label>
         <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
-        <button type="submit">Start saving time</button>
+        <button class="submit-email" type="submit">Start saving time</button>
         <p>We don't share your email with anyone, ever.</p>
       </form>
 
@@ -81,8 +81,7 @@
 
     </section> <!--End 'main' section -->
 
-    <section class=features>
-      <!--style with :before for icons? May need individual classs -->
+    <section class=features-list>
       <div class=feature>
         <i class="fa fa-check"></i>
         <h3>Simplicity</h3>
