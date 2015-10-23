@@ -22,7 +22,7 @@ body{
   height: 100%;
 }
 
-#main-content {
+.main-content {
   min-height: 100%;
   margin-bottom:-5em;
 }
@@ -37,7 +37,7 @@ h1, h2, h3, p, ul {
 }
 
 /*==============================
-  Header
+  Header / Navigation
 ================================*/
 header{
   background-color: #ffffff;
@@ -48,7 +48,7 @@ header{
   margin: 0;
 }
 
-  #logo{
+  .logo{
     max-width: 11em;
   }
 
@@ -60,22 +60,22 @@ header{
     padding: 0 1em 1em 0;
   }
 
-    nav ul{
-      padding: 0.3em 0 0 0; /*neutralises typical list padding*/
-      float: right;
+    nav a{
+      color: #4DB6AC;
+      text-decoration: none;
     }
-      nav ul li{
-        list-style-type: none;
+    
+      .nav-links{
+        padding: 0.3em 0 0 0; /*neutralises typical list padding*/
+        float: right;
       }
-      
-      nav a{
-        color: #4DB6AC;
-        text-transform: uppercase;
-        text-decoration: none;
-      }
-      
+        .nav-links li{
+          list-style-type: none;
+          text-transform: uppercase;
+        }
+  
   @media only screen and (min-device-width : 700px){
-    #logo{
+    .logo{
       max-width: 18em;
     }
     
@@ -87,41 +87,41 @@ header{
 /*==============================
   MAIN
 ================================*/
-#main{
+.main{
   background-color: #4DB6AC;
   border-bottom: 1px solid #00897B;
 }
-  #headline h1{
+
+/*-- Headline message --*/
+  .headline h1{
     font-size: 2em;
     padding: 1em 0.5em 0.3em 0.5em;
     text-align: center;
     color: #ffffff;
   }
 
-  #headline h2{
+  .headline h2{
     font-size: 1.3em;
     padding: 0.3em 0.5em;
     text-align:center;
-    color: #ffffff;
   }
+  
+    .sub-headline {
+      color: #ffffff;
+    }
+    
+    .thanks {
+      display: none;
+      color:#004D40;
+    }
 
-  #headline h2 a{
-    color: #004D40;
-  }
-
-  h2#thanks {
-    display: none;
-    padding-bottom:0.5em;
-    color:#004D40;
-  }
-
-
-  #signup{
+/*-- Sign up form --*/
+  .signup{
     padding: 0.5em 1.5em 1.5em 1.5em;
     text-align: center;
   }
 
-    #signup input{
+    .signup input{
       border: solid 1px #ffffff;
       background:none;
       font-size: 1em;
@@ -132,14 +132,14 @@ header{
     }
 
       /*Only way to change placeholder text color*/
-      #main ::-webkit-input-placeholder {
+      .main ::-webkit-input-placeholder {
         color: #fafafa;
       }
-      #main ::-moz-placeholder {
+      .main ::-moz-placeholder {
         color: #fafafa;
       }
 
-    #signup button{
+    .submit-email{
       border: solid 1px #fafafa;
       border-radius: 0;
       background:#FEFDFB;
@@ -149,7 +149,7 @@ header{
       padding: 0.5em;
     }
 
-    #signup p{
+    .signup p{
       font-size:0.5em;
       width:100%;
       text-align: center;
@@ -157,19 +157,16 @@ header{
 
 @media only screen and (min-device-width : 700px){
 
-  #headline h1{
+  .headline h1{
     font-size:3.5em;
     margin:0;
   }
 
-  #headline h2{
+  .headline h2{
     font-size:2em;
-    /*position:relative;
-    left: 4em;
-    margin: 0;*/
   }
   
-  #signup{
+  .signup{
     font-size: 1.5em;
     margin-bottom: 0;
   }
@@ -178,35 +175,35 @@ header{
 /*==============================
   FEATURES
 ================================*/
-#features {
+.homepage-features-list {
   background-color: #ffffff;
   color: #ffffff;
   padding: 1em;
 }
 
-  #features h3, i, p{
+  .homepage-feature h3, i, p{
     color: #616161;
     margin:0;
     padding-top: 0.4em;
   }
 
-    .feature i, h3 {
+    .homepage-feature i, h3 {
       display: inline-block;
       padding-right: 0.4em;
       font-size: 1.2em;
     }
 
-    .feature p{
+    .homepage-feature p{
       padding-bottom: 1.3em;
       font-size: 1em;
     }
 
-    .feature a{
+    .homepage-feature a{
       color: #00897B;
     }
     
 @media only screen and (min-device-width : 700px){
-  #features{
+  .homepage-features-list{
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -222,7 +219,7 @@ header{
   }
   
   
-  .feature{
+  .homepage-feature{
     width: 20em;
     flex-grow: 1;
     padding: 1.2em 1em;
@@ -233,23 +230,23 @@ header{
 /*==============================
   SAY HELLO
 ================================*/
-#say-hello{
+.say-hello{
     background-color: #F5f5f5;
     height: 5em;
     width: 100%;
     padding:0.5em 1em;
 }
 
-    #social{
+    .social{
       float: right;
       text-align:center;
     }
 
-      #social p{
+      .social p{
         padding-top: 0;
       }
 
-      #social a{
+      .social a{
         color: #43b59f;
       }
 
@@ -280,5 +277,5 @@ header{
 + dark blue: #00897B;
 + logo grey: #616161;
 + light grey: #F5f5f5;
-
++ off-white: #FAFAFA;
 */
