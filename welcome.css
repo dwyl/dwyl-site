@@ -98,7 +98,7 @@ header{
     font-size: 2em;
     padding: 0.5em 0.5em 0.1em 0.5em;
     text-align: center;
-    color: #404040;
+    color: #4DB6AC;
     font-weight: 500;
   }
 
@@ -110,12 +110,13 @@ header{
   }
   
     .sub-headline {
-      color: #4DB6AC;
+      color: #404040;
     }
     
     .thanks {
       display: none;
-      color:#004D40;
+      color:#616161;
+      padding-bottom: 0.2em;
     }
 
 /*-- Sign up form --*/
@@ -183,14 +184,21 @@ header{
 }
 
 /*==============================
+  ABOUT
+================================*/
+.about {
+  background-color: #4DB6AC;
+  color: #ffffff;
+  height: 300px;
+  padding: 1em;
+}
+
+/*==============================
   FEATURES
 ================================*/
 .homepage-features-list {
-  background-color: #4DB6AC;
-  color: #ffffff;
+  background-color: #ffffff;
   padding: 1em;
-  width: 100%;
-  margin:0;
 }
 
   .homepage-feature h3, i, p{

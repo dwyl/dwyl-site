@@ -76,13 +76,16 @@
       $('.signup').on('submit', function(event) {
         event.preventDefault(); // http://api.jquery.com/event.preventdefault/
         var $form = $(this);
-        $.post($form.attr('action'), { email: $('#input-email').val() });
+        $.post($form.attr('action'), { email: $('#input-email').val() }); 
         $form.fadeOut();
         $('.thanks').fadeIn();
       })     
       </script>
 
     </section> <!--End 'main' section -->
+
+    <section class='about'>
+    </section>
 
     <section class="homepage-features-list">
       <div class="homepage-feature">
