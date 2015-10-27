@@ -1,0 +1,281 @@
+/*==============================
+  GENERAL STYLES
+================================*/
+
+/*https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/*/
+html {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding:0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  color: #403f3f;
+  font-size:1em;
+  height: 100%;
+}
+
+.main-content {
+  min-height: 100%;
+  margin-bottom:-5em;
+}
+  .main-content:after {
+    content: "";
+    display: block;
+    height: 5em;
+  }
+
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+/*==============================
+  Header / Navigation
+================================*/
+header{
+  background-color: #ffffff;
+  border-bottom: 1px solid #00897B;
+  padding: 1em;
+  position: relative; /*To accommodate nav absolute positioning*/
+  width: 100%;
+  margin: 0;
+}
+
+  .logo{
+    max-width: 11em;
+  }
+
+  nav{
+    color: #4DB6AC;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 1em 1em 0;
+  }
+
+    nav a{
+      color: #4DB6AC;
+      text-decoration: none;
+    }
+    
+      .nav-links{
+        padding: 0.3em 0 0 0; /*neutralises typical list padding*/
+        float: right;
+      }
+        .nav-links li{
+          list-style-type: none;
+          text-transform: uppercase;
+        }
+  
+  @media only screen and (min-device-width : 700px){
+    .logo{
+      max-width: 18em;
+    }
+    
+    nav{
+      font-size: 1.2em;
+    }
+  }
+
+/*==============================
+  MAIN
+================================*/
+.main{
+  background-color: #4DB6AC;
+  border-bottom: 1px solid #00897B;
+}
+
+/*-- Headline message --*/
+  .headline h1{
+    font-size: 2em;
+    padding: 1em 0.5em 0.3em 0.5em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .headline h2{
+    font-size: 1.3em;
+    padding: 0.3em 0.5em;
+    text-align:center;
+  }
+  
+    .sub-headline {
+      color: #ffffff;
+    }
+    
+    .thanks {
+      display: none;
+      color:#004D40;
+    }
+
+/*-- Sign up form --*/
+  .signup{
+    padding: 0.5em 1.5em 1.5em 1.5em;
+    text-align: center;
+  }
+
+    .signup input{
+      border: solid 1px #ffffff;
+      background:none;
+      font-size: 1em;
+      color: #ffffff;
+      display: inline-block;
+      margin: 0.2em;
+      padding: 0.5em;
+    }
+
+      /*Only way to change placeholder text color*/
+      .main ::-webkit-input-placeholder {
+        color: #fafafa;
+      }
+      .main ::-moz-placeholder {
+        color: #fafafa;
+      }
+
+    .submit-email{
+      border: solid 1px #fafafa;
+      border-radius: 0;
+      background:#FEFDFB;
+      font-size: 1em;
+      color: #616161;
+      margin: 0.2em;
+      padding: 0.5em;
+    }
+
+    .signup p{
+      font-size:0.5em;
+      width:100%;
+      text-align: center;
+    }
+
+@media only screen and (min-device-width : 700px){
+
+  .headline h1{
+    font-size:3.5em;
+    margin:0;
+  }
+
+  .headline h2{
+    font-size:2em;
+  }
+  
+  .signup{
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+}
+
+/*==============================
+  FEATURES
+================================*/
+.homepage-features-list {
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 1em;
+}
+
+  .homepage-feature h3, i, p{
+    color: #616161;
+    margin:0;
+    padding-top: 0.4em;
+  }
+
+    .homepage-feature i, h3 {
+      display: inline-block;
+      padding-right: 0.4em;
+      font-size: 1.2em;
+    }
+
+    .homepage-feature p{
+      padding-bottom: 1.3em;
+      font-size: 1em;
+    }
+
+    .homepage-feature a{
+      color: #00897B;
+    }
+    
+@media only screen and (min-device-width : 700px){
+  .homepage-features-list{
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-item: center;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -webkit-align-item: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+  }
+  
+  
+  .homepage-feature{
+    width: 20em;
+    flex-grow: 1;
+    padding: 1.2em 1em;
+    text-align: center;
+  }
+} /*end media query*/
+
+/*==============================
+  SAY HELLO
+================================*/
+.say-hello{
+    background-color: #F5f5f5;
+    height: 5em;
+    width: 100%;
+    padding:0.5em 1em;
+}
+
+    .social{
+      float: right;
+      text-align:center;
+    }
+
+      .social p{
+        padding-top: 0;
+      }
+
+      .social a{
+        color: #43b59f;
+      }
+
+
+/*==============================
+  SCREEN READERS
+================================*/
+
+/*Hides labels from sighted-users without hiding from screen readers*/
+.sr-only{
+  color: red;
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  border:0;
+  overflow:hidden;
+  clip: rect(0,0,0,0);
+}
+
+
+/*==============================
+  COLOUR REFERENCE
+================================
++ teal: #4DB6AC;
++ dark teal: #00897B;
++ dark blue: #00897B;
++ logo grey: #616161;
++ light grey: #F5f5f5;
++ off-white: #FAFAFA;
+*/
