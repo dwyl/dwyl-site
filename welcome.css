@@ -187,10 +187,13 @@ header{
   ABOUT
 ================================*/
 .about {
-  background-color: #4DB6AC;
+  background-image: url(images/dwyl-team-photo.jpg);
+  background-size: cover;
   color: #ffffff;
-  height: 300px;
-  padding: 1em;
+  max-width: 100%;
+  background-color: red;
+  height: 400px;
+  /*margin: 0 auto;*/
 }
 
 /*==============================
