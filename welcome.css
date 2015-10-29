@@ -130,7 +130,7 @@ header{
       border: solid 1.5px #B1B1B1;
       border-radius: 0.1em;
       font-size: 1em;
-      color: #404040;
+      color: #B1B1B1;
       display: inline-block;
       margin: 0.2em;
       padding: 0.5em;
@@ -138,10 +138,10 @@ header{
 
       /*Only way to change placeholder text color*/
       .main ::-webkit-input-placeholder {
-        color: #404040;
+        color: #B1B1B1;
       }
       .main ::-moz-placeholder {
-        color: #404040;
+        color: #B1B1B1;
       }
 
     .submit-email{
@@ -187,18 +187,62 @@ header{
   ABOUT
 ================================*/
 .about {
-  /*background-image: url(images/dwyl-team-photo.jpg);*/
+  /*Inspired by https://css-tricks.com/perfect-full-page-background-image/ */
   background: url(/images/dwyl-team-photo.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   
+  background-color: #4DB6AC;
   color: #ffffff;
-  background-color: red;
   /*height: 100%;*/
   min-width: 100%;
 }
+
+  .about-text{
+    padding: 1em 1em 1.5em 1em;
+  }
+    
+    .about-title{
+      padding: 0.2em 0 0.5em 0;
+    }
+    
+    .about-text p{
+      color: #ffffff;
+      padding-bottom: 0.8em;
+    }
+  
+  /*To be reviewed if about image changes*/
+  @media only screen and (min-device-width : 700px){
+    .about-text{
+      /*4em padding helps the  image display properly at larger screen sizes*/
+      padding: 3em 2em 4em 2em;
+    }
+    
+    .about-title{
+      padding: 0 0 0.5em 0;
+    }
+    
+      .about-text p{
+        color: #ffffff;
+        padding-bottom: 0.5em;
+      }
+  }
+
+  /*To be reviewed if about image changes*/
+  @media only screen and (min-device-width : 1000px){
+    .about-text{
+      /*4em padding helps the  image display properly at larger screen sizes*/
+      padding: 4em 2em 7em 2em;
+    }
+    
+    .about-title{
+      padding: 0 0 1em 0;
+    }
+    
+  }
+  
 
 /*==============================
   FEATURES
