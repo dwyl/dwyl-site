@@ -64,6 +64,9 @@ header{
       color: #4DB6AC;
       text-decoration: none;
     }
+      .social-header i{
+        color: #616161;
+      }
     
       .nav-links{
         padding: 0.3em 0 0 0; /*neutralises typical list padding*/
@@ -180,13 +183,13 @@ header{
   padding: 1em;
 }
 
-  .homepage-feature h3, i, p{
+  .homepage-feature h3, .homepage-feature i, .homepage-feature p{
     color: #616161;
     margin:0;
     padding-top: 0.4em;
   }
 
-    .homepage-feature i, h3 {
+    .homepage-feature i, .homepage-feature h3 {
       display: inline-block;
       padding-right: 0.4em;
       font-size: 1.2em;
@@ -246,7 +249,7 @@ header{
       }
 
       .social a{
-        color: #43b59f;
+        color: #403f3f
       }
 
 
@@ -274,6 +277,7 @@ header{
 + teal: #4DB6AC;
 + dark teal: #00897B;
 + dark blue: #00897B;
++ dark grey: #403f3f;
 + logo grey: #616161;
 + light grey: #F5f5f5;
 + off-white: #FAFAFA;
