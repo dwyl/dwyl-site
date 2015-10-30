@@ -211,7 +211,7 @@ header{
       padding: 0.2em 0 0.5em 0;
     }
     
-    .about-text p{
+    .about-text p, .about-text a{
       color: #ffffff;
       padding-bottom: 0.8em;
     }
