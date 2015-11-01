@@ -16,7 +16,7 @@
     <![endif]-->
 	
     <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="./main.css" type='text/css'>
+    <link rel="stylesheet" href="./welcome.css" type='text/css'>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     
     <!-- Google Analytics -->
     <!--Adds support for pre-loading in modern browsers but degrades gracefully-->
@@ -44,7 +44,7 @@
   <body>
     <div class="main-content">
       <header>
-        <img class='logo' alt='dwyl logo' src="./images/dwyl-logo-grey-solidheart-tagline.png"/>
+        <img class='logo' alt='dwyl logo' src="./images/dwyl-new-logo.png"/>
         <nav>
           <div class="social-header">
             <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
@@ -68,7 +68,7 @@
       <form class="signup" action="https://dwylapi.herokuapp.com/email" method="post">
         <label class="sr-only" for="email">Email address</label>
         <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
-        <button class="submit-email" type="submit">Start saving time</button>
+        <button class="submit-email" type="submit">Tell me when it's ready!</button>
         <p>We don't share your email with anyone, ever.</p>
       </form>
 
@@ -76,13 +76,30 @@
       $('.signup').on('submit', function(event) {
         event.preventDefault(); // http://api.jquery.com/event.preventdefault/
         var $form = $(this);
-        $.post($form.attr('action'), { email: $('#input-email').val() });
+        $.post($form.attr('action'), { email: $('#input-email').val() }); 
         $form.fadeOut();
         $('.thanks').fadeIn();
       })     
       </script>
 
     </section> <!--End 'main' section -->
+
+    <section class='about'>
+      <div class='about-text'>
+        <h1 class='about-title'>Our Story</h1>
+        <!--Need to A/B test title here in a BIG way: 'Solving real problems with technology'-->
+        <p>
+          In 2015, <a href="http://www.twitter.com/nelsonic">Nelson</a> and <a href="http://www.twitter.com/iteles">Ines</a> decided they wanted to work together. But not just on anything, they wanted to do something they <i>loved</i>. Better yet, they wanted <strong>everyone that they worked with to be doing something <i>they</i> love.</strong>  
+        </p>
+        <p>
+          And so, <strong>dwyl</strong> was born, a rapidly expanding community of developers from around the word who want to <strong>solve real problems with technology</strong>. 
+        </p>
+        <p>
+          We're currently building an app which allows you to track any time-based activity. <strong>Sign up above</strong> if you want to be one of the first to <em>beta test our app</em>, we'd <i>really</i> appreciate your feedback!
+        </p>
+      </div>
+
+    </section>
 
     <section class="homepage-features-list">
       <div class="homepage-feature">
