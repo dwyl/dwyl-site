@@ -1,131 +1,196 @@
-<!DOCTYPE>
-<html lang="en-gb">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>dwyl - do what you love</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
 
-    <meta name="author" content="@dwyl">
-    <meta name="keywords" content="do, what, you, love, dwyl, time, tracking, help, developers, code, frontend, backend, tooling, tools">
-    <meta name="description" content="dwyl is community dedicated to helping you do what you love, with a focus on saving you time and making tasks easier.">
-    <meta name="robots" content="index, follow, noarchive">
-    <meta name="base" content="http://www.dwyl.io">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1">
-    <!--[if ie]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <![endif]-->
-	
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="./main.css" type='text/css'>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
 
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
-    <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    
-    <!-- Google Analytics -->
-    <!--Adds support for pre-loading in modern browsers but degrades gracefully-->
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
-    ga('create', 'UA-63938505-1', 'auto');
-    ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
 
-  </head>
-  <body>
-    <div class="main-content">
-      <header>
-        <img class='logo' alt='dwyl logo' src="./images/dwyl-logo-grey-solidheart-tagline.png"/>
-        <nav>
-          <div class="social-header">
-            <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
-            <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
-            <a href="https://instagram.com/explore/tags/dwylsummer"><i class="fa fa-instagram"></i></a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="/#">Alpha!</a></li>
-          </ul>
-        </nav>
-      </header>
 
-    <section class='main'>
-      <div class='headline'>
-        <h1>dwyl saves you time </h1>
-        <h2 class='sub-headline'>so you can do what you love </h2>
-        <h2 class='thanks'>Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
-
-      </div>
-
-      <form class="signup" action="https://dwylapi.herokuapp.com/email" method="post">
-        <label class="sr-only" for="email">Email address</label>
-        <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
-        <button class="submit-email" type="submit">Start saving time</button>
-        <p>We don't share your email with anyone, ever.</p>
-      </form>
-
-      <script>
-      $('.signup').on('submit', function(event) {
-        event.preventDefault(); // http://api.jquery.com/event.preventdefault/
-        var $form = $(this);
-        $.post($form.attr('action'), { email: $('#input-email').val() });
-        $form.fadeOut();
-        $('.thanks').fadeIn();
-      })     
-      </script>
-
-    </section> <!--End 'main' section -->
-
-    <section class="homepage-features-list">
-      <div class="homepage-feature">
-        <i class="fa fa-check"></i>
-        <h3>Simplicity</h3>
-        <p>We keep it simple and intuitive, with only the features you use.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-users"></i>
-        <h3>Community Driven</h3>
-        <p>We build only what you ask for. <a href="mailto:hello@dwyl.io">Drop us an email</a> or <a href="http://www.github.com/dwyl/time/issues">open an issue on Github</a>.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-lock"></i>
-        <h3>Your data is Yours</h3>
-        <p>We don't sell it. And only the people you want to see it.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-github"></i>
-        <h3>Fully Open Source</h3>
-        <p>We're developing dwyl <a href="https://github.com/dwyl/time">completely out in the open on Github</a> so anyone can use it and contribute.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-tree"></i>
-        <h3>Environmental Love</h3>
-        <p>We <i class="fa fa-heart-o"></i> the environment and aim to be carbon positive.</p>
-      </div>
-    </section>
-  </div>
-    
-    <section class='say-hello'>
-
-      <div class="social">
-        <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
-        <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
-        <a href="https://instagram.com/dwylhq"><i class="fa fa-instagram"></i></a>
-        <p>hello@dwyl.io</p>
-      </div>
-      
-      <p>SAY HELLO!</p>
-      <p>#dwyl</p>
-
-    </section>
+<!--[if lte IE 8]>
   
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  
+<![endif]-->
+<!--[if gt IE 8]><!-->
+  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  
+<!--<![endif]-->
+
+
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+
+  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing.css">
+    <!--<![endif]-->
+  
+
+
+    
+
+    
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">Your Site</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head">Big Bold Text</h1>
+        <p class="splash-subhead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p>
+            <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+
+        <div class="pure-g">
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    Get Started Quickly
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-mobile"></i>
+                    Responsive Layouts
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-th-large"></i>
+                    Modular
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+                <h3 class="content-subhead">
+                    <i class="fa fa-check-square-o"></i>
+                    Plays Nice
+                </h3>
+                <p>
+                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+            <img class="pure-img-responsive" alt="File Icons" width="300" src="img/common/file-icons.png">
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor.
+            </p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+
+        <div class="pure-g">
+            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name">
+
+
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email">
+
+                        <label for="password">Your Password</label>
+                        <input id="password" type="password" placeholder="Your Password">
+
+                        <button type="submit" class="pure-button">Sign Up</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                <h4>Contact Us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+
+                <h4>More Information</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer l-box is-center">
+        View the source of this layout to learn more. Made with love by the YUI Team.
+    </div>
+
+</div>
+
+
+
+
+
+
 </body>
 </html>
