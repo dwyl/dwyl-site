@@ -7,29 +7,29 @@
   <meta name="author" content="@dwyl">
   <meta name="keywords" content="do, what, you, love, dwyl, time, tracking, help, developers, code, frontend, backend, tooling, tools">
   <meta name="robots" content="index, follow, noarchive">
-  <meta name="base" content="http://www.dwyl.io">
-  
+  <meta name="base" content="https://www.dwyl.io">
+
   <!--This if is not part of the pureCSS template-->
   <!--[if ie]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <![endif]-->
 
   <link rel="shortcut icon" href="/img/favicon.ico">
-  
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
-  <!--[if lte IE 8]>  
-      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">    
+  <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
   <![endif]-->
-  <!--[if gt IE 8]><!-->  
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">  
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
   <!--<![endif]-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  
+
   <!--FontAwesome-->
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-  
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
   <!-- Google fonts -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
@@ -41,7 +41,7 @@
         <link rel="stylesheet" href="css/layouts/marketing.css">
         <link rel="stylesheet" href="css/dwyl.css">
     <!--<![endif]-->
-    
+
     <!-- Google Analytics -->
     <!--Adds support for pre-loading in modern browsers but degrades gracefully-->
     <script async src="//www.google-analytics.com/analytics.js"></script>
@@ -55,7 +55,7 @@
     ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
-    
+
 </head>
 <body>
 
@@ -109,7 +109,7 @@
                     Community Driven
                 </h3>
                 <p>
-                  We build only what you ask for. <a href="mailto:hello@dwyl.io">Drop us an email</a> or <a href="http://www.github.com/dwyl/time/issues">open an issue on Github</a>.
+                  We build only what you ask for. <a href="mailto:hello@dwyl.io">Drop us an email</a> or <a href="https://www.github.com/dwyl/time/issues">open an issue on Github</a>.
                 </p>
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
@@ -139,7 +139,7 @@
                   We <i class="fa fa-heart-o"></i> the environment and aim to be carbon positive.
                 </p>
             </div> -->
-            
+
         </div>
     </div>
 
@@ -153,10 +153,10 @@
             <h2 class="content-head content-head-ribbon">Our Story</h2>
             <!--Need to A/B test title here in a BIG way: 'Solving real problems with technology'-->
             <p>
-              In 2015, <a href="http://www.twitter.com/nelsonic">Nelson</a> and <a href="http://www.twitter.com/iteles">Ines</a> decided they wanted to work together. But not just on anything, they wanted to do something they <i>loved</i>. Better yet, they wanted <strong>everyone that they worked with to be doing something <i>they</i> love.</strong>  
+              In 2015, <a href="https://www.twitter.com/nelsonic">Nelson</a> and <a href="https://www.twitter.com/iteles">Ines</a> decided they wanted to work together. But not just on anything, they wanted to do something they <i>loved</i>. Better yet, they wanted <strong>everyone that they worked with to be doing something <i>they</i> love.</strong>
             </p>
             <p>
-              And so, <strong>dwyl</strong> was born, a rapidly expanding community of developers from around the word who want to <strong>solve real problems with technology</strong>. 
+              And so, <strong>dwyl</strong> was born, a rapidly expanding community of developers from around the word who want to <strong>solve real problems with technology</strong>.
             </p>
             <p>
               We're currently building an app which allows you to track any time-based activity. <strong>Sign up above</strong> if you want to be one of the first to <em>beta test our app</em>, we'd <i>really</i> appreciate your feedback!
@@ -166,11 +166,11 @@
 
     <div class="content">
         <h2 class="content-head is-center">What's on your mind? We want to hear all about it.</h2>
-        
+
         <div class="pure-g">
              <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
                <h2 class="splash-subhead thanks">Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
-               
+
                <form class="signup pure-form pure-form-stacked" action="https://dwylapi.herokuapp.com/email" method="post">
                  <fieldset>
                    <label for="email">Email address</label>
@@ -182,15 +182,15 @@
 
                <script>
                $('.signup').on('submit', function(event) {
-                 event.preventDefault(); // http://api.jquery.com/event.preventdefault/
+                 event.preventDefault(); // https://api.jquery.com/event.preventdefault/
                  var $form = $(this);
                  $.post($form.attr('action'), { email: $('#input-email').val() });
                  $form.fadeOut();
                  $('.thanks').fadeIn();
-               })     
+               })
                </script>
-              
-            </div> 
+
+            </div>
 
             <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
                 <h4>Contact Us</h4>
@@ -199,14 +199,14 @@
                 </p>
 
                 <!-- <h4>More Information</h4> -->
-                
+
                   <p>Email us at <a href="mailto:hello@dwyl.io">hello@dwyl.io</a></p>
                   <p class="social">
                     <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
                     <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
                     <a href="https://instagram.com/dwylhq"><i class="fa fa-instagram"></i></a>
                   </p>
-              
+
             </div>
         </div>
 
