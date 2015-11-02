@@ -66,17 +66,14 @@
       <a class="pure-menu-heading" href="">dwyl</a>
 
       <ul class="pure-menu-list">
-          <!-- <li class="pure-menu-item pure-menu-selected">
-            <a href="#" class="pure-menu-link">Home</a>
-          </li> -->
-          <li class="pure-menu-item">
-            <a href="https://twitter.com/dwylhq" class="pure-menu-link"><i class="fa fa-twitter"></i></a>
+          <li class="pure-menu-item pure-menu-selected">
+            <a href="#" class="pure-menu-link">Who?</a>
           </li>
           <li class="pure-menu-item">
-            <a href="mailto:hello@dwyl.io" class="pure-menu-link"><i class="fa fa-envelope-o"></i></a>
+            <a href="#" class="pure-menu-link">What?</a>
           </li>
           <li class="pure-menu-item">
-            <a href="https://instagram.com/explore/tags/dwylsummer" class="pure-menu-link"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="pure-menu-link">How?</a>
           </li>
         </ul>
     </div>
@@ -84,31 +81,10 @@
 
 <div class="splash-container">
     <div class="splash">
-        <h1 class="splash-head">We save you time</h1>
+        <h1 class="splash-head">We are a community of people</h1>
         <p class="splash-subhead">
-            so you can do can do what you love.
+            passionate about using technology to solve <i>real</i> problems.
         </p>
-        <h2 class="splash-subhead thanks">Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
-        
-        <form class="signup" action="https://dwylapi.herokuapp.com/email" method="post">
-          <label class="sr-only" for="email">Email address</label>
-          <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
-          <button class="pure-button-primary pure-button call-to-action-button" type="submit">Start saving time</button>
-          <p class="splash-disclaimer">We don't share your email with anyone, ever.</p>
-        </form>
-
-        <script>
-        $('.signup').on('submit', function(event) {
-          event.preventDefault(); // http://api.jquery.com/event.preventdefault/
-          var $form = $(this);
-          $.post($form.attr('action'), { email: $('#input-email').val() });
-          $form.fadeOut();
-          $('.thanks').fadeIn();
-        })     
-        </script>
-        <!-- <p>
-            <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
-        </p> -->
     </div>
 </div>
 
@@ -190,23 +166,31 @@
 
     <div class="content">
         <h2 class="content-head is-center">What's on your mind? We want to hear all about it.</h2>
-
+        
         <div class="pure-g">
-            <!-- <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <form class="pure-form pure-form-stacked">
-                    <fieldset>
+             <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+               <h2 class="splash-subhead thanks">Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
+               
+               <form class="signup pure-form pure-form-stacked" action="https://dwylapi.herokuapp.com/email" method="post">
+                 <fieldset>
+                   <label for="email">Email address</label>
+                   <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
+                   <button type="submit" class="pure-button">I want to be a beta tester for dwyl products!</button>
+                 </fieldset>
+                  <p class="disclaimer">We don't share your email with anyone, ever.</p>
+               </form>
 
-                        <label for="name">Your Name</label>
-                        <input id="name" type="text" placeholder="Your Name">
-
-
-                        <label for="email">Your Email</label>
-                        <input id="email" type="email" placeholder="Your Email">
-
-                        <button type="submit" class="pure-button">Sign Up</button>
-                    </fieldset>
-                </form>
-            </div> -->
+               <script>
+               $('.signup').on('submit', function(event) {
+                 event.preventDefault(); // http://api.jquery.com/event.preventdefault/
+                 var $form = $(this);
+                 $.post($form.attr('action'), { email: $('#input-email').val() });
+                 $form.fadeOut();
+                 $('.thanks').fadeIn();
+               })     
+               </script>
+              
+            </div> 
 
             <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
                 <h4>Contact Us</h4>

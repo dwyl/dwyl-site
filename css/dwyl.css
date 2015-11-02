@@ -26,47 +26,35 @@ body{
       color: #616161;
   }
   
-.splash-disclaimer{
-  color: white;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
-  font-size: 0.5em;
+.splash-head{
+  border:none;
 }
 
-.thanks {
-  display: none;
-  color:#004D40;
-}
 
-.signup input{
-  border: solid 1px #ffffff;
-  background:none;
-  font-size: 1em;
-  color: #ffffff;
-  display: inline-block;
-  margin: 0.2em;
-  padding: 0.5em;
-}
 
-  /*Only way to change placeholder text color*/
-  .signup ::-webkit-input-placeholder {
-    color: #fafafa;
-  }
-  .signup ::-moz-placeholder {
-    color: #fafafa;
-  }
 
 /*TEMPORARY to override `pure-button` class*/
-.call-to-action-button{
+/*.call-to-action-button{
   background: white;
   color: #1f8dd6;
   border-radius:0;
   border: 1px solid white;
   margin-bottom: 0.2em;
-}
+}*/
 
 .pure-g [class *="pure-u"] {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.disclaimer{
+  letter-spacing: 0.05em;
+  font-size: 0.6em;
+  text-transform:uppercase;
+}
+
+.thanks {
+  display: none;
+  color:#004D40;
 }
 
 /*Hides labels from sighted-users without hiding from screen readers*/
