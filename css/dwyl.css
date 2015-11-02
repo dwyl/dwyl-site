@@ -18,9 +18,20 @@ body{
     padding: 0 0.1em;
   }
   
+  a.social-menu{
+    display:inline-block;
+  }
+  
   .home-menu .pure-menu-selected a {
       color: #616161;
   }
+  
+.splash-disclaimer{
+  color: white;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  font-size: 0.5em;
+}
 
 .thanks {
   display: none;
