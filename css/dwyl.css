@@ -1,0 +1,104 @@
+body{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+.home-menu {
+    background: #ffffff;
+}
+
+.home-menu .menu-logo {
+  max-width: 1.5em;
+}
+
+.home-menu .pure-menu-heading {
+    color: #616161;
+    text-transform: none;
+    font-size: 1.5em;
+    padding: 0 0.1em;
+  }
+  
+  .home-menu .pure-menu-selected a {
+      color: #616161;
+  }
+
+.thanks {
+  display: none;
+  color:#004D40;
+}
+
+.signup input{
+  border: solid 1px #ffffff;
+  background:none;
+  font-size: 1em;
+  color: #ffffff;
+  display: inline-block;
+  margin: 0.2em;
+  padding: 0.5em;
+}
+
+  /*Only way to change placeholder text color*/
+  .signup ::-webkit-input-placeholder {
+    color: #fafafa;
+  }
+  .signup ::-moz-placeholder {
+    color: #fafafa;
+  }
+
+/*TEMPORARY to override `pure-button` class*/
+.call-to-action-button{
+  background: white;
+  color: #1f8dd6;
+  border-radius:0;
+  border: 1px solid white;
+  margin-bottom: 0.2em;
+}
+
+.pure-g [class *="pure-u"] {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Hides labels from sighted-users without hiding from screen readers*/
+.sr-only{
+  color: red;
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  border:0;
+  overflow:hidden;
+  clip: rect(0,0,0,0);
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 48em) {
+
+  .home-menu .pure-menu-heading {
+    color: #616161;
+    text-transform: none;
+    font-size: 3em;
+    padding:0.1em;
+  }
+  
+  .home-menu .menu-logo {
+    font-size: 2.8em;
+  }
+    
+}
+
+/*==============================
+  COLOUR REFERENCE
+================================
++ teal: #4DB6AC;
++ dark teal: #00897B;
++ dark blue: #00897B;
++ dark grey: #403f3f;
++ logo grey: #616161;
++ light grey: #F5f5f5;
++ off-white: #FAFAFA;
+*/

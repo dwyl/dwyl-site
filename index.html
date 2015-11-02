@@ -29,6 +29,9 @@
   
   <!--FontAwesome-->
   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  
+  <!-- Google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
   <!--PureCSS 'Landing Page' layout stylesheet-->
     <!--[if lte IE 8]>
@@ -36,6 +39,7 @@
     <![endif]-->
     <!--[if gt IE 8]><!-->
         <link rel="stylesheet" href="css/layouts/marketing.css">
+        <link rel="stylesheet" href="css/dwyl.css">
     <!--<![endif]-->
     
     <!-- Google Analytics -->
@@ -58,7 +62,7 @@
 
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-      <img class='logo' alt='dwyl logo' src="/img/common/dwyl-heart-only-logo.png" style="max-width:4em;"/>
+      <img class='menu-logo pure-menu-heading' alt='dwyl logo' src="/img/common/dwyl-heart-only-logo.png"/>
       <a class="pure-menu-heading" href="">dwyl</a>
 
       <ul class="pure-menu-list">
@@ -81,16 +85,17 @@
 
 <div class="splash-container">
     <div class="splash">
-        <h1 class="splash-head">dwyl saves you time</h1>
+        <h1 class="splash-head">We save you time</h1>
         <p class="splash-subhead">
             so you can do can do what you love.
         </p>
+        <h2 class="splash-subhead thanks">Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
         
         <form class="signup" action="https://dwylapi.herokuapp.com/email" method="post">
           <label class="sr-only" for="email">Email address</label>
           <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
-          <button class="pure-button pure-button-primary" type="submit">Start saving time</button>
-          <p>We don't share your email with anyone, ever.</p>
+          <button class="pure-button-primary pure-button call-to-action-button" type="submit">Start saving time</button>
+          <p class="splash-subhead">We don't share your email with anyone, ever.</p>
         </form>
 
         <script>
@@ -150,7 +155,7 @@
                   We're developing dwyl <a href="https://github.com/dwyl/time">completely out in the open on Github</a> so anyone can use it and contribute.
                 </p>
             </div>
-            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <!-- <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <h3 class="content-subhead">
                     <i class="fa fa-tree"></i>
                     Environmental Love
@@ -158,16 +163,17 @@
                 <p>
                   We <i class="fa fa-heart-o"></i> the environment and aim to be carbon positive.
                 </p>
-            </div>
+            </div> -->
             
         </div>
     </div>
 
     <div class="ribbon l-box-lrg pure-g">
-        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <!-- <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
             <img class="pure-img-responsive" alt="File Icons" width="300" src="img/common/file-icons.png">
-        </div>
-        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        </div> -->
+        <!-- <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5"> -->
+        <div class="pure-u-1">
 
             <h2 class="content-head content-head-ribbon">Our Story</h2>
             <!--Need to A/B test title here in a BIG way: 'Solving real problems with technology'-->
@@ -187,7 +193,7 @@
         <h2 class="content-head is-center">What's on your mind? We want to hear all about it.</h2>
 
         <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+            <!-- <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
                 <form class="pure-form pure-form-stacked">
                     <fieldset>
 
@@ -198,13 +204,10 @@
                         <label for="email">Your Email</label>
                         <input id="email" type="email" placeholder="Your Email">
 
-                        <label for="password">Your Password</label>
-                        <input id="password" type="password" placeholder="Your Password">
-
                         <button type="submit" class="pure-button">Sign Up</button>
                     </fieldset>
                 </form>
-            </div>
+            </div> -->
 
             <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
                 <h4>Contact Us</h4>
@@ -212,20 +215,13 @@
                     Let's be friends!
                 </p>
 
-                <h4>More Information</h4>
-                <div class="social">
-                  <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
-                  <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
-                  <a href="https://instagram.com/dwylhq"><i class="fa fa-instagram"></i></a>
-                  <p>hello@dwyl.io</p>
-                </div>
+                <!-- <h4>More Information</h4> -->
+                
+                  <p>Email us at <a href="mailto:hello@dwyl.io">hello@dwyl.io</a></p>
+              
             </div>
         </div>
 
-    </div>
-
-    <div class="footer l-box is-center">
-        View the source of this layout to learn more. Made with love by the YUI Team.
     </div>
 
 </div>
