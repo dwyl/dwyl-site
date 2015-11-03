@@ -4,7 +4,8 @@
   "description": "temporary dwyl website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon ./server.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,12 @@
   "dependencies": {
     "hapi": "^11.0.3",
     "inert": "^3.2.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.0",
+    "nodemon": "^1.7.3"
+  },
+  "engines": {
+    "node": ">= 4.0"
   }
 }
