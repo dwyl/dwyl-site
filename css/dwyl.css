@@ -1,26 +1,26 @@
-body{
+/*body{
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-}
+}*/
 
 .home-menu {
     background: #ffffff;
 }
 
-.home-menu .menu-logo {
+/*.menu-logo {
   max-width: 1.5em;
-}
+}*/
 
 .home-menu .pure-menu-heading {
     color: #616161;
     text-transform: none;
-    font-size: 1.5em;
-    padding: 0 0.1em;
+    /*font-size: 1.5em;
+    padding: 0 0.1em;*/
   }
-  
+  /*
   a.social-menu{
     display:inline-block;
-  }
+  }*/
   
   .home-menu .pure-menu-selected a {
       color: #616161;
