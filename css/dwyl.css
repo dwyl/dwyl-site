@@ -3,32 +3,42 @@
   font-size: 1em;
 }*/
 
+/*==============================
+  NAV
+================================*/
 .home-menu {
     background: #ffffff;
 }
 
-/*.menu-logo {
+.pure-menu-heading img{
   max-width: 1.5em;
-}*/
+}
 
-.home-menu .pure-menu-heading {
+.home-menu a.pure-menu-heading {
     color: #616161;
     text-transform: none;
-    /*font-size: 1.5em;
-    padding: 0 0.1em;*/
+    padding-bottom: 0.2em;
+
   }
-  /*
-  a.social-menu{
-    display:inline-block;
-  }*/
   
   .home-menu .pure-menu-selected a {
       color: #616161;
   }
   
-.splash-head{
-  border:none;
+  .home-menu .pure-menu-item a {
+    color: #4DB6AC;
+  }
+  
+/*==============================
+  SPLASH
+================================*/
+.splash-container{
+  background-color: #4DB6AC;
 }
+
+  .splash-head{
+    border:none;
+  }
 
 
 
@@ -95,7 +105,7 @@
 ================================
 + teal: #4DB6AC;
 + dark teal: #00897B;
-+ dark blue: #00897B;
++ dark blue: #2A628F;
 + dark grey: #403f3f;
 + logo grey: #616161;
 + light grey: #F5f5f5;
