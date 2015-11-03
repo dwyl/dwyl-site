@@ -33,28 +33,28 @@
   SPLASH
 ================================*/
 .splash-container{
-  background-color: #4DB6AC;
+  /*max-width: 100%;*/
+  
+  /*Inspired by https://css-tricks.com/perfect-full-page-background-image/ */
+  background-color: transparent;
+  background: url(../img/common/dwyl-team-photo-1037-691.png) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
   .splash-head{
     border:none;
   }
 
-
-
-
-/*TEMPORARY to override `pure-button` class*/
-/*.call-to-action-button{
-  background: white;
-  color: #1f8dd6;
-  border-radius:0;
-  border: 1px solid white;
-  margin-bottom: 0.2em;
-}*/
-
 .pure-g [class *="pure-u"] {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/*==============================
+  CONTACT US
+================================*/
 
 .disclaimer{
   letter-spacing: 0.05em;
