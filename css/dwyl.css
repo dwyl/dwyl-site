@@ -37,7 +37,7 @@
   
   /*Inspired by https://css-tricks.com/perfect-full-page-background-image/ */
   background-color: transparent;
-  background: url(../img/common/dwyl-team-photo-1037-691.png) no-repeat center center;
+  background: url(../img/common/dwyl-team-photo-tall-2074-1485.jpg) no-repeat center center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -46,6 +46,10 @@
 
   .splash-head{
     border:none;
+  }
+  
+  .splash-subhead {
+    opacity:100%;
   }
 
 .pure-g [class *="pure-u"] {
