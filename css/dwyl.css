@@ -3,6 +3,14 @@
   font-size: 1em;
 }*/
 
+a {
+  color: #4DB6AC;
+}
+
+.pure-g [class *="pure-u"] {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /*==============================
   NAV
 ================================*/
@@ -22,19 +30,22 @@
   }
   
   .home-menu .pure-menu-item a {
-    color: #00897B;
+    color: #4DB6AC;
   }
   
-  .home-menu .pure-menu-item .pure-menu-selected a {
-      color: #616161;
+  .home-menu .pure-menu-item a:hover {
+    color: #2A628F;
   }
   
+    .home-menu .pure-menu-item a.pure-menu-selected {
+        color: #616161;
+    }
+    
+
 /*==============================
   SPLASH
 ================================*/
 .splash-container{
-  /*max-width: 100%;*/
-  
   /*Inspired by https://css-tricks.com/perfect-full-page-background-image/ */
   background-color: transparent;
   background: url(../img/common/dwyl-team-photo-tall-2074-1485.jpg) no-repeat center center;
@@ -49,21 +60,29 @@
   }
   
   .splash-subhead {
-    opacity:100%;
+    opacity:1;
   }
-
-.pure-g [class *="pure-u"] {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
+  
 /*==============================
-  CONTACT US
+  RIBBONS (dark blue sections)
 ================================*/
 
+/*.ribbon a {
+  color: #4DB6AC;
+}*/
+
+.content-subhead {
+  color: #ffffff;
+}
 
 /*==============================
   BELIEFS
 ================================*/
+/*TEMPORARY - margin seems to be encroaching on section above
+Might be a flexbox issue (section above end with big white space)*/
+.beliefs-heading{
+  padding-top: 2em;
+}
 
 
 /*==============================
@@ -78,7 +97,11 @@
 
 .thanks {
   display: none;
-  color:#004D40;
+  color:#2A628F;
+}
+
+.social i{
+  font-size: 1.5em;
 }
 
 /*Hides labels from sighted-users without hiding from screen readers*/
@@ -106,6 +129,10 @@
     text-transform: none;
     font-size: 3em;
     padding:0.1em;
+  }
+  
+  .beliefs-heading{
+    padding-top: inherit;
   }
     
 }
