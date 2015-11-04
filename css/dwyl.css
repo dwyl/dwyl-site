@@ -21,12 +21,12 @@
 
   }
   
-  .home-menu .pure-menu-selected a {
-      color: #616161;
+  .home-menu .pure-menu-item a {
+    color: #00897B;
   }
   
-  .home-menu .pure-menu-item a {
-    color: #4DB6AC;
+  .home-menu .pure-menu-item .pure-menu-selected a {
+      color: #616161;
   }
   
 /*==============================
@@ -55,6 +55,16 @@
 .pure-g [class *="pure-u"] {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/*==============================
+  CONTACT US
+================================*/
+
+
+/*==============================
+  BELIEFS
+================================*/
+
 
 /*==============================
   CONTACT US
@@ -96,10 +106,6 @@
     text-transform: none;
     font-size: 3em;
     padding:0.1em;
-  }
-  
-  .home-menu .menu-logo {
-    font-size: 2.8em;
   }
     
 }
