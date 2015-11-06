@@ -100,9 +100,14 @@ Might be a flexbox issue (section above end with big white space)*/
   color:#2A628F;
 }
 
-.social i{
-  font-size: 1.5em;
+.social-icon{
+  padding: 0.5em;
 }
+
+  .social i{
+    font-size: 1.5em;
+  }
+
 
 /*Hides labels from sighted-users without hiding from screen readers*/
 .sr-only{
