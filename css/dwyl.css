@@ -28,14 +28,14 @@ a {
     .home-menu .pure-menu-item a {
       color: #4DB6AC;
     }
-    
+
     .home-menu .pure-menu-item a:hover {
       color: #2A628F;
     }
-  
+
       .home-menu .pure-menu-item a.pure-menu-selected {
           color: #616161;
-      }  
+      }
 
 /*==============================
   SPLASH
@@ -53,11 +53,11 @@ a {
   .splash-head{
     border:none;
   }
-  
+
   .splash-subhead {
     opacity:1;
   }
-  
+
 /*==============================
   RIBBONS (dark blue sections)
 ================================*/
@@ -127,11 +127,11 @@ Might be a flexbox issue (section above end with big white space)*/
     font-size: 3em;
     padding:0.1em;
   }
-  
+
   .beliefs-heading{
     padding-top: inherit;
   }
-    
+
 }
 
 /*==============================
@@ -145,3 +145,13 @@ Might be a flexbox issue (section above end with big white space)*/
 + light grey: #F5f5f5;
 + off-white: #FAFAFA;
 */
+
+/*** CONTACT US FORM ***/
+
+#contact-block {
+  width: 90%;
+  margin-left: 5%;
+}
+#name, #email { width: 70%;}
+#message { width: 90%}
+#contact-block button { float: right;}
