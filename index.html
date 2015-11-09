@@ -1,31 +1,50 @@
-<!DOCTYPE>
-<html lang="en-gb">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>dwyl - do what you love</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="dwyl is community of people dedicated to helping people solve real problems with technology.">
+  <meta name="author" content="@dwyl">
+  <meta name="keywords" content="do, what, you, love, dwyl, mvp, time, tracking, help, developers, code, frontend, backend, tooling, tools">
+  <meta name="robots" content="index, follow, noarchive">
+  <meta name="base" content="https://www.dwyl.io">
 
-    <meta name="author" content="@dwyl">
-    <meta name="keywords" content="do, what, you, love, dwyl, time, tracking, help, developers, code, frontend, backend, tooling, tools">
-    <meta name="description" content="dwyl is community dedicated to helping you do what you love, with a focus on saving you time and making tasks easier.">
-    <meta name="robots" content="index, follow, noarchive">
-    <meta name="base" content="http://www.dwyl.io">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1">
-    <!--[if ie]>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>dwyl - do what you love</title>
+
+  <!--This if is not part of the pureCSS template-->
+  <!--[if ie]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <!--PureCSS 'Landing Page' layout stylesheet-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
     <![endif]-->
-	
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="./main.css" type='text/css'>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/marketing.css">
+        <!--TODO-->
+        <link rel="stylesheet" href="css/dwyl.css">
+    <!--<![endif]-->
 
-    <!--FontAwesome-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
-    <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    
     <!-- Google Analytics -->
     <!--Adds support for pre-loading in modern browsers but degrades gracefully-->
     <script async src="//www.google-analytics.com/analytics.js"></script>
@@ -40,92 +59,200 @@
     </script>
     <!-- End Google Analytics -->
 
-  </head>
-  <body>
-    <div class="main-content">
-      <header>
-        <img class='logo' alt='dwyl logo' src="./images/dwyl-logo-grey-solidheart-tagline.png"/>
-        <nav>
-          <div class="social-header">
-            <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
-            <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
-            <a href="https://instagram.com/explore/tags/dwylsummer"><i class="fa fa-instagram"></i></a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="/#">Alpha!</a></li>
-          </ul>
-        </nav>
-      </header>
+</head>
+<body>
 
-    <section class='main'>
-      <div class='headline'>
-        <h1>dwyl saves you time </h1>
-        <h2 class='sub-headline'>so you can do what you love </h2>
-        <h2 class='thanks'>Thanks for registering your interest! <br /> Please check your inbox for an email from us.</h2>
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">
+          <img src="img/common/dwyl-heart-only-logo.png" alt="dwyl logo"/>dwyl</a>
 
-      </div>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link pure-menu-selected">Who?</a></li>
+            <li class="pure-menu-item"><a href="#what" class="pure-menu-link">What?</a></li>
+            <li class="pure-menu-item"><a href="#how" class="pure-menu-link">How?</a></li>
+        </ul>
+    </div>
+</div>
 
-      <form class="signup" action="https://dwylapi.herokuapp.com/email" method="post">
-        <label class="sr-only" for="email">Email address</label>
-        <input type="email" required placeholder="Your email address" name="email" id="input-email"/>
-        <button class="submit-email" type="submit">Start saving time</button>
-        <p>We don't share your email with anyone, ever.</p>
-      </form>
+<div class="splash-container">
+    <div class="splash" >
+        <h1 class="splash-head">We are a community of people</h1>
+        <p class="splash-subhead">
+            passionate about using technology to solve <i>real</i> problems.
+        </p>
+    </div>
+</div>
 
-      <script>
-      $('.signup').on('submit', function(event) {
-        event.preventDefault(); // http://api.jquery.com/event.preventdefault/
-        var $form = $(this);
-        $.post($form.attr('action'), { email: $('#input-email').val() });
-        $form.fadeOut();
-        $('.thanks').fadeIn();
-      })     
-      </script>
+<div class="content-wrapper">
+  <!--TEMPORARY div for anchoring-->
+    <div id="what"></div>
+  <!--end TEMPORARY div-->
+  <div class="ribbon l-box-lrg pure-g" >
+    <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+      <img class="pure-img-responsive" alt="dwyl logo in white" width="150" src="img/common/dwyl-heart-only-logo-white.png">
+    </div>
 
-    </section> <!--End 'main' section -->
-
-    <section class="homepage-features-list">
-      <div class="homepage-feature">
-        <i class="fa fa-check"></i>
-        <h3>Simplicity</h3>
-        <p>We keep it simple and intuitive, with only the features you use.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-users"></i>
-        <h3>Community Driven</h3>
-        <p>We build only what you ask for. <a href="mailto:hello@dwyl.io">Drop us an email</a> or <a href="http://www.github.com/dwyl/time/issues">open an issue on Github</a>.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-lock"></i>
-        <h3>Your data is Yours</h3>
-        <p>We don't sell it. And only the people you want to see it.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-github"></i>
-        <h3>Fully Open Source</h3>
-        <p>We're developing dwyl <a href="https://github.com/dwyl/time">completely out in the open on Github</a> so anyone can use it and contribute.</p>
-      </div>
-      <div class="homepage-feature">
-        <i class="fa fa-tree"></i>
-        <h3>Environmental Love</h3>
-        <p>We <i class="fa fa-heart-o"></i> the environment and aim to be carbon positive.</p>
-      </div>
-    </section>
+    <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+      <h2 class="content-head content-head-ribbon">What do we do?</h2>
+      <p>
+        We build
+        <b>M</b>inimum
+        <b>V</b>iable
+        <b>P</b>roducts
+        (<strong>MVP</strong>s)
+        that test ideas as fast as possible.
+      </p>
+      <p>
+        If you have an idea for a digital product or service,
+        we would <a href="#contact"><em>love</em> to hear from you</a>!
+      </p>
+    </div>
+    <!--TEMPORARY div-->
+      <div id="how"></div>
+    <!--end TEMPORARY div-->
   </div>
-    
-    <section class='say-hello'>
 
-      <div class="social">
-        <a href="https://twitter.com/dwylhq"><i class="fa fa-twitter"></i></a>
-        <a href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o"></i></a>
-        <a href="https://instagram.com/dwylhq"><i class="fa fa-instagram"></i></a>
-        <p>hello@dwyl.io</p>
+
+  <div class="content pure-g">
+    <div class="pure-u-1 l-box">
+      <h2 class="content-head is-center">How do we do it?</h2>
+
+      <p>
+        We have a <strong>3-step approach</strong> to getting your idea(s) tested
+        in the hands of <em>real</em> people.
+      </p>
+      <ol>
+        <li>
+          <i>Understand</i> the problem that needs to be solved
+          and confirm the intended users feel the <i>pain</i>
+          and <i>need</i> for a solution.
+        </li>
+        <li>
+          <em>Prototype</em> the solution and get feedback from
+          <i>real</i> people as fast as possible.
+        </li>
+        <li>
+          <em>Review</em> customer feedback and <i>confirm</i> we are
+          making progress toward solving the problem.
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="content ribbon">
+    <h2 class="content-head content-head-ribbon is-center beliefs-heading">What do we believe in?</h2>
+
+    <div class="pure-g">
+      <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+              <i class="fa fa-code"></i>
+              Fully Tested Code
+          </h3>
+          <p>
+            We're proud of the quality of our code. Having tests means that when we add to that code we <i>know</i> we're not creating a problem somewhere else.
+          </p>
       </div>
-      
-      <p>SAY HELLO!</p>
-      <p>#dwyl</p>
+      <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
 
-    </section>
-  
+        <h3 class="content-subhead">
+            <i class="fa fa-check"></i>
+            Simplicity
+        </h3>
+        <p>
+          We keep it simple and intuitive, with only the features you need and a tried and tested user journey.
+        </p>
+    </div>
+      <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+              <i class="fa fa-github"></i>
+              Open Source
+          </h3>
+          <p>
+            We're big advocates developing our code our in the open, allowing us to tap into a global network of experts contributors.
+          </p>
+      </div>
+      <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+          <h3 class="content-subhead">
+              <i class="fa fa-tree"></i>
+              Ethics Driven
+          </h3>
+          <p>
+            We <i class="fa fa-heart-o"></i> people who are doing amazing things and having a positive effect on the world. If that's you, we'd <a href="#contact"><em>love</em> to hear from you</a>!
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="content">
+    <h2 class="content-head is-center">What's on your mind?</h2>
+
+    <div id="contact-block">
+      <aside>
+           <p>
+               We would <em>love</em> to hear from you!
+               Please contact us using the form below:
+           </p>
+       </aside>
+      <!-- START HERE -->
+         <!-- Style The Contact Form How Ever You Prefer -->
+         <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css"> -->
+
+        <form id="gform" method="POST" class="pure-form pure-form-stacked"
+        action="https://script.google.com/macros/s/AKfycby5ZdD8HfCaz1tMVLw26qYQKEXkP8qdfwLek3TH_RYH3l1o1-Li/exec">
+          <!-- change the form action to your script url -->
+
+          <fieldset class="pure-group">
+            <label for="name">Name: </label>
+            <input id="name" name="name" placeholder="What your Mom calls you" />
+          </fieldset>
+
+          <fieldset class="pure-group">
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="10"
+            placeholder="Tell us what's on your mind..."></textarea>
+          </fieldset>
+
+          <fieldset class="pure-group">
+            <label for="email"><em>Your</em> Email Address:</label>
+            <input id="email" name="email" type="email" value=""
+            required placeholder="your.name@email.com"/>
+            <span id="email-invalid" style="visibility:hidden">
+              Must be a valid email address</span>
+          </fieldset>
+
+          <button class="button-success pure-button button-xlarge">
+            <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+        </form>
+
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div style="display:none;" id="thankyou_message">
+          <h2><em>Thanks</em> for contacting us!
+            We will get back to you soon!</h2>
+        </div>
+
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+      <!-- END -->
+
+    </div>
+
+
+
+    <div class="pure-g">
+
+      <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+        <div class="social">
+          <a class="social-icon" href="https://twitter.com/dwylhq"><i class="fa fa-twitter" title="link to dwylhq twitter"></i></a>
+          <a class="social-icon" href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o" title="email us!"></i></a>
+          <a class="social-icon" href="https://instagram.com/explore/tags/dwylsummer/"><i class="fa fa-instagram" title="link to dwylhq instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+</div> <!--end of content-wrapper-->
+
 </body>
 </html>

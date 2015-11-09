@@ -1,0 +1,157 @@
+a {
+  color: #4DB6AC;
+}
+
+.pure-g [class *="pure-u"] {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*==============================
+  NAV
+================================*/
+.home-menu {
+    background: #ffffff;
+}
+
+  .pure-menu-heading img{
+    max-width: 1.5em;
+  }
+
+  .home-menu a.pure-menu-heading {
+      color: #616161;
+      text-transform: none;
+      padding-bottom: 0.2em;
+
+    }
+
+    /*Need this repeated here to override pureCSS styles due to specificity*/
+    .home-menu .pure-menu-item a {
+      color: #4DB6AC;
+    }
+
+    .home-menu .pure-menu-item a:hover {
+      color: #2A628F;
+    }
+
+      .home-menu .pure-menu-item a.pure-menu-selected {
+          color: #616161;
+      }
+
+/*==============================
+  SPLASH
+================================*/
+.splash-container{
+  /*Inspired by https://css-tricks.com/perfect-full-page-background-image/ */
+  background-color: transparent;
+  background: url(../img/common/dwyl-team-photo-tall-2074-1485.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+  .splash-head{
+    border:none;
+  }
+
+  .splash-subhead {
+    opacity:1;
+  }
+
+/*==============================
+  RIBBONS (dark blue sections)
+================================*/
+
+/*Headings of each section*/
+.content-subhead {
+  color: #ffffff;
+}
+
+/*==============================
+  BELIEFS
+================================*/
+/*TEMPORARY - margin seems to be encroaching on section above
+Might be a flexbox issue (section above end with big white space)*/
+.beliefs-heading{
+  padding-top: 2em;
+}
+
+
+/*==============================
+  CONTACT US
+================================*/
+
+.disclaimer{
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  text-transform:uppercase;
+}
+
+.thanks {
+  display: none;
+  color:#2A628F;
+}
+
+  .social-icon{
+    padding: 0.5em;
+  }
+
+    .social i{
+      font-size: 1.5em;
+    }
+
+
+/*Hides labels from sighted-users without hiding from screen readers*/
+.sr-only{
+  color: red;
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  border:0;
+  overflow:hidden;
+  clip: rect(0,0,0,0);
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 48em) {
+
+  .home-menu .pure-menu-heading {
+    color: #616161;
+    text-transform: none;
+    font-size: 3em;
+    padding:0.1em;
+  }
+
+  .beliefs-heading{
+    padding-top: inherit;
+  }
+
+}
+
+/*==============================
+  COLOUR REFERENCE
+================================
++ teal: #4DB6AC;
++ dark teal: #00897B;
++ dark blue: #2A628F;
++ dark grey: #403f3f;
++ logo grey: #616161;
++ light grey: #F5f5f5;
++ off-white: #FAFAFA;
+*/
+
+/*** CONTACT US FORM ***/
+
+#contact-block {
+  width: 90%;
+  margin-left: 5%;
+}
+#name, #email { width: 70%;}
+#message { width: 90%}
+#contact-block button { float: right;}
