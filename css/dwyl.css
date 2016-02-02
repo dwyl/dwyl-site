@@ -155,3 +155,23 @@ Might be a flexbox issue (section above end with big white space)*/
 #name, #email { width: 70%;}
 #message { width: 90%}
 #contact-block button { float: right;}
+
+
+/*==============================
+  ANCHOR POSITIONING
+================================
+Negative margin on anchor divs in order to accoutn for fixed header whose
+height varies depending on width of window.
+*/
+
+.anchor {
+  position: absolute;
+  margin-top: -49px;
+}
+
+@media (min-width: 48em) {
+  .anchor {
+    position: absolute;
+    margin-top: -98px;
+  }
+}
