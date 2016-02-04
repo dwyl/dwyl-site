@@ -6,15 +6,7 @@ module.exports = [
     config: {
       auth: false,
       handler: function (request, reply) {
-        reply.file(index);
-      }
-    }
-  },
-  { path: '/websummit', method: 'GET',
-    config: {
-      auth: false,
-      handler: function (request, reply) {
-        reply.file(index);
+        reply.view('index');
       }
     }
   },
@@ -33,5 +25,4 @@ module.exports = [
       directory: { path: Path.normalize(__dirname + '/css/') }
     }
   }
-
-]
+];

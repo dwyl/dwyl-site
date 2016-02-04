@@ -6,6 +6,19 @@ a {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.dark-bg {
+  background-color: #403f3f;
+  color: #f5f5f5;
+}
+
+/*==============================
+  CONENT BLOCKS
+================================*/
+
+.full-height-block {
+  min-height: 100vh;
+}
+
 /*==============================
   NAV
 ================================*/
@@ -42,12 +55,15 @@ a {
 ================================*/
 .splash-container{
   /*Inspired by https://css-tricks.com/perfect-full-page-background-image/ */
-  background-color: transparent;
-  background: url(../img/common/dwyl-team-photo-tall-2074-1485.jpg) no-repeat center center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url(../img/common/dwyl_heart.png) no-repeat center center;
+  background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  top: 4em;
+  bottom: 10em;
+  width: 100%;
+  position: absolute;
 }
 
   .splash-head{
@@ -56,6 +72,21 @@ a {
 
   .splash-subhead {
     opacity:1;
+  }
+
+  .splash-tagline{
+    position: absolute;
+    bottom: 6em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+  }
+
+  .splash-links {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+    text-align: center;
   }
 
 /*==============================

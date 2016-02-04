@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="dwyl is community of people dedicated to helping people solve real problems with technology.">
+  <meta name="author" content="@dwyl">
+  <meta name="keywords" content="do, what, you, love, dwyl, mvp, time, tracking, help, developers, code, frontend, backend, tooling, tools">
+  <meta name="robots" content="index, follow, noarchive">
+  <meta name="base" content="https://www.dwyl.io">
+
+  <title>dwyl - do what you love</title>
+
+  <!--This if is not part of the pureCSS template-->
+  <!--[if ie]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300%7COpen+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  <!--PureCSS 'Landing Page' layout stylesheet-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+    <![endif]-->
+
+    <!--[if gt IE 8]><!-->
+        <!-- <link rel="stylesheet" href="css/layouts/marketing.css"> -->
+        <!--TODO-->
+        <link rel="stylesheet" href="css/dwyl.css">
+    <!--<![endif]-->
+
+    <!-- Google Analytics -->
+    <!--Adds support for pre-loading in modern browsers but degrades gracefully-->
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-63938505-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+</head>
+<body>
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="">
+          <img src="img/common/dwyl-heart-only-logo.png" alt="dwyl logo"/>dwyl</a>
+
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link pure-menu-selected">Who?</a></li>
+            <li class="pure-menu-item"><a href="#what" class="pure-menu-link">What?</a></li>
+            <li class="pure-menu-item"><a href="#how" class="pure-menu-link">How?</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="pure-g full-height-block dark-bg">
+  <div class="splash-container"></div>
+  <div class=" pure-u-1 splash-tagline">dwyl is a community of people</div>
+  <div class="splash-links">
+    <div class="pure-u-1 pure-u-md-1-3">Our Offering</div>
+    <div class="pure-u-1 pure-u-md-1-3">Our Process</div>
+    <div class="pure-u-1 pure-u-md-1-3">What Our Clients Say</div>
+  </div>
+</div>
+
+<div class="content-wrapper">
+  <div class="pure-g full-height-block offering">
+   <div class="pure-u-1 pure-u-md-1-2">
+     <img class="pure-img-responsive" alt="dwyl logo in white" width="150" src="img/common/dwyl-heart-only-logo-white.png">
+   </div>
+   <div class="pure-u-1 pure-u-md-1-2">
+     <h2>Our Offering</h2>
+     <ol>
+       <li>Product Development. We build <i>mobile-first</i> <strong>MVPs</strong></li>
+       <li>User testing. We mentor you on <strong>customer development</strong>, <strong>user feedback</strong> and <strong>product walkthroughs</strong></li>
+       <li>Training. We give you <strong>Product Owner</strong> and <strong>Github Project Management</strong> training</li>
+     </ol>
+     <p>Got an idea for a product or service? <a href="#contact">Let's talk</a>!</p>
+   </div>
+  </div>
+  <div class="pure-g full-height-block dark-bg">
+    <div class="pure-u-1 pure-u-md-1-2">
+      <img class="pure-img-responsive" alt="dwyl logo in white" width="150" src="img/common/dwyl-heart-only-logo-white.png">
+    </div>
+    <div class="pure-u-1 pure-u-md-1-2">
+      <h2>Our Process</h2>
+    </div>
+  </div>
+  <div class="pure-g full-height-block">
+    {{{clients}}}
+  </div>
+  <div class="pure-g full-height-block dark-bg">
+    {{{contact}}}
+  </div>
+    <!-- <div class="pure-g">
+      <div class="l-box-lrg pure-u-1 pure-u-md-3-5"> social buttons
+        <div class="social">
+          <a class="social-icon" href="https://twitter.com/dwylhq"><i class="fa fa-twitter" title="link to dwylhq twitter"></i></a>
+          <a class="social-icon" href="mailto:hello@dwyl.io"><i class="fa fa-envelope-o" title="email us!"></i></a>
+          <a class="social-icon" href="https://instagram.com/explore/tags/dwylsummer/"><i class="fa fa-instagram" title="link to dwylhq instagram"></i></a>
+        </div>
+      </div>
+    </div> -->
+  </div> <!--end of content-wrapper-->
+</body>
+</html>
