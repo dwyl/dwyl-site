@@ -100,6 +100,15 @@ Might be a flexbox issue (section above end with big white space)*/
       font-size: 1.5em;
     }
 
+/*temporarily inserted for banking purposes*/
+.copyright-block{
+  width: 100%;
+  background-color: #2d3e50;
+  color: white;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
 
 /*Hides labels from sighted-users without hiding from screen readers*/
 .sr-only{
@@ -134,18 +143,6 @@ Might be a flexbox issue (section above end with big white space)*/
 
 }
 
-/*==============================
-  COLOUR REFERENCE
-================================
-+ teal: #4DB6AC;
-+ dark teal: #00897B;
-+ dark blue: #2A628F;
-+ dark grey: #403f3f;
-+ logo grey: #616161;
-+ light grey: #F5f5f5;
-+ off-white: #FAFAFA;
-*/
-
 /*** CONTACT US FORM ***/
 
 #contact-block {
@@ -160,7 +157,7 @@ Might be a flexbox issue (section above end with big white space)*/
 /*==============================
   ANCHOR POSITIONING
 ================================
-Negative margin on anchor divs in order to accoutn for fixed header whose
+Negative margin on anchor divs in order to account for fixed header whose
 height varies depending on width of window.
 */
 
@@ -175,3 +172,16 @@ height varies depending on width of window.
     margin-top: -98px;
   }
 }
+
+/*==============================
+  COLOUR REFERENCE
+================================
++ teal: #4DB6AC;
++ dark teal: #00897B;
++ dark blue: #2A628F;
++ dark grey: #403f3f;
++ logo grey: #616161;
++ light grey: #F5f5f5;
++ off-white: #FAFAFA;
+*/
+
