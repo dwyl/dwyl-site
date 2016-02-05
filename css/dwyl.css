@@ -16,10 +16,13 @@ ol li {
 }
 .pure-g [class *="pure-u"] {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 .pure-sm-hide {
   display: none;
 }
+
 .dark-bg {
   background-color: #403f3f;
   color: #f5f5f5;
@@ -109,6 +112,11 @@ ol li {
   bottom: 10em;
   width: 100%;
   position: absolute;
+  transition: background-image 1s;
+}
+.splash-container:hover{
+  background-image: url(../img/common/dwyl_heart_teal_tick.png);
+  transition: background-image 1s;
 }
   .splash-head {
     border: none;
@@ -205,6 +213,45 @@ Might be a flexbox issue (section above end with big white space)*/
 /*==============================
   CONTACT US
 ================================*/
+.pure-form .pure-group select, .pure-form .pure-group input, .pure-form .pure-group textarea {
+  color:#616161;
+  border-radius:4px;
+}
+
+.pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {
+  /* Overriding strange styles from purecss */
+  top:0px;
+  border-radius: 4px;
+  margin:0;
+}
+
+#contact-block {
+  padding-left: 1em;
+}
+
+  #contact-block button {
+    float: right;
+  }
+
+  #contact-block input, #contact-block select, #contact-block textarea {
+    width: 100%;
+  }
+
+  h2.call-to-action {
+      font-size: 8em;
+      text-align: right;
+      line-height: 1em;
+      margin-top: -2em;
+      margin-bottom: 0;
+  }
+
+  span.contact-detail {
+    text-align: right;
+    width: 100%;
+    display: block;
+    font-size: 1.7em;
+    font-weight: bold;
+}
 
 .disclaimer {
   letter-spacing: 0.05em;
@@ -268,20 +315,3 @@ Might be a flexbox issue (section above end with big white space)*/
 + light grey: #F5f5f5;
 + off-white: #FAFAFA;
 */
-
-
-/*** CONTACT US FORM ***/
-
-#contact-block {
-  width: 90%;
-  margin-left: 5%;
-}
-#name, #email {
-  width: 70%;
-}
-#message {
-  width: 90%
-}
-#contact-block button {
-  float: right;
-}

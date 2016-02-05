@@ -153,8 +153,70 @@
   </div>
   <div class="pure-g full-height-block flex-center-wrapper dark-bg contact">
     <div class="pure-u-1 pure-u-md-1-2 flex-center">
+      <h2 class="call-to-action">Let's Talk!</h2>
+      <div class="contact-info">
+        <span class="contact-detail">Tel: <a href="tel:01234567890">01234567890</a></span>
+        <span class="contact-detail">Email: <a href="mailto:hello@dwyl.io">hello@dwyl.io</a></span>
+      </div>
     </div>
     <div class="pure-u-1 pure-u-md-1-2 flex-center">
+      <div id="contact-block">
+
+        <!-- START HERE -->
+           <!-- Style The Contact Form How Ever You Prefer -->
+           <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css"> -->
+
+          <form id="gform" method="POST" class="pure-form pure-form-stacked"
+          action="https://script.google.com/macros/s/AKfycby5ZdD8HfCaz1tMVLw26qYQKEXkP8qdfwLek3TH_RYH3l1o1-Li/exec">
+            <!-- change the form action to your script url -->
+
+            <fieldset class="pure-group">
+              <label for="name">Name: </label>
+              <input id="name" name="name" placeholder="e.g. Mark Zuckerberg" />
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="email">Email Address:</label>
+              <input id="email" name="email" type="email" value=""
+              required placeholder="e.g. mark@facebook.com"/>
+              <!-- <span id="email-invalid" style="visibility:hidden">
+                Must be a valid email address</span> -->
+                <!-- I think this isn't necessary, as the 'required' attribute fulfills this purpose -->
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="budget">Budget:</label>
+              <select id="budget" name="budget" required>
+                <option value="under-15">Under 15k</option>
+                <option value="under-50">Under 50k</option>
+                <option value="under-100">Under 100k</option>
+                <option value="above-100">Above 100k</option>
+                <option value="no-app">I don't need an app!</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="pure-group">
+              <label for="message">Message: </label>
+              <textarea id="message" name="message" rows="10"
+              placeholder="What problem can we solve?"></textarea>
+            </fieldset>
+
+            <button class="button-success pure-button button-xlarge">
+              <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+          </form>
+
+          <!-- Customise the Thankyou Message People See when they submit the form: -->
+          <div style="display:none;" id="thankyou_message">
+            <h2><em>Thanks</em> for contacting us!
+              We will get back to you soon!</h2>
+          </div>
+
+          <!-- Submit the Form to Google Using "AJAX" -->
+          <script data-cfasync="false" type="text/javascript"
+          src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        <!-- END -->
+      </div>
     </div>
   </div>
     <!-- <div class="pure-g">
