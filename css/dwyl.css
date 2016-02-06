@@ -268,6 +268,15 @@ Might be a flexbox issue (section above end with big white space)*/
 .social i {
   font-size: 1.5em;
 }
+/*temporarily inserted for banking purposes*/
+.copyright-block {
+  width: 100%;
+  background-color: #2d3e50;
+  color: white;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
 
 /*Hides labels from sighted-users without hiding from screen readers*/
 
