@@ -68,7 +68,7 @@
             <li class="pure-menu-item"><a href="/team" class="pure-menu-link">Meet the team</a></li>
             <li class="pure-menu-item"><a href="/blog" class="pure-menu-link">Blog</a></li>
             <li class="pure-menu-item"><a href="/portfolio" class="pure-menu-link">Portfolio</a></li>
-            <li class="pure-menu-item"><a href="/contact" class="pure-menu-link">Contact</a></li>
+            <li class="pure-menu-item"><a href="#contact-block" class="pure-menu-link">Contact</a></li>
         </ul>
     </div>
 </div>
@@ -76,15 +76,15 @@
 <div class="pure-g full-height-block dark-bg">
   <div class="splash-container"></div>
   <div class="pure-u-1 splash-tagline">dwyl is a community of <span class="tagline-highlight">people</span></div>
-  <div class="splash-links">
-    <div class="splash-link pure-u-1 pure-u-md-1-3">Our Offering</div>
-    <div class="splash-link pure-u-1 pure-u-md-1-3">Our Process</div>
-    <div class="splash-link pure-u-1 pure-u-md-1-3">What Our Clients Say</div>
+  <div class="scroll-links">
+    <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#offering-block">Our Offering</a></div>
+    <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#process-block">Our Process</a></div>
+    <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#clients-block">What Our Clients Say</a></div>
   </div>
 </div>
 
 <div class="content-wrapper">
-  <div class="pure-g full-height-block flex-center-wrapper offering">
+  <div class="pure-g full-height-block flex-center-wrapper offering" id="offering-block">
    <div class="pure-u-1 pure-u-md-1-2">
      <img class="pure-img-responsive" alt="dwyl logo in white" width="150" src="img/common/dwyl-heart-only-logo-white.png">
    </div>
@@ -101,18 +101,29 @@
          <br>We give you <strong>Product Owner</strong> and <strong>Github Project Management</strong> training
        </li>
      </ol>
-     <p>Got an idea for a product or service? <a href="#contact">Let's talk</a>!</p>
+     <p>Got an idea for a product or service? <a href="#contact-block">Let's talk</a>!</p>
+   </div>
+   <div class="scroll-links">
+     <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#">To Top</a></div>
+     <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#process-block">Our Process</a></div>
+     <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#clients-block">What Our Clients Say</a></div>
    </div>
   </div>
-  <div class="pure-g full-height-block flex-center-wrapper dark-bg process">
+  <div class="pure-g full-height-block flex-center-wrapper dark-bg process" id="process-block">
     <div class="pure-u-1 pure-u-md-1-2 flex-center">
       <img class="pure-img-responsive" alt="dwyl logo in white" width="150" src="img/common/dwyl-heart-only-logo-white.png">
     </div>
     <div class="pure-u-1 pure-u-md-1-2 flex-center">
       <h2>Our Process</h2>
+      <p>Like our process? <a href='#contact-block'>Let's talk</a>!</p>
+    </div>
+    <div class="scroll-links">
+      <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#offering-block">Our Offering</a></div>
+      <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#">To Top</a></div>
+      <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#clients-block">What Our Clients Say</a></div>
     </div>
   </div>
-  <div class="pure-g full-height-block flex-center-wrapper clients">
+  <div class="pure-g full-height-block flex-center-wrapper clients" id="clients-block">
     <div class="pure-u-1 section-heading">
       <h2>What Our Clients Say</h2>
     </div>
@@ -149,6 +160,16 @@
           <strong>Huw Davies</strong>, IT Architect at <br><strong>Facebook</strong>
         </div>
       </div>
+    </div>
+    <div class="pure-u-1">
+      <div class="clients-tagline">
+        <p>Want to see your face here? <a href='#contact-block'>Let's talk</a>!</p>
+      </div>
+    </div>
+    <div class="scroll-links">
+      <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#offering-block">Our Offering</a></div>
+      <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#process-block">Our Process</a></div>
+      <div class="scroll-link pure-u-1 pure-u-md-1-3"><a href="#">To Top</a></div>
     </div>
   </div>
   <div class="pure-g full-height-block flex-center-wrapper dark-bg contact">
@@ -229,8 +250,15 @@
       </div>
     </div> -->
     <div class="copyright-block">
-       Copyright 2016 &copy; dwyl Ltd. All rights reserved. Based at 104, Mary Datchelor Close, London SE5 7DY, UK
+       Copyright 2016 &copy; dwyl Ltd. All rights reserved. 104 Mary Datchelor Close, London SE5 7DY, UK
     </div>
   </div> <!--end of content-wrapper-->
+  <script src="../js/smoothHash.js"></script>
+  <script>
+  $(document).smoothHash({
+      speed: 500,
+      smoothfunc: 'linear'
+  });
+  </script>
 </body>
 </html>

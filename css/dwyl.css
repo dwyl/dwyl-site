@@ -6,6 +6,7 @@ html {
 }
 a {
   color: #4DB6AC;
+  text-decoration: none;
 }
 ol {
   padding-left: 1.2em;
@@ -138,18 +139,25 @@ ol li {
     color: #4DB6AC;
     transition: color 0.6s ease;
   }
-  .splash-links {
+  .scroll-links {
     position: absolute;
     bottom: 3em;
-    width: 100%;
+    left: 0;
+    right: 0;
     text-align: center;
   }
-    .splash-link {
+    .scroll-link {
       cursor: pointer;
       transition: color 0.2s ease;
-      padding-top: 0.4em;
     }
-    .splash-link:hover {
+    .scroll-link a{
+      color: #403f3f;
+      transition: color 0.2s ease;
+    }
+    .dark-bg .scroll-link a{
+      color: white;
+    }
+    .scroll-link a:hover {
       color: #4DB6AC;
       transition: color 0.2s ease;
     }
@@ -209,6 +217,10 @@ Might be a flexbox issue (section above end with big white space)*/
       border-radius: 50%;
       width: 100%
     }
+
+.clients-tagline {
+  text-align: center;
+}
 
 /*==============================
   CONTACT US
@@ -271,7 +283,7 @@ Might be a flexbox issue (section above end with big white space)*/
 /*temporarily inserted for banking purposes*/
 .copyright-block {
   width: 100%;
-  background-color: #2d3e50;
+  background-color: #403f3f;
   color: white;
   margin: 0;
   padding: 1em;
