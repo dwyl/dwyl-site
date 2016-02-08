@@ -13,8 +13,12 @@ server.register([Inert, Vision], function (err) {
     engines: {
       html: require('handlebars')
     },
-    relativeTo: __dirname, 
-    path: 'views'
+    relativeTo: __dirname,
+    path: 'views',
+    layout: 'default',
+    layoutPath: 'views/layout'
+    //helpersPath: 'views/helpers',
+    //partialsPath: 'views/partials'
   });
 });
 

@@ -238,7 +238,6 @@ Might be a flexbox issue (section above end with big white space)*/
 }
 
 #contact-block {
-  padding-left: 1em;
 }
 
   #contact-block button {
@@ -253,7 +252,7 @@ Might be a flexbox issue (section above end with big white space)*/
       font-size: 8em;
       text-align: right;
       line-height: 1em;
-      margin-top: -2em;
+      margin-top: 0em;
       margin-bottom: 0;
   }
 
@@ -304,6 +303,27 @@ Might be a flexbox issue (section above end with big white space)*/
   clip: rect(0, 0, 0, 0);
 }
 
+/*==============================
+  VALUES
+================================*/
+
+.values h1 {
+  text-align: center;
+}
+
+.values-box {
+    border: 3px solid white;
+    border-radius: 1.5em;
+    padding: 1em;
+    min-height: 13em;
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.values-box p {
+    margin-bottom: 0;
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -323,7 +343,31 @@ Might be a flexbox issue (section above end with big white space)*/
   .pure-sm-hide {
     display: inline-block;
   }
+
+  h2.call-to-action {
+      margin-top: -2em;
+  }
+  .values h1 {
+    margin-bottom: 2.5em;
+  }
 }
+
+
+@media (min-width: 80em) {
+  /* This class is for containers which are full width on sm and md and lg screens, and
+  half width on xl screens. Currently used on values page.*/
+  .container-xl-1-2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .container-xl-1-2 .values-box {
+    /* Would like to make this better */
+    min-height: 15em;
+  }
+
+}
+
+
 
 /*==============================
   COLOUR REFERENCE
