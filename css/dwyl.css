@@ -15,7 +15,8 @@ img {
 }
 
 ol {
-  padding-left: 1.2em;
+  padding-left: 0;
+  list-style-type: none;
 }
 ol li {
   margin-bottom: 1em;
@@ -180,7 +181,15 @@ ol li {
   display: block;
   margin: 0 auto;
   max-width: 650px;
+  width: 100%;
 }
+
+.process ol h3 {
+  text-align: left;
+  padding-bottom: 0.6em;
+  border-bottom: #4DB6AC 3px solid;
+}
+
 
 /*==============================
   RIBBONS (dark blue sections)
