@@ -183,6 +183,23 @@ ol li {
   text-align: center;
 }
 
+.offering-icon {
+  width: 100%;
+  height: 10em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.mvp-icon {
+  background-image:url(/img/common/icons/offering/mvp-icon.png);
+}
+.user-testing-icon {
+  background-image:url(/img/common/icons/offering/user-testing-icon.png);
+}
+.training-icon {
+  background-image:url(/img/common/icons/offering/training-icon.png);
+}
+
 /*==============================
   PROCESS BLOCK
 ================================*/
