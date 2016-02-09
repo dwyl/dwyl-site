@@ -4,10 +4,16 @@
 html {
   color: #403f3f;
 }
+
 a {
   color: #4DB6AC;
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+}
+
 ol {
   padding-left: 1.2em;
 }
@@ -161,6 +167,20 @@ ol li {
       color: #4DB6AC;
       transition: color 0.2s ease;
     }
+
+/*==============================
+  PROCESS BLOCK
+================================*/
+
+.process h3 {
+  text-align: center;
+}
+
+.process .diagram {
+  display: block;
+  margin: 0 auto;
+  max-width: 650px;
+}
 
 /*==============================
   RIBBONS (dark blue sections)
