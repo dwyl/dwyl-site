@@ -38,7 +38,7 @@ ol li {
 }
 
 /*==============================
-  CONENT BLOCKS
+  CONTENT BLOCKS
 ================================*/
 
 .full-height-block {
@@ -49,10 +49,10 @@ ol li {
   padding-top: 94px;
 }
 
-  .section-heading {
-      margin-bottom: 12em;
-      text-align: center;
-  }
+.section-heading {
+  text-align: center;
+}
+
 
 /*==============================
   NAV
@@ -187,6 +187,11 @@ Might be a flexbox issue (section above end with big white space)*/
 /*==============================
   CLIENTS
 ================================*/
+
+.clients .section-heading {
+    margin-bottom: 12em;
+    text-align: center;
+}
 
 .client-container {
   text-align: center;
@@ -324,6 +329,65 @@ Might be a flexbox issue (section above end with big white space)*/
     margin-bottom: 0;
 }
 
+
+/*==============================
+  TEAM
+================================*/
+
+.member-image img {
+  max-width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.no-flex-margin {
+  /* This is for pages which don't use flex centering. It is to offset the fixed nav. */
+  margin-top: 94px;
+}
+
+.member-container {
+  border-radius: 1.5em;
+  padding: 1em 1em 1em 0;
+  min-height: 13em;
+  margin: 1.5em 0;
+  cursor: pointer;
+}
+
+.member-container:hover {
+    transition: opacity 0.2s ease;
+    opacity: 0.8;
+}
+
+.member-container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+  .member-image {
+      width: 50%;
+      padding: 0 3em;
+      float: left;
+  }
+    .member-image img {
+      width: 100%;
+      max-width: 14em;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  .member-title {
+    width: 50%;
+    float:left;
+  }
+  .member-title h2 {
+    margin-top: 0;
+    font-size: 1em;
+  }
+  .member-text {
+    width: 50%;
+    float:left;
+    text-align: justify;
+  }
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
