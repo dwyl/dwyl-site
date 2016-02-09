@@ -4,16 +4,13 @@
 html {
   color: #403f3f;
 }
-
 a {
   color: #4DB6AC;
   text-decoration: none;
 }
-
 img {
   max-width: 100%;
 }
-
 ol {
   padding-left: 0;
   list-style-type: none;
@@ -30,7 +27,6 @@ ol li {
 .pure-sm-hide {
   display: none;
 }
-
 .dark-bg {
   background-color: #403f3f;
   color: #f5f5f5;
@@ -55,11 +51,23 @@ ol li {
   min-height: 100vh;
   padding-top: 94px;
 }
-
 .section-heading {
   text-align: center;
 }
-
+.section-box {
+    border: 3px solid #403f3f;
+    border-radius: 1.5em;
+    padding: 1em;
+    min-height: 13em;
+    margin: 1.5em 0;
+    text-align: center;
+}
+  .section-box p {
+      margin-bottom: 0;
+  }
+.dark-bg .section-box {
+    border-color: white;
+}
 
 /*==============================
   NAV
@@ -90,7 +98,6 @@ ol li {
 }
 
 /*Need this repeated here to override pureCSS styles due to specificity*/
-
 .home-menu .pure-menu-item a {
   color: #616161;
   padding-top: 0;
@@ -168,6 +175,13 @@ ol li {
       color: #4DB6AC;
       transition: color 0.2s ease;
     }
+/*==============================
+  OFFERING BLOCK
+================================*/
+
+.offering-tagline {
+  text-align: center;
+}
 
 /*==============================
   PROCESS BLOCK
@@ -176,27 +190,23 @@ ol li {
 .process h3 {
   text-align: center;
 }
-
 .process .diagram {
   display: block;
   margin: 0 auto;
   max-width: 650px;
   width: 100%;
 }
-
 .process ol h3 {
   text-align: left;
   padding-bottom: 0.6em;
   border-bottom: #4DB6AC 3px solid;
 }
 
-
 /*==============================
   RIBBONS (dark blue sections)
 ================================*/
 
 /*Headings of each section*/
-
 .content-subhead {
   color: #ffffff;
 }
@@ -205,10 +215,8 @@ ol li {
   BELIEFS
 ================================*/
 
-
 /*TEMPORARY - margin seems to be encroaching on section above
 Might be a flexbox issue (section above end with big white space)*/
-
 .beliefs-heading {
   padding-top: 2em;
 }
@@ -221,7 +229,6 @@ Might be a flexbox issue (section above end with big white space)*/
     margin-bottom: 12em;
     text-align: center;
 }
-
 .client-container {
   text-align: center;
   color: #403f3f;
@@ -236,13 +243,11 @@ Might be a flexbox issue (section above end with big white space)*/
     bottom: 100%;
     height: 12em;
   }
-
   .client-name {
       padding-top: 2em;
       position: absolute;
       width: 100%;
   }
-
   .client-image {
     width: 50%;
     margin: 0 auto;
@@ -251,7 +256,6 @@ Might be a flexbox issue (section above end with big white space)*/
       border-radius: 50%;
       width: 100%
     }
-
 .clients-tagline {
   text-align: center;
 }
@@ -259,29 +263,25 @@ Might be a flexbox issue (section above end with big white space)*/
 /*==============================
   CONTACT US
 ================================*/
+
 .pure-form .pure-group select, .pure-form .pure-group input, .pure-form .pure-group textarea {
   color:#616161;
   border-radius:4px;
 }
-
 .pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child {
   /* Overriding strange styles from purecss */
   top:0px;
   border-radius: 4px;
   margin:0;
 }
-
-#contact-block {
+#contact {
 }
-
-  #contact-block button {
+  #contact button {
     float: right;
   }
-
-  #contact-block input, #contact-block select, #contact-block textarea {
+  #contact input, #contact select, #contact textarea {
     width: 100%;
   }
-
   h2.call-to-action {
       font-size: 8em;
       text-align: right;
@@ -289,7 +289,6 @@ Might be a flexbox issue (section above end with big white space)*/
       margin-top: 0em;
       margin-bottom: 0;
   }
-
   span.contact-detail {
     text-align: right;
     width: 100%;
@@ -297,7 +296,6 @@ Might be a flexbox issue (section above end with big white space)*/
     font-size: 1.7em;
     font-weight: bold;
 }
-
 .disclaimer {
   letter-spacing: 0.05em;
   font-size: 0.8em;
@@ -324,7 +322,6 @@ Might be a flexbox issue (section above end with big white space)*/
 }
 
 /*Hides labels from sighted-users without hiding from screen readers*/
-
 .sr-only {
   color: red;
   position: absolute;
@@ -345,20 +342,6 @@ Might be a flexbox issue (section above end with big white space)*/
   text-align: center;
 }
 
-.values-box {
-    border: 3px solid white;
-    border-radius: 1.5em;
-    padding: 1em;
-    min-height: 13em;
-    margin: 1.5em 0;
-    text-align: center;
-}
-
-.values-box p {
-    margin-bottom: 0;
-}
-
-
 /*==============================
   TEAM
 ================================*/
@@ -368,12 +351,10 @@ Might be a flexbox issue (section above end with big white space)*/
   border-radius: 50%;
   overflow: hidden;
 }
-
 .no-flex-margin {
   /* This is for pages which don't use flex centering. It is to offset the fixed nav. */
   margin-top: 94px;
 }
-
 .member-container {
   border-radius: 1.5em;
   padding: 1em 1em 1em 0;
@@ -381,18 +362,15 @@ Might be a flexbox issue (section above end with big white space)*/
   margin: 1.5em 0;
   cursor: pointer;
 }
-
 .member-container:hover {
     transition: opacity 0.2s ease;
     opacity: 0.8;
 }
-
 .member-container:after {
     content: "";
     display: block;
     clear: both;
 }
-
   .member-image {
       width: 50%;
       padding: 0 3em;
@@ -417,6 +395,7 @@ Might be a flexbox issue (section above end with big white space)*/
     float:left;
     text-align: justify;
   }
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -436,7 +415,6 @@ Might be a flexbox issue (section above end with big white space)*/
   .pure-sm-hide {
     display: inline-block;
   }
-
   h2.call-to-action {
       margin-top: -2em;
   }
@@ -445,7 +423,6 @@ Might be a flexbox issue (section above end with big white space)*/
   }
 }
 
-
 @media (min-width: 80em) {
   /* This class is for containers which are full width on sm and md and lg screens, and
   half width on xl screens. Currently used on values page.*/
@@ -453,14 +430,11 @@ Might be a flexbox issue (section above end with big white space)*/
     width: 50%;
     margin: 0 auto;
   }
-  .container-xl-1-2 .values-box {
+  .container-xl-1-2 .section-box {
     /* Would like to make this better */
     min-height: 15em;
   }
-
 }
-
-
 
 /*==============================
   COLOUR REFERENCE
