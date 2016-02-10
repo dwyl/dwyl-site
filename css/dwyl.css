@@ -84,14 +84,15 @@ ol li {
   border-bottom: 1px solid #F5f5f5
   /* Needs to be the same has padding-top on .full-height-block */
 }
-.pure-menu-heading img {
-  max-width: 1.5em;
-}
-.home-menu a.pure-menu-heading {
-  color: #616161;
-  text-transform: none;
-  padding-bottom: 0.2em;
-}
+  .home-menu .pure-menu-heading {
+    color: #616161;
+    text-transform: none;
+    font-size: 3em;
+    padding: 0.1em;
+  }
+    .pure-menu-heading img {
+      max-width: 1.5em;
+    }
 .pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
   background-color: transparent;
   /* Overriding purecss grey box effect */
@@ -412,11 +413,6 @@ Might be a flexbox issue (section above end with big white space)*/
     margin-top: 0;
     font-size: 1em;
   }
-  .member-text {
-    width: 50%;
-    float:left;
-    text-align: justify;
-  }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -425,12 +421,6 @@ Might be a flexbox issue (section above end with big white space)*/
  */
 
 @media (min-width: 48em) {
-  .home-menu .pure-menu-heading {
-    color: #616161;
-    text-transform: none;
-    font-size: 3em;
-    padding: 0.1em;
-  }
   .beliefs-heading {
     padding-top: inherit;
   }
