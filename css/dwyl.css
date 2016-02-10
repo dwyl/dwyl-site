@@ -54,6 +54,8 @@ ol li {
 .section-heading {
   text-align: center;
   position: absolute;
+  left: 0;
+  right: 0;
 }
 .section-boxes {
     padding-top: 6em;
@@ -117,6 +119,43 @@ ol li {
   color: #616161;
   transition: color 0.2s ease;
 }
+.pure-menu-horizontal nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 94px;
+  left: 0;
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+  .pure-menu-horizontal nav ul.pure-menu-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+    .pure-menu-horizontal nav ul li.pure-menu-item  {
+      width: 100%;
+      border-bottom: solid 1px #aaa;
+      display: block;
+      font-size: 1.3em;
+      line-height: 2.6em;
+      padding-left: 25px;
+    }
+  .burger-button {
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    width: 30px;
+    top: 0;
+    height: 94px;
+    background: url('/img/common/icons/burger.png');
+    background-size:contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  nav.concealed {
+    left: -100vw;
+  }
 
 /*==============================
   SPLASH
@@ -188,7 +227,6 @@ ol li {
 .offering-tagline {
   text-align: center;
 }
-
 .offering-icon {
   width: 100%;
   height: 10em;
@@ -223,25 +261,6 @@ ol li {
   text-align: left;
   padding-bottom: 0.6em;
   border-bottom: #4DB6AC 3px solid;
-}
-
-/*==============================
-  RIBBONS (dark blue sections)
-================================*/
-
-/*Headings of each section*/
-.content-subhead {
-  color: #ffffff;
-}
-
-/*==============================
-  BELIEFS
-================================*/
-
-/*TEMPORARY - margin seems to be encroaching on section above
-Might be a flexbox issue (section above end with big white space)*/
-.beliefs-heading {
-  padding-top: 2em;
 }
 
 /*==============================
@@ -421,9 +440,6 @@ Might be a flexbox issue (section above end with big white space)*/
  */
 
 @media (min-width: 48em) {
-  .beliefs-heading {
-    padding-top: inherit;
-  }
   .pure-sm-hide {
     display: inline-block;
   }
@@ -433,6 +449,27 @@ Might be a flexbox issue (section above end with big white space)*/
   .values h1 {
     margin-bottom: 2.5em;
   }
+  /*This is for the nav bar*/
+  .pure-menu-horizontal nav {
+    position: relative;
+    float: right;
+    left: 0;
+    top: 0;
+    width: auto;
+    transition: none;
+  }
+    .pure-menu-horizontal nav ul li.pure-menu-item {
+        width: auto;
+        border-bottom: none;
+        display: inline-block;
+        font-size: 1em;
+        line-height: 2.6em;
+        padding-left: 25px;
+      }
+  .burger-button {
+    display: none;
+  }
+  /*end of nav bar css */
 }
 
 @media (min-width: 80em) {
