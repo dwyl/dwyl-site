@@ -453,6 +453,9 @@ ol li {
   .values h1 {
     margin-bottom: 2.5em;
   }
+  .pure-u-1.pure-u-md-1-2.flex-center.contact-box {
+    padding-right: 6em;
+  }
   /*This is for the nav bar*/
   .pure-menu-horizontal nav {
     position: relative;
