@@ -27,6 +27,9 @@ ol li {
 .pure-sm-hide {
   display: none;
 }
+.pure-xl-show {
+  display: none;
+}
 .dark-bg {
   background-color: #403f3f;
   color: #f5f5f5;
@@ -441,6 +444,9 @@ ol li {
   .pure-sm-hide {
     display: inline-block;
   }
+  .pure-md-hide {
+    display: none;
+  }
   h2.call-to-action {
       margin-top: -2em;
   }
@@ -472,7 +478,13 @@ ol li {
 
 @media (min-width: 80em) {
   /* This class is for containers which are full width on sm and md and lg screens, and
-  half width on xl screens. Currently used on values page.*/
+  half width on xl screens.*/
+  .pure-md-hide {
+    display: inline-block;;
+  }
+  .pure-xl-show {
+    display: inline-block;
+  }
   .container-xl-1-2 {
     width: 50%;
     margin: 0 auto;
