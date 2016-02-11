@@ -66,7 +66,7 @@ ol li {
 }
   .section-box {
       border: 3px solid #403f3f;
-      border-radius: 1.5em;
+      border-radius: 5px;
       padding: 1em;
       min-height: 13em;
       margin: 1.5em 0;
