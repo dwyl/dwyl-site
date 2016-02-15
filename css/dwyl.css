@@ -208,28 +208,6 @@ ol li {
       color: #4DB6AC;
       transition: color 0.6s ease;
     }
-    .scroll-links {
-      position: absolute;
-      bottom: 3em;
-      left: 0;
-      right: 0;
-      text-align: center;
-    }
-      .scroll-link {
-        cursor: pointer;
-        transition: color 0.2s ease;
-      }
-      .scroll-link a{
-        color: #403f3f;
-        transition: color 0.2s ease;
-      }
-      .dark-bg .scroll-link a{
-        color: white;
-      }
-      .scroll-link a:hover {
-        color: #4DB6AC;
-        transition: color 0.2s ease;
-      }
 /*==============================
   OFFERING BLOCK
 ================================*/
