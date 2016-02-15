@@ -49,6 +49,7 @@ ol li {
 
 .full-height-block {
   position: relative;
+  padding:0 1em;
   min-height: 720px;
   /*fallback for ie8*/
   min-height: 100vh;
@@ -182,9 +183,11 @@ ol li {
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
-    top: 4em;
+    /* Height of page header */
+    top: 94px;
     bottom: 10em;
-    width: 100%;
+    left: 0;
+    right: 0;
     position: absolute;
     transition: background-image 1s;
   }
@@ -201,7 +204,8 @@ ol li {
     .splash-tagline {
       position: absolute;
       bottom: 6em;
-      width: 100%;
+      left: 0;
+      right: 0;
       text-align: center;
       font-size: 1.8em;
     }
@@ -448,8 +452,8 @@ ol li {
   .values h1 {
     margin-bottom: 2.5em;
   }
-  .pure-u-1.pure-u-md-1-2.flex-center.contact-box {
-    padding-right: 6em;
+  .pure-u-1.pure-u-md-1-2.flex-center.contact-box form{
+    max-width: 40em;
   }
   /*This is for the nav bar*/
   .pure-menu-horizontal nav {
