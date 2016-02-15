@@ -54,30 +54,34 @@ ol li {
   min-height: 100vh;
   padding-top: 94px;
 }
-.section-heading {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-.section-boxes {
-    padding-top: 6em;
-    padding-bottom: 9em;
-}
-  .section-box {
-      border: 3px solid #403f3f;
-      border-radius: 5px;
-      padding: 1em;
-      min-height: 13em;
-      margin: 1.5em 0;
-      text-align: center;
+  .section-heading {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
-    .section-box p {
-        margin-bottom: 0;
+  .section-boxes {
+      padding-top: 6em;
+      padding-bottom: 9em;
+  }
+    .section-box {
+        border: 3px solid #403f3f;
+        border-radius: 5px;
+        padding: 1em;
+        min-height: 13em;
+        margin: 1.5em 0;
+        text-align: center;
     }
-.dark-bg .section-box {
-    border-color: white;
-}
+      .section-box p {
+          margin-bottom: 0;
+      }
+  .dark-bg .section-box {
+      border-color: white;
+  }
+
+  .full-height-block.has-tagline .section-boxes {
+    padding-top: 10em;
+  }
 
 /*==============================
   NAV
