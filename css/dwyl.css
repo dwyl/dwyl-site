@@ -60,6 +60,7 @@ ol li {
     position: absolute;
     left: 0;
     right: 0;
+    top: 94px;
   }
   .section-boxes {
       padding-top: 6em;
