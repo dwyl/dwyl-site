@@ -325,7 +325,13 @@ ol li {
     display: block;
     font-size: 1.7em;
     font-weight: bold;
-}
+  }
+  span.contact-tagline {
+    text-align: right;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+  }
 .disclaimer {
   letter-spacing: 0.05em;
   font-size: 0.8em;
