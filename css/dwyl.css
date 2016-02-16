@@ -132,8 +132,8 @@ ol li {
   position: fixed;
   background-color: white;
   width: 100%;
-  top: 94px;
-  left: 0;
+  /*top: 94px;
+  left: 0;*/
   transition: left 0.3s ease;
   z-index: 100;
 }
@@ -163,7 +163,8 @@ ol li {
     background-repeat: no-repeat;
   }
   nav.concealed {
-    left: -100vw;
+    /*left: -100vw;*/
+    display: none;
   }
 
 /*==============================
@@ -458,10 +459,12 @@ ol li {
   }
   /*This is for the nav bar*/
   .pure-menu-horizontal nav {
-    position: relative;
-    float: right;
-    left: 0;
+    position: absolute;
+    display: block;
+    /*float: right;
+    left: 0;*/
     top: 0;
+    right: 0;
     width: auto;
     transition: none;
   }
