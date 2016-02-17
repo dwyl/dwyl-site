@@ -162,6 +162,9 @@ ol li {
   nav.concealed {
     display: none;
   }
+  nav.main-nav.concealed {
+    border-bottom: 1px solid #F5f5f5;
+  }
 
 /*==============================
   SPLASH
