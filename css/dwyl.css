@@ -390,50 +390,53 @@ ol li {
   TEAM
 ================================*/
 
-.member-image img {
-  max-width: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-}
 .no-flex-margin {
   /* This is for pages which don't use flex centering. It is to offset the fixed nav. */
   margin-top: 94px;
 }
-.member-container {
-  border-radius: 1.5em;
-  padding: 1em 1em 1em 0;
-  min-height: 13em;
-  margin: 1.5em 0;
-  cursor: pointer;
+.members {
+    padding-top: 5em;
 }
-.member-container:hover {
-    transition: opacity 0.2s ease;
-    opacity: 0.8;
-}
-.member-container:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-  .member-image {
-      width: 50%;
-      padding: 0 3em;
-      float: left;
+  .member-container {
+    border-radius: 1.5em;
+    padding: 1em 1em 1em 0;
+    min-height: 13em;
+    margin: 1.5em 0;
+    cursor: pointer;
   }
-    .member-image img {
-      width: 100%;
-      max-width: 14em;
-      border-radius: 50%;
-      overflow: hidden;
+  .member-container:hover {
+      transition: opacity 0.2s ease;
+      opacity: 0.8;
+  }
+  .member-container:after {
+      content: "";
+      display: block;
+      clear: both;
+  }
+    .member-image {
+        width: 50%;
+        padding: 0 3em;
+        margin: 0 auto;
     }
-  .member-title {
-    width: 50%;
-    float:left;
-  }
-  .member-title h2 {
-    margin-top: 0;
-    font-size: 1em;
-  }
+      .member-image img {
+        width: 100%;
+        max-width: 14em;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      /*.member-image img {
+        max-width: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+      }*/
+    .member-title {
+      margin: 0 auto;
+      text-align: center;
+    }
+    .member-title h2 {
+      margin-top: 0;
+      font-size: 1em;
+    }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
