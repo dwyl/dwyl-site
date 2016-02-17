@@ -39,9 +39,6 @@ ol li {
   align-items: center;
   justify-content: center;
 }
-/*.flex-center {
-  margin-bottom: 94px;
-}*/
 
 /*==============================
   CONTENT BLOCKS
@@ -53,14 +50,14 @@ ol li {
   min-height: 720px;
   /*fallback for ie8*/
   min-height: 100vh;
-  padding-top: 94px;
+  padding-top: 55px;
 }
   .section-heading {
     text-align: center;
     position: absolute;
     left: 0;
     right: 0;
-    top: 94px;
+    top: 55px;
   }
   .section-boxes {
       padding-top: 6em;
@@ -91,18 +88,18 @@ ol li {
 
 .home-menu {
   background: #ffffff;
-  height: 94px;
+  height: 55px;
   border-bottom: 1px solid #F5f5f5
   /* Needs to be the same has padding-top on .full-height-block */
 }
   .home-menu .pure-menu-heading {
     color: #616161;
     text-transform: none;
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 0.1em;
   }
     .pure-menu-heading img {
-      max-width: 1.5em;
+      max-width: 1em;
     }
 .pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
   background-color: transparent;
@@ -110,8 +107,8 @@ ol li {
 }
 .pure-menu-horizontal .pure-menu-list {
   float: right;
-  line-height: 94px;
   /* Needs to be the same has padding-top on .full-height-block */
+  line-height: 55px;
 }
 
 /*Need this repeated here to override pureCSS styles due to specificity*/
@@ -156,14 +153,13 @@ ol li {
     right: 25px;
     width: 30px;
     top: 0;
-    height: 94px;
+    height: 55px;
     background: url('/img/common/icons/burger.png');
     background-size:contain;
     background-position: center center;
     background-repeat: no-repeat;
   }
   nav.concealed {
-    /*left: -100vw;*/
     display: none;
   }
 
@@ -186,7 +182,7 @@ ol li {
     -moz-background-size: contain;
     -o-background-size: contain;
     /* Height of page header */
-    top: 94px;
+    top: 55px;
     bottom: 10em;
     left: 0;
     right: 0;
@@ -357,7 +353,6 @@ ol li {
 .social i {
   font-size: 1.5em;
 }
-/*temporarily inserted for banking purposes*/
 .copyright-block {
   width: 100%;
   margin: 0;
@@ -392,7 +387,7 @@ ol li {
 
 .no-flex-margin {
   /* This is for pages which don't use flex centering. It is to offset the fixed nav. */
-  margin-top: 94px;
+  margin-top: 55px;
 }
 .members {
     padding-top: 5em;
@@ -444,11 +439,23 @@ ol li {
  */
 
 @media (min-width: 48em) {
+  .full-height-block {
+    padding-top: 94px;
+  }
+  .section-heading {
+    top: 94px;
+  }
+  .no-flex-margin {
+    margin-top: 94px;
+  }
   .pure-sm-hide {
     display: inline-block;
   }
   .pure-md-hide {
     display: none;
+  }
+  .splash-container {
+    top: 94px;
   }
   h2.call-to-action {
       margin-top: -2em;
@@ -460,6 +467,15 @@ ol li {
     max-width: 40em;
   }
   /*This is for the nav bar*/
+  .home-menu {
+    height: 94px;
+  }
+  .home-menu .pure-menu-heading {
+    font-size: 3em;
+  }
+    .pure-menu-heading img {
+      max-width: 1.5em;
+    }
   .pure-menu-horizontal nav {
     position: absolute;
     display: block;
@@ -470,6 +486,9 @@ ol li {
     width: auto;
     transition: none;
   }
+  .pure-menu-horizontal .pure-menu-list {
+    line-height: 94px;
+  }
     .pure-menu-horizontal nav ul li.pure-menu-item {
         width: auto;
         border-bottom: none;
@@ -479,6 +498,7 @@ ol li {
         padding-left: 25px;
       }
   .burger-button {
+    height: 94px;
     display: none;
   }
   /*end of nav bar css */
