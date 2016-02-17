@@ -391,6 +391,8 @@ ol li {
 }
 .members {
     padding-top: 5em;
+    max-width: 1024px;
+    margin: 0 auto;
 }
   .member-container {
     border-radius: 1.5em;
