@@ -221,9 +221,6 @@ ol li {
   OFFERING BLOCK
 ================================*/
 
-.offering-tagline {
-  text-align: center;
-}
 .offering-icon {
   width: 100%;
   height: 10em;
@@ -461,6 +458,10 @@ ol li {
   }
   .splash-container {
     top: 94px;
+  }
+  .section-tagline {
+    margin-top: 8em;
+    display: block;
   }
   h2.call-to-action {
       margin-top: -2em;
