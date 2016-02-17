@@ -414,7 +414,7 @@ ol li {
       clear: both;
   }
     .member-image {
-        width: 50%;
+        width: 100%;
         padding: 0 3em;
         margin: 0 auto;
     }
@@ -423,19 +423,18 @@ ol li {
         max-width: 14em;
         border-radius: 50%;
         overflow: hidden;
+        margin: 0 auto;
+        display: block;
       }
-      /*.member-image img {
-        max-width: 100%;
-        border-radius: 50%;
-        overflow: hidden;
-      }*/
     .member-title {
       margin: 0 auto;
       text-align: center;
+      padding: 1em;
     }
     .member-title h2 {
       margin-top: 0;
       font-size: 1em;
+      text-align: center;
     }
 
 /*
