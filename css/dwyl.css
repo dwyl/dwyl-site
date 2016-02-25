@@ -208,7 +208,7 @@ ol li {
       left: 0;
       right: 0;
       text-align: center;
-      font-size: 1.8em;
+      font-size: 1.2em;
     }
     .splash-tagline .tagline-highlight {
       transition: color 0.4s ease;
@@ -459,6 +459,9 @@ ol li {
   .splash-container {
     top: 94px;
   }
+  .splash-tagline {
+    font-size: 1.5em;
+  }
   .section-tagline {
     margin-top: 4em;
     display: block;
@@ -518,6 +521,9 @@ ol li {
   }
   .pure-xl-show {
     display: inline-block;
+  }
+  .splash-tagline {
+    font-size: 1.8em;
   }
   .container-xl-1-2 {
     width: 50%;
