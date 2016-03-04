@@ -319,7 +319,7 @@ ol li {
     width: 100%;
   }
   h2.call-to-action {
-      font-size: 8em;
+      font-size: 6em;
       text-align: right;
       line-height: 1em;
       margin-top: 0em;
@@ -467,6 +467,7 @@ ol li {
     display: block;
   }
   h2.call-to-action {
+      font-size: 8em;
       margin-top: -2em;
   }
   .values h1 {
