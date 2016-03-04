@@ -170,12 +170,11 @@ ol li {
   SPLASH
 ================================*/
 .splash {
-  background: url(../img/common/team-splash-image.jpg) no-repeat center center fixed;
+  background: url(../img/common/team-splash-image.jpg) no-repeat center center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: center center;
 }
   .splash-container {
     /*Inspired by https://css-tricks.com/perfect-full-page-background-image/ */
