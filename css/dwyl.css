@@ -64,7 +64,6 @@ ol li {
       padding-bottom: 9em;
   }
     .section-box {
-        border: 3px solid #403f3f;
         border-radius: 5px;
         padding: 1em;
         min-height: 13em;
@@ -511,6 +510,10 @@ ol li {
     display: none;
   }
   /*end of nav bar css */
+  
+  .section-box {
+      border: 2px solid #403f3f;
+    }
 }
 
 @media (min-width: 80em) {
@@ -533,6 +536,11 @@ ol li {
     /* Would like to make this better */
     min-height: 15em;
   }
+  
+  .section-box {
+      border: 2px solid #403f3f;
+    }
+}
 }
 
 /*==============================
