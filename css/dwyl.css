@@ -66,7 +66,7 @@ ol li {
     .section-box {
         border-radius: 5px;
         padding: 1em;
-        min-height: 13em;
+        min-height: 14em;
         margin: 1.5em 0;
         text-align: center;
     }
@@ -510,7 +510,7 @@ ol li {
     display: none;
   }
   /*end of nav bar css */
-  
+
   .section-box {
       border: 2px solid #403f3f;
     }
@@ -534,14 +534,14 @@ ol li {
   }
   .container-xl-1-2 .section-box {
     /* Would like to make this better */
-    min-height: 15em;
+    min-height: 16em;
   }
-  
+
   .section-box {
       border: 2px solid #403f3f;
     }
 }
-}
+
 
 /*==============================
   COLOUR REFERENCE
