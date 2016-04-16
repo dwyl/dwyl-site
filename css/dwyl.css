@@ -11,6 +11,7 @@ a {
 img {
   max-width: 100%;
 }
+
 ol {
   padding-left: 0;
   list-style-type: none;
@@ -396,7 +397,7 @@ ol li {
     border-radius: 1.5em;
     padding: 1em 1em 1em 0;
     min-height: 13em;
-    margin: 1.5em 0;
+    margin: 0;
     cursor: pointer;
   }
   .member-container:hover {
@@ -421,16 +422,26 @@ ol li {
         margin: 0 auto;
         display: block;
       }
+      
     .member-title {
       margin: 0 auto;
       text-align: center;
       padding: 1em;
     }
-    .member-title h2 {
-      margin-top: 0;
-      font-size: 1em;
-      text-align: center;
-    }
+    
+      .member-title h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.2em;
+        text-align: center;
+      }
+      
+      .member-title p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1em;
+        text-align: center;
+      }
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
@@ -514,6 +525,10 @@ ol li {
   .section-box {
       border: 2px solid #403f3f;
     }
+    
+    .member-container {
+      margin: 0.5em 0 0 0;
+    }
 }
 
 @media (min-width: 80em) {
@@ -539,6 +554,10 @@ ol li {
 
   .section-box {
       border: 2px solid #403f3f;
+    }
+    
+    .member-container {
+      margin: 1em 0 0 0;
     }
 }
 
