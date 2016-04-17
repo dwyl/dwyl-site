@@ -8,21 +8,10 @@ module.exports = [
   staticEndpoint('/portfolio','portfolio'),
   { path: '/{param*}', method: 'GET',
     handler: {
-      directory: { path: Path.normalize(__dirname + '/') }
-    }
-  },
-  { path: '/img/{param*}', method: 'GET',
-    handler: {
-      directory: { path: Path.normalize(__dirname + '/img/') }
-    }
-  },
-  { path: '/css/{param*}', method: 'GET',
-    handler: {
-      directory: { path: Path.normalize(__dirname + '/css/') }
+      directory: { path: Path.join(__dirname + '/public/') }
     }
   }
 ];
-
 
 function staticEndpoint (path, view){
   return {
