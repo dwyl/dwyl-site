@@ -1,6 +1,8 @@
 # *Welcome* to the dwyl website!
 
-Currently just a landing page some people have a way of getting in touch with us!
+It's as ever a work in progress, so please don't hesitate to [share your ideas](https://github.com/dwyl/dwyl.github.io/issues) on how to make it better!
+
+The current version is built by [@hdrdavies] and [@mantagen] but you can see the evolution here: https://github.com/dwyl/dwyl.github.io/issues/143 .
 
 ## How?
 
