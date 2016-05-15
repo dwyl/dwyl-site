@@ -1,6 +1,8 @@
 # *Welcome* to the dwyl website!
 
-Currently just a landing page some people have a way of getting in touch with us!
+It's as ever a work in progress, so please don't hesitate to [share your ideas](https://github.com/dwyl/dwyl.github.io/issues) on how to make it better!
+
+The current version is built by [@hdrdavies] and [@mantagen] but you can see the evolution here: https://github.com/dwyl/dwyl.github.io/issues/143 .
 
 ## How?
 
@@ -16,8 +18,4 @@ Then visit: http://localhost:3000
 ## Background
 
 We are migrating from using GitHub Pages to using a little ***Open Source CMS***
-we are building: [***adoro***](https://github.com/dwyl/adoro)
-
-The *reason* we (*think we*) have out-grown GitHub pages is we don't want to force people
-to type urls with the `.html` ...
-see: https://github.com/dwyl/dwyl.github.io/issues/46
+we are building: [***adoro***](https://github.com/dwyl/adoro).
