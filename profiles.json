@@ -42,9 +42,9 @@
     "role": "Full Stack Developer"
   },
   {
-    "github": "https://github.com/rjmk",
-    "image": "rafe.jpg",
-    "firstname": "Rafe",
+    "github": "https://github.com/Danwhy",
+    "image": "daniel.jpg",
+    "firstname": "Daniel",
     "role": "Full Stack Developer &amp; QA"
   },
   {
@@ -54,15 +54,15 @@
     "role": "Full Stack Developer"
   },
   {
-    "github": "https://github.com/jackcarlisle",
-    "image": "jackc.jpg",
-    "firstname": "Jack C",
-    "role": "Full Stack Developer"
+    "github": "https://github.com/rjmk",
+    "image": "rafe.jpg",
+    "firstname": "Rafe",
+    "role": "Full Stack Developer &amp; QA"
   },
   {
-    "github": "https://github.com/conorc1000",
-    "image": "conor.jpg",
-    "firstname": "Conor",
+    "github": "https://github.com/jbarget",
+    "image": "justen.jpg",
+    "firstname": "Justen",
     "role": "Full Stack Developer"
   },
   {
@@ -72,9 +72,27 @@
     "role": "Full Stack Developer"
   },
   {
-    "github": "https://github.com/msmichellegar",
-    "image": "michelle.jpg",
-    "firstname": "Michelle",
+    "github": "https://github.com/conorc1000",
+    "image": "conor.jpg",
+    "firstname": "Conor",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/jackcarlisle",
+    "image": "jackc.jpg",
+    "firstname": "Jack C",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/mk4111",
+    "image": "marie.jpg",
+    "firstname": "Marie",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/katpas",
+    "image": "katerina.jpg",
+    "firstname": "Katerina",
     "role": "Full Stack Developer"
   },
   {
@@ -84,15 +102,21 @@
     "role": "Full Stack Developer"
   },
   {
-    "github": "https://github.com/hdrdavies",
-    "image": "huw.png",
-    "firstname": "Huw",
+    "github": "https://github.com/harrygfox",
+    "image": "harry.jpg",
+    "firstname": "Harry",
+    "role": "UX designer"
+  },
+  {
+    "github": "https://github.com/msmichellegar",
+    "image": "michelle.jpg",
+    "firstname": "Michelle",
     "role": "Full Stack Developer"
   },
   {
-    "github": "https://github.com/jbarget",
-    "image": "justen.jpg",
-    "firstname": "Justen",
+    "github": "https://github.com/hdrdavies",
+    "image": "huw.png",
+    "firstname": "Huw",
     "role": "Full Stack Developer"
   }
 ]
