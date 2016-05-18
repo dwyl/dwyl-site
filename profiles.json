@@ -1,0 +1,98 @@
+[
+  {
+    "github": "https://github.com/iteles",
+    "image": "ines.jpg",
+    "firstname": "Ines",
+    "role": "Co-founder"
+  },
+  {
+    "github": "https://github.com/nelsonic",
+    "image": "nelson.jpg",
+    "firstname": "Nelson",
+    "role": "Co-founder"
+  },
+  {
+    "github": "https://github.com/heron2014",
+    "image": "anita.jpg",
+    "firstname": "Anita",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/simonlab",
+    "image": "simon.jpg",
+    "firstname": "Simon",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/nikhilaravi",
+    "image": "nikhila.jpg",
+    "firstname": "Nikki",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/jrans",
+    "image": "jackr.jpg",
+    "firstname": "Jack R",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/des-des",
+    "image": "eoin.jpg",
+    "firstname": "Eoin",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/rjmk",
+    "image": "rafe.jpg",
+    "firstname": "Rafe",
+    "role": "Full Stack Developer &amp; QA"
+  },
+  {
+    "github": "https://github.com/minaorangina",
+    "image": "mina.jpg",
+    "firstname": "Mina",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/jackcarlisle",
+    "image": "jackc.jpg",
+    "firstname": "Jack C",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/conorc1000",
+    "image": "conor.jpg",
+    "firstname": "Conor",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/naazy",
+    "image": "naaz.jpg",
+    "firstname": "Naaz",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/msmichellegar",
+    "image": "michelle.jpg",
+    "firstname": "Michelle",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/mantagen",
+    "image": "matt.jpg",
+    "firstname": "Matt",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/hdrdavies",
+    "image": "huw.png",
+    "firstname": "Huw",
+    "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/jbarget",
+    "image": "justen.jpg",
+    "firstname": "Justen",
+    "role": "Full Stack Developer"
+  }
+]
