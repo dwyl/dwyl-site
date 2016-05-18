@@ -1,6 +1,6 @@
 {
   "name": "dwyl-website",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "temporary dwyl website",
   "main": "server.js",
   "scripts": {
