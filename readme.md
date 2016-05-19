@@ -1,3 +1,5 @@
+[![Dependency Status](https://david-dm.org/dwyl/dwyl.github.io.svg)](https://david-dm.org/dwyl/dwyl.github.io)
+[![devDependency Status](https://david-dm.org/dwyl/dwyl.github.io/dev-status.svg)](https://david-dm.org/dwyl/dwyl.github.io#info=devDependencies)
 # *Welcome* to the dwyl website!
 
 It's as ever a work in progress, so please don't hesitate to [share your ideas](https://github.com/dwyl/dwyl.github.io/issues) on how to make it better!
