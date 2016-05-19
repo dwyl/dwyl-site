@@ -21,3 +21,7 @@ Then visit: http://localhost:3000
 
 We are migrating from using GitHub Pages to using a little ***Open Source CMS***
 we are building: [***adoro***](https://github.com/dwyl/adoro).
+
+## Team
+
+The members information are saved in the members.json. If you need to add or reorganise the list of members displayed on the website, you just need to modify or change the order of the json member objects in the members.json file.
