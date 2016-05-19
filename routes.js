@@ -19,8 +19,8 @@ module.exports = [
       auth: false,
       handler: function (request, reply) {
 
-        const profiles = require('./profiles.json')
-        return reply.view('team', {profiles: profiles});
+        const members = require('./members.json')
+        return reply.view('team', {members: members});
       }
     }
   }

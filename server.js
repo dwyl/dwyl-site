@@ -16,9 +16,9 @@ server.register([Inert, Vision], function (err) {
     relativeTo: __dirname,
     path: 'views',
     layout: 'default',
-    layoutPath: 'views/layout'
+    layoutPath: 'views/layout',
+    partialsPath: 'views/partials'
     //helpersPath: 'views/helpers',
-    //partialsPath: 'views/partials'
   });
 });
 
