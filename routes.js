@@ -1,4 +1,6 @@
-var Path = require('path');
+'use strict';
+
+const Path = require('path');
 
 module.exports = [
   staticEndpoint('/','index'),
@@ -16,8 +18,9 @@ module.exports = [
     config: {
       auth: false,
       handler: function (request, reply) {
+
         const profiles = require('./profiles.json')
-        reply.view('team', {profiles: profiles});
+        return reply.view('team', {profiles: profiles});
       }
     }
   }
@@ -30,7 +33,8 @@ function staticEndpoint (path, view){
     config: {
       auth: false,
       handler: function (request, reply) {
-        reply.view(view);
+
+        return reply.view(view);
       }
     }
   };
