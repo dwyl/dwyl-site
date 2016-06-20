@@ -118,5 +118,11 @@
     "image": "huw.png",
     "firstname": "Huw",
     "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/roryc89",
+    "image": "rory.jpg",
+    "firstname": "Rory",
+    "role": "Full Stack Developer"
   }
 ]
