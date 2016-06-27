@@ -124,5 +124,11 @@
     "image": "rory.jpg",
     "firstname": "Rory",
     "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/katbow",
+    "image": "katherine.jpg",
+    "firstname": "Katherine",
+    "role": "Full Stack Developer"
   }
 ]
