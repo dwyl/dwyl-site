@@ -124,5 +124,11 @@
     "image": "rory.jpg",
     "firstname": "Rory",
     "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/andrewmacmurray",
+    "image": "andrew.jpg",
+    "firstname": "Andrew",
+    "role": "Full Stack Developer & Designer"
   }
 ]
