@@ -33,7 +33,7 @@
     "github": "https://github.com/jrans",
     "image": "jackr.jpg",
     "firstname": "Jack R",
-    "role": "Full Stack Developer"
+    "role": "Full Stack Developer &amp; QA"
   },
   {
     "github": "https://github.com/des-des",
@@ -136,5 +136,11 @@
     "image": "andrew.jpg",
     "firstname": "Andrew",
     "role": "Full Stack Developer & Designer"
+  },
+  {
+    "github": "https://github.com/sohilpandya",
+    "image": "sohil.jpg",
+    "firstname": "Sohil",
+    "role": "Lead Full Stack Developer"
   }
 ]
