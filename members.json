@@ -148,5 +148,11 @@
     "image": "rob.jpg",
     "firstname": "Robert",
     "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/jmurphyweb",
+    "image": "jackum.jpg",
+    "firstname": "Jack M",
+    "role": "Full Stack Developer"
   }
 ]
