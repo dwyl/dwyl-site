@@ -1,5 +1,7 @@
 [![Dependency Status](https://david-dm.org/dwyl/dwyl.github.io.svg)](https://david-dm.org/dwyl/dwyl.github.io)
 [![devDependency Status](https://david-dm.org/dwyl/dwyl.github.io/dev-status.svg)](https://david-dm.org/dwyl/dwyl.github.io?type=dev)
+[![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts)
+
 # *Welcome* to the dwyl website!
 
 It's as ever a work in progress, so please don't hesitate to [share your ideas](https://github.com/dwyl/dwyl.github.io/issues) on how to make it better!
