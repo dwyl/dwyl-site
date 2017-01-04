@@ -159,6 +159,12 @@
     "github": "https://github.com/NataliaLKB",
     "image": "natalia.jpg",
     "firstname": "Natalia",
-    "role": "Alumni, Supporter, Friend"
+    "role": "Technical Advisor, Alumni, BFF"
+  },
+  {
+    "github": "https://github.com/shouston3",
+    "image": "sam.jpg",
+    "firstname": "Sam",
+    "role": "Full Stack Developer"
   }
 ]
