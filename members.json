@@ -154,5 +154,11 @@
     "image": "jackum.jpg",
     "firstname": "Jack M",
     "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/NataliaLKB",
+    "image": "natalia.jpg",
+    "firstname": "Natalia",
+    "role": "Alumni, Supporter, Friend"
   }
 ]
