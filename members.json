@@ -154,5 +154,11 @@
     "image": "jackum.jpg",
     "firstname": "Jack M",
     "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/shouston3",
+    "image": "sam.jpg",
+    "firstname": "Sam",
+    "role": "Full Stack Developer"
   }
 ]
