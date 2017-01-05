@@ -4,8 +4,9 @@
   "description": "temporary dwyl website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/nodemon ./server.js"
+    "test": "node test/members.spec.js",
+    "start": "./node_modules/.bin/nodemon ./server.js",
+    "lint": "./node_modules/.bin/goodparts ."
   },
   "repository": {
     "type": "git",
@@ -28,10 +29,17 @@
     "vision": "^4.1.0"
   },
   "devDependencies": {
+    "goodparts": "^1.2.1",
     "istanbul": "^0.4.3",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "pre-commit": "^1.2.2",
+    "tape": "^4.6.3"
   },
   "engines": {
     "node": ">= 4.0"
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
 }
