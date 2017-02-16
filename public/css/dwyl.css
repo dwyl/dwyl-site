@@ -479,6 +479,10 @@ ol li {
       font-size: 8em;
       margin-top: -2em;
   }
+  div.contact-info {
+    max-width: 24em;
+    float: right;
+  }
   .values h1 {
     margin-bottom: 2.5em;
   }
