@@ -172,5 +172,11 @@
     "image": "sam.jpg",
     "firstname": "Sam",
     "role": "Full Stack Developer"
+  },
+  {
+    "github": "https://github.com/Cleop",
+    "image": "cleo.jpg",
+    "firstname": "Cleo",
+    "role": "Full Stack Developer & Scrum Master"
   }
 ]
