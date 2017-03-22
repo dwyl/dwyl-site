@@ -178,5 +178,11 @@
     "image": "cleo.jpg",
     "firstname": "Cleo",
     "role": "Full Stack Developer & Scrum Master"
+  },
+  {
+    "github": "https://github.com/ritz078",
+    "image": "ritesh.jpg",
+    "firstname": "Ritesh",
+    "role": "Full Stack Developer"
   }
 ]
