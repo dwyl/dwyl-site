@@ -1,11 +1,12 @@
 {
   "name": "dwyl-website",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "temporary dwyl website",
   "main": "server.js",
   "scripts": {
     "test": "node test/members.spec.js",
-    "start": "./node_modules/.bin/nodemon ./server.js",
+    "start": "node ./server.js",
+    "dev": "./node_modules/.bin/nodemon ./server.js",
     "lint": "./node_modules/.bin/goodparts ."
   },
   "repository": {
@@ -23,10 +24,10 @@
   },
   "homepage": "https://github.com/dwyl/dwyl.github.io#readme",
   "dependencies": {
-    "handlebars": "^4.0.5",
-    "hapi": "^16.1.0",
-    "inert": "^4.0.0",
-    "vision": "^4.1.0"
+    "handlebars": "^4.0.10",
+    "hapi": "^16.3.0",
+    "inert": "^4.2.0",
+    "vision": "^4.1.1"
   },
   "devDependencies": {
     "goodparts": "^1.2.1",
