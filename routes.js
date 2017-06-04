@@ -29,4 +29,3 @@ module.exports = [
     handler: { directory: { path: Path.join(__dirname, '/public/') } }
   }
 ];
-

@@ -4,7 +4,7 @@
   "description": "temporary dwyl website",
   "main": "server.js",
   "scripts": {
-    "test": "node test/members.spec.js",
+    "test": "tape test/*.test.js",
     "start": "node ./server.js",
     "dev": "./node_modules/.bin/nodemon ./server.js",
     "lint": "./node_modules/.bin/goodparts ."
