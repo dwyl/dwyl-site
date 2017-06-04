@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "node test/members.spec.js",
-    "start": "./node_modules/.bin/nodemon ./server.js",
+    "start": "node ./server.js",
+    "dev": "./node_modules/.bin/nodemon ./server.js",
     "lint": "./node_modules/.bin/goodparts ."
   },
   "repository": {
