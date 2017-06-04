@@ -1,4 +1,4 @@
-[![Dependency Status](https://david-dm.org/dwyl/dwyl.github.io.svg)](https://david-dm.org/dwyl/dwyl.github.io)
+[![Build Status](https://travis-ci.org/dwyl/dwyl-site.svg?branch=master)](https://travis-ci.org/dwyl/dwyl-site)[![Dependency Status](https://david-dm.org/dwyl/dwyl.github.io.svg)](https://david-dm.org/dwyl/dwyl.github.io)
 [![devDependency Status](https://david-dm.org/dwyl/dwyl.github.io/dev-status.svg)](https://david-dm.org/dwyl/dwyl.github.io?type=dev)
 [![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts)
 
