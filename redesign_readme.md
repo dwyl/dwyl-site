@@ -8,6 +8,7 @@ npm install && npm start
 
 Then visit: http://localhost:8181
 
+Starting Live Server will automatically open your default browser.
 
 ## What?
 
