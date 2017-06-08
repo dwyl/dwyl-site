@@ -7,6 +7,7 @@
     "test": "tape test/*.test.js",
     "start": "node ./server.js",
     "dev": "live-server --port=8000 --open=./redesign",
+    "test:dev": "tape ./redesign/test/*.test.js",
     "lint": "./node_modules/.bin/goodparts ."
   },
   "repository": {
