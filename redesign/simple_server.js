@@ -11,4 +11,5 @@ var params = {
     mount: [['/components', './node_modules']],
     logLevel: 2,
     middleware: [function(req, res, next) { next(); }]
+};
 liveServer.start(params);
