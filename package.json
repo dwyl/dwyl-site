@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "tape test/*.test.js",
-    "start": "node ./redesign/simple_server.js",
-    "dev": "./node_modules/.bin/nodemon ./server.js",
+    "start": "node ./server.js",
+    "dev": "live-server --port=8000 --open=./redesign",
     "lint": "./node_modules/.bin/goodparts ."
   },
   "repository": {
