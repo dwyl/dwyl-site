@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "tape test/*.test.js",
-    "start": "node ./server.js",
+    "start": "node ./redesign/simple_server.js",
     "dev": "./node_modules/.bin/nodemon ./server.js",
     "lint": "./node_modules/.bin/goodparts ."
   },
@@ -27,6 +27,7 @@
     "handlebars": "^4.0.10",
     "hapi": "^16.3.0",
     "inert": "^4.2.0",
+    "live-server": "^1.2.0",
     "vision": "^4.1.1"
   },
   "devDependencies": {
