@@ -3,7 +3,7 @@
 To run this site on your localhost, simply ***install*** the *dependencies* from npm and then ***start*** it:
 
 ```
-npm install && npm start
+npm install && npm run dev
 ```
 
 Then visit: http://localhost:8181
