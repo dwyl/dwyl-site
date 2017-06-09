@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tape test/*.test.js",
     "start": "node ./server.js",
-    "dev": "./node_modules/.bin/nodemon ./server.js",
+    "dev": "live-server --port=8000 --open=./redesign",
+    "test:dev": "tape ./redesign/test/*.test.js",
     "lint": "./node_modules/.bin/goodparts ."
   },
   "repository": {
@@ -27,6 +28,7 @@
     "handlebars": "^4.0.10",
     "hapi": "^16.3.0",
     "inert": "^4.2.0",
+    "live-server": "^1.2.0",
     "vision": "^4.1.1"
   },
   "devDependencies": {
