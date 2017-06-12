@@ -1,0 +1,75 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* COLORS */
+
+.dwyl-dark-grey {
+  color: #45535B;
+}
+
+.dwyl-bg-dark-grey {
+  background-color: #45535B;
+}
+
+.dwyl-b--dark-grey {
+  border-color: #45535B;
+}
+
+.dwyl-grey {
+  color: #42575B;
+}
+
+.dwyl-bg-grey {
+  background-color: #42575B;
+}
+
+.dwyl-b--grey {
+  border-color: #42575B;
+}
+
+.dwyl-mint {
+  color: #4BC0A9;
+}
+
+.dwyl-bg-mint {
+  background-color: #4BC0A9;
+}
+
+.dwyl-b--mint {
+  border-color: #4BC0A9;
+}
+
+.dwyl-bg-gold {
+  background-color: #C6AC5C;
+}
+
+.dwyl-light-grey {
+  color: #717E84;
+}
+
+.text-shadow {
+  text-shadow: 0px 2px 0px #45535B;
+}
+
+.left-auto {
+  margin-left: auto;
+}
+
+.f-xl {
+  font-size: 4rem;
+}
+
+/*Accessibility*/
+
+.sr-only {
+  color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
