@@ -24,7 +24,6 @@
   border-color: #42575B;
 }
 
-
 .dwyl-mint {
   color: #4BC0A9;
 }
@@ -35,6 +34,10 @@
 
 .dwyl-b--mint {
   border-color: #4BC0A9;
+}
+
+.dwyl-bg-gold {
+  background-color: #C6AC5C;
 }
 
 .text-shadow {
