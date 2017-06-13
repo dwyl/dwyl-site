@@ -64,6 +64,10 @@ body {
   border-width: thin;
 }
 
+.mw-21 {
+  max-width: 21rem;
+}
+
 /*Accessibility*/
 
 .sr-only {
