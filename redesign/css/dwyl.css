@@ -60,6 +60,10 @@ body {
   font-size: 4rem;
 }
 
+.bw-s {
+  border-width: thin;
+}
+
 /*Accessibility*/
 
 .sr-only {
