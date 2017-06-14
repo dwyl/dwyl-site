@@ -69,7 +69,6 @@ body {
 .menu {
   min-height: 4rem;
   max-height: 0;
-  overflow: hidden;
   transition: max-height 1s;
 }
 
