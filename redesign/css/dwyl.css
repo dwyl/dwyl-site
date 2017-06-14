@@ -68,6 +68,18 @@ body {
   max-width: 21rem;
 }
 
+/*Navbar*/
+
+.menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#burger:checked ~ .menu {
+  max-height: 100vh;
+}
+
 /*Accessibility*/
 
 .sr-only {
