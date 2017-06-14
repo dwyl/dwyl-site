@@ -78,7 +78,7 @@ body {
 }
 
 #burger:checked ~ .menu {
-  max-height: 100vh;
+  max-height: 25rem;
 }
 
 /*Accessibility*/
