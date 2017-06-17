@@ -4,27 +4,27 @@ body {
 
 /* COLORS */
 
-.dwyl-dark-grey {
+.dwyl-dark-gray {
   color: #45535B;
 }
 
-.dwyl-bg-dark-grey {
+.dwyl-bg-dark-gray {
   background-color: #45535B;
 }
 
-.dwyl-b--dark-grey {
+.dwyl-b--dark-gray {
   border-color: #45535B;
 }
 
-.dwyl-grey {
+.dwyl-gray {
   color: #42575B;
 }
 
-.dwyl-bg-grey {
+.dwyl-bg-gray {
   background-color: #42575B;
 }
 
-.dwyl-b--grey {
+.dwyl-b--gray {
   border-color: #42575B;
 }
 
@@ -44,7 +44,7 @@ body {
   background-color: #C6AC5C;
 }
 
-.dwyl-light-grey {
+.dwyl-light-gray {
   color: #717E84;
 }
 
@@ -60,12 +60,20 @@ body {
   font-size: 4rem;
 }
 
-.bw-s {
-  border-width: thin;
-}
-
 .mw-21 {
   max-width: 21rem;
+}
+
+/*Navbar*/
+
+.menu {
+  min-height: 4rem;
+  max-height: 0;
+  transition: max-height 1s;
+}
+
+#burger:checked ~ .menu {
+  max-height: 25rem;
 }
 
 /*Accessibility*/
