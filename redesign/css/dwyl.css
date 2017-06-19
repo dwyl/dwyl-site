@@ -79,7 +79,7 @@ body {
 .menu {
   min-height: 4rem;
   max-height: 0;
-  transition: max-height 1s;
+  transition: max-height 0.4s;
 }
 
 #burger:checked ~ .menu {
