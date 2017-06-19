@@ -1,4 +1,10 @@
+/* Fonts */
+
 body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montserrat {
   font-family: 'Montserrat', sans-serif;
 }
 
