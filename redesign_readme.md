@@ -6,7 +6,7 @@ To run this site on your localhost, simply ***install*** the *dependencies* from
 npm install && npm run dev
 ```
 
-Then visit: http://localhost:8181
+Then visit: http://localhost:8000/redesign/
 
 Starting live-server will automatically open your default browser.
 
