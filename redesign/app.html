@@ -39,6 +39,9 @@
       </ul>
     </nav>
 
+    <section class="dwyl-bg-lightest-gray center pt6-ns pb5-ns">
+
+      <div class="dib-ns w-50-ns dtc v-top dwyl-dark-gray">
         <div class="w-80 w-60-ns center pt4">
           <h1 class="mt4-ns mb3 pl4-ns f-xl fw9">Time</h1>
           <h2 class="pl4-ns pv0 mv1 f1 fw9 white text-shadow">Productivity</h2>
@@ -46,6 +49,32 @@
           <h3 class="pl4-ns">Track and analyse your daily activities</h3>
         </div>
       </div>
+
+      <div class="dib-ns dwyl-bg-dark-gray pt4 mv4 pa3 pl5 shadow-4 w-40-ns">
+        <h3 class="white f3">Become a BETA tester!</h3>
+        <p class="dwyl-yellow f4 lh-copy istok-web w-90">
+          Time is currently in development and needs lovely people like you to
+          put it through its paces.
+        </p>
+        <form id="gform" method="POST" class="tc tl-ns white" action="https://script.google.com/macros/s/AKfycby5ZdD8HfCaz1tMVLw26qYQKEXkP8qdfwLek3TH_RYH3l1o1-Li/exec">
+        <!-- change the form action to your script url -->
+
+          <fieldset class="bn ph0">
+            <label for="name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
+            <input id="name" name="name" class="br2 ba dwyl-b--dark-gray pa2 w-90 border-box" placeholder="Tim Berners-Lee" />
+          </fieldset>
+
+          <fieldset class="bn ph0">
+            <label for="email" class="db mb2 tl pl3 pl0-ns">Email Address</label>
+            <input id="email" name="email" class="br2 ba dwyl-b--dark-gray pa2 w-90 border-box" type="email" value="" required placeholder="tim@cern.com" />
+          </fieldset>
+          <div class="tc">
+            <button class="bn dib link mt2 mb3 ph4 pv2-plus dwyl-bg-yellow dwyl-dark-gray br2 shadow-4 pointer montserrat">
+              I Love Productivity, Sign Me Up!
+            </button>
+          </div>
+        </form>
+
         <div class="dn dwyl-bg-dark-gray pt4 mv4 pa3 shadow-4 w-40-ns tc" id="thankyou_message">
           <h3 class="white f2 w-80 center lh-copy">Thank you for expressing your interest!</h3>
           <p class="dwyl-mint f3 lh-copy istok-web w-80 center">
@@ -53,6 +82,13 @@
           </p>
           <h1 class="f-xxl">🚀</h1>
         </div>
+
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+        <!-- END -->
+      </div>
+    </section>
+
     <section class="dwyl-bg-mint center pt4-ns pb5-ns">
 
       <div class="dib-ns w-50-ns dtc v-top">
