@@ -88,6 +88,11 @@ body {
   margin-left: auto;
 }
 
+.pv2-plus {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .w1-plus {
   width: 1.5rem;
 }
@@ -104,6 +109,10 @@ body {
 
 .f-xl {
   font-size: 4rem;
+}
+
+.f-xxl {
+  font-size: 5.5rem;
 }
 
 .mw-21 {
