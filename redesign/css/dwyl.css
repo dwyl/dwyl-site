@@ -8,6 +8,14 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.istok-web {
+  font-family: 'Istok Web', sans-serif;
+}
+
+p {
+  font-family: 'Istok Web', sans-serif;
+}
+
 /* COLORS */
 
 .dwyl-dark-gray {
@@ -48,6 +56,10 @@ body {
 
 .dwyl-bg-gold {
   background-color: #C6AC5C;
+}
+
+.dwyl-bg-yellow {
+  background-color: #FED35E;
 }
 
 .dwyl-light-gray {
