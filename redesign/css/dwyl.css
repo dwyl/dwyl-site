@@ -16,6 +16,10 @@ body {
   font-family: 'Times New Roman';
 }
 
+p {
+  font-family: 'Istok Web', sans-serif;
+}
+
 /* COLORS */
 
 .dwyl-dark-gray {
