@@ -92,6 +92,9 @@ body {
   .w1-plus {
     width: 1.2rem;
   }
+  .w-45-ns {
+    width: 45%;
+  }
 }
 
 .f3-plus {
