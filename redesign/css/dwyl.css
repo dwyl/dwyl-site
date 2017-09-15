@@ -74,6 +74,22 @@ p {
   color: #717E84;
 }
 
+.dwyl-bg-yellow {
+  background-color: #FED35E;
+}
+
+.dwyl-yellow {
+  color: #FED35E;
+}
+
+.dwyl-lightest-gray {
+  color: #CAD2D3;
+}
+
+.dwyl-bg-lightest-gray {
+  background-color: #CAD2D3;
+}
+
 .dwyl-bg-orange {
   background-color: #fc865b;
 }
@@ -86,6 +102,11 @@ p {
 
 .left-auto {
   margin-left: auto;
+}
+
+.pv2-plus {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .w1-plus {
@@ -103,6 +124,14 @@ p {
 
 .f-xl {
   font-size: 4rem;
+}
+
+.f-xxl {
+  font-size: 5.5rem;
+}
+
+.mw-21 {
+  max-width: 21rem;
 }
 
 /*Navbar*/
