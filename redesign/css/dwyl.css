@@ -12,6 +12,10 @@ body {
   font-family: 'Istok Web', sans-serif;
 }
 
+.times-new-roman {
+  font-family: 'Times New Roman';
+}
+
 p {
   font-family: 'Istok Web', sans-serif;
 }
@@ -62,6 +66,10 @@ p {
   background-color: #FED35E;
 }
 
+.dwyl-yellow {
+  color: #FED35E;
+}
+
 .dwyl-light-gray {
   color: #717E84;
 }
@@ -92,10 +100,9 @@ p {
   .w1-plus {
     width: 1.2rem;
   }
-}
-
-.f3-plus {
-  font-size: 1.7rem;
+  .w-45-ns {
+    width: 45%;
+  }
 }
 
 .f-xl {

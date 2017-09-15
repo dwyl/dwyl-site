@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSP64J3');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="dwyl is a worldwide community of people using technology to solve real problems.">
@@ -9,13 +16,17 @@
     <meta name="robots" content="index, follow, noarchive">
     <meta name="base" content="https://www.dwyl.com">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="css/dwyl.css">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <title>dwyl</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSP64J3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="w-100 dwyl-bg-dark-gray tc white relative fixed">
       <input type="checkbox" id="burger" class="absolute top-2 right-1 dn">
       <label for="burger" class="dn-ns pointer absolute top-1 right-1">
@@ -39,26 +50,25 @@
       </ul>
     </nav>
 
-    <section class="dwyl-dark-gray pt5 pt6-ns pb4 pb6-ns ph6-ns center">
-      <h1 class="f1 pl2-ns w-80 tc tl-ns center">Portfolio</h1>
-
-      <div class="w-third-ns w-80 pt2 ph2 pb3 dib-ns dtc-ns v-top tc center">
+    <section class="dwyl-dark-gray pt5 pt6-ns pb4 pb6-ns ph7-ns center">
+      <h1 class="f2 pl2-ns w-80 w-100-ns tc tl-ns center">Portfolio</h1>
+      <div class="w-10-ns w-80 pt2 ph2 pb3 dib-ns dtc-ns v-top tc center">
         <div class="pa2 bg-white br2 h5 shadow-2">
-          <p class="pa2 bb b--black pb3 tl-ns">More than 250,000 artefacts, made accessible
+          <p class="pa2 bb b--black pb3 tl-ns montserrat f6">More than 250,000 artefacts, made accessible
             and searchable!</p>
           <img src="./img/common/science-museum-logo.jpg" alt="Science Museum logo" class="w4"/>
         </div>
       </div>
-      <div class="w-third-ns w-80 pt2 ph2 pb3 dib-ns dtc-ns v-top tc center">
+      <div class="w-10-ns w-80 pt2 ph2 pb3 dib-ns dtc-ns v-top tc center">
         <div class="pa2 bg-white br2 h5 shadow-2">
-          <p class="pa2 bb b--black tl-ns">Automating data collection means our TA's
+          <p class="pa2 bb b--black tl-ns montserrat f6 pb3">Automating data collection means our TA's
             can get on with what really matters.</p>
           <img src="./img/common/inclusive-classrooms-logo.png" alt="Inclusive Classrooms logo" class="w4 pt4"/>
         </div>
       </div>
-      <div class="w-third-ns w-80 pt2 ph2 pb3 dib-ns dtc-ns v-top tc center">
+      <div class="w-10-ns w-80 pt2 ph2 pb3 dib-ns dtc-ns v-top tc center">
         <div class="pa2 bg-white br2 h5 shadow-2">
-          <p class="pa2 bb b--black tl-ns">We increased community engagement with an
+          <p class="pa2 bb b--black tl-ns montserrat f6 pb3">We increased community engagement with an
           exclusive social network.</p>
           <img src="./img/common/ellen-macarthur-foundation-logo.png" alt="Ellen MacArthur Foundation logo" class="w5 pt4"/>
         </div>
@@ -100,13 +110,13 @@
             <textarea id="message" name="message" class="br2 ba w-90 dwyl-b--dark-gray pa2" rows="10" placeholder="What problem can we solve for you?"></textarea>
           </fieldset>
 
-          <button class="bn dib link mt2 mb3 ph3 pv3 dwyl-bg-orange white br2 f4 shadow-4 pointer montserrat">
+          <button class="bn dib link mt2 mb3 ph3 pv2 dwyl-bg-orange white br2 f5 ml3 shadow-4 pointer montserrat">
             <i class="fa fa-paper-plane"></i>&nbsp; Say Hello</button>
         </form>
 
-        <div style="display:none;" id="thankyou_message">
-          <h2>
-            <em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+        <div style="display:none;" class="tc pb4" id="thankyou_message">
+          <h2>Thanks for contacting us!</h2>
+          <h2>We will get back to you soon!</h2>
         </div>
 
         <!-- Submit the Form to Google Using "AJAX" -->
