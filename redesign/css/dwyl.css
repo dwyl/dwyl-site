@@ -113,6 +113,10 @@ p {
   width: 1.5rem;
 }
 
+.w4-plus {
+  width: 10rem;
+}
+
 @media (min-width: 48em) {
   .w1-plus {
     width: 1.2rem;
@@ -134,6 +138,11 @@ p {
   max-width: 21rem;
 }
 
+.github-circle {
+  padding-left: .435rem;
+  padding-right: 0.125rem;
+}
+
 /*Navbar*/
 
 .menu {
@@ -144,6 +153,68 @@ p {
 
 #burger:checked ~ .menu {
   max-height: 25rem;
+}
+
+/*Team Descriptions*/
+
+#ines:checked ~ .description {
+  display: block;
+}
+
+#nelson:checked ~ .description {
+  display: block;
+}
+
+#mark:checked ~ .description {
+  display: block;
+}
+
+#daniel:checked ~ .description {
+  display: block;
+}
+
+#justen:checked ~ .description {
+  display: block;
+}
+
+#naaz:checked ~ .description {
+  display: block;
+}
+
+#conor:checked ~ .description {
+  display: block;
+}
+
+#jackc:checked ~ .description {
+  display: block;
+}
+
+#harry:checked ~ .description {
+  display: block;
+}
+
+#rory:checked ~ .description {
+  display: block;
+}
+
+#katherine:checked ~ .description {
+  display: block;
+}
+
+#sohil:checked ~ .description {
+  display: block;
+}
+
+#rob:checked ~ .description {
+  display: block;
+}
+
+#sam:checked ~ .description {
+  display: block;
+}
+
+#cleo:checked ~ .description {
+  display: block;
 }
 
 /*Accessibility*/
