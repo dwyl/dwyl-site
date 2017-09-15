@@ -46,45 +46,43 @@
           <h1 class="mt4-ns mb3 pl4-ns pl3 pl0-m f-xl fw9">Time</h1>
           <h2 class="pl4-ns pv0 mv1 f1 pl3 pl0-m fw9 white text-shadow">Productivity</h2>
           <h2 class="pl4-ns pv0 mv0 f1 pl3 pl0-m fw9 white text-shadow">Reimagined</h2>
-          <h3 class="pl4-ns ph3 ph0-m ">Track and analyse your daily activities</h3>
+          <h3 class="pl4-ns ph3 ph0-m">Track and analyse your daily activities</h3>
         </div>
       </div>
 
       <div class="dib-ns dwyl-bg-dark-gray pt4 mt4 ml4-m mb0 mt4-ns pa3 ph4 ph5-l shadow-4 w-40-ns">
-        <form id="gform" method="POST" class="tc tl-ns white" action="https://script.google.com/macros/s/AKfycby5ZdD8HfCaz1tMVLw26qYQKEXkP8qdfwLek3TH_RYH3l1o1-Li/exec">
-        <h3 class="white f3">Become a BETA tester!</h3>
-        <p class="dwyl-yellow f4 lh-copy istok-web">
-          Time is currently in development and needs lovely people like you to
-          put it through its paces.
-        </p>
-        <!-- change the form action to your script url -->
-
+        
+        <form id="appform" method="POST" class="tc tl-ns white" action="https://script.google.com/a/dwyl.com/macros/s/AKfycbz29e_hlMPvok2bmk4mXkDoPm_sUHjQme7JWio1cIPI7x011d09/exec">
+          <h3 class="white f3">Become a BETA tester!</h3>
+          <p class="dwyl-yellow f4 lh-copy istok-web">
+            Time is currently in development and needs lovely people like you to
+            put it through its paces.
+          </p>
+          
           <fieldset class="bn ph0">
-            <label for="name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
-            <input id="name" name="name" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" placeholder="Tim Berners-Lee" />
+            <label for="app_name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
+            <input id="app_name" name="app_name" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" placeholder="Tim Berners-Lee" />
           </fieldset>
 
           <fieldset class="bn ph0">
-            <label for="email" class="db mb2 tl pl3 pl0-ns">Email Address</label>
-            <input id="email" name="email" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" type="email" value="" required placeholder="tim@cern.com" />
+            <label for="app_email" class="db mb2 tl pl3 pl0-ns">Email Address</label>
+            <input id="app_email" name="app_email" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" type="email" value="" required placeholder="tim@cern.com" />
           </fieldset>
+
           <div class="tc">
-            <button class="bn dib link mt2 mb3 ph4 pv2-plus dwyl-bg-yellow dwyl-dark-gray br2 shadow-4 pointer montserrat">
+            <button class="bn dib link mt2 mb4 ph4 pv2 pv2-plus dwyl-bg-yellow dwyl-dark-gray br2 shadow-4 pointer montserrat">
               I Love Productivity, Sign Me Up!
             </button>
           </div>
         </form>
 
-          <div class="tc dn" id="thankyou_message">
-            <h3 class="white f2 w-100 center lh-copy">Thank you for expressing your interest!</h3>
-            <p class="dwyl-mint f3 lh-copy istok-web w-80 center">
-              We will be in touch when we're ready to launch!
-            </p>
-            <h1 class="f-xxl">🚀</h1>
-          </div>
-        <!-- Submit the Form to Google Using "AJAX" -->
-        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-        <!-- END -->
+        <div class="tc dn" id="app_thankyou_message">
+          <h3 class="white f2 w-100 center lh-copy">Thank you for expressing your interest!</h3>
+          <p class="dwyl-mint f3 lh-copy istok-web w-80 center">
+            We will be in touch when we're ready to launch!
+          </p>
+          <h1 class="f-xxl">🚀</h1>
+        </div>
       </div>
     </section>
 
@@ -104,9 +102,8 @@
       </div>
 
       <div class="dib-ns bg-white pt4 pa2 shadow-4 ml5-ns w-40-ns">
-
+        
           <form id="gform" method="POST" class="tc tl-ns" action="https://script.google.com/macros/s/AKfycby5ZdD8HfCaz1tMVLw26qYQKEXkP8qdfwLek3TH_RYH3l1o1-Li/exec">
-          <!-- change the form action to your script url -->
 
           <fieldset class="bn">
             <label for="name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
@@ -131,12 +128,9 @@
           <h2>
             <em>Thanks</em> for contacting us! We will get back to you soon!</h2>
         </div>
-
-        <!-- Submit the Form to Google Using "AJAX" -->
-        <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-        <!-- END -->
       </div>
     </section>
+        
     <footer class="dwyl-bg-dark-gray white pt1 pt3-ns pb4 tc center">
       <div class="bb b--white w-90-ns w-80 center">
         <ul class="list tc pl0 pt3 pb3-ns mv0 f3 f5-ns ">
@@ -158,5 +152,9 @@
         </p>
         <img src="./img/common/dwyl-grey-heart.png" alt="dwyl logo" class="pv4">
     </footer>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <!-- END -->
+    <script type="text/javascript" src="./js/app_google_form_handler.js"></script>
   </body>
 </html>
