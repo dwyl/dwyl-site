@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSP64J3');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="dwyl is a worldwide community of people using technology to solve real problems.">
@@ -9,7 +16,7 @@
     <meta name="robots" content="index, follow, noarchive">
     <meta name="base" content="https://www.dwyl.com">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Montserrat:500" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="css/dwyl.css">
     <link rel="shortcut icon" href="/dwyl-site/img/favicon.ico">
@@ -24,6 +31,10 @@
     <title>dwyl</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSP64J3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="w-100 dwyl-bg-dark-gray tc white relative fixed">
       <input type="checkbox" id="burger" class="absolute top-2 right-1 dn">
       <label for="burger" class="dn-ns pointer absolute top-1 right-1">
@@ -31,7 +42,7 @@
       </label>
       <ul class="overflow-hidden menu db-ns w-100 list tc pl0 pt3 mv0 f3 fw3 f5-ns">
         <li class="absolute top-1 static-ns ph4 mh2 fw3 di-ns pt1 pb3 pv3-ns">
-          <a href="/" class="white link">
+          <a href="/dwyl-site/" class="white link">
             <img src="./img/common/dwyl-heart-only-logo.png" alt="dwyl logo" class="w1-plus"/>
             dwyl
           </a>
@@ -43,7 +54,7 @@
         <li class="ph5 di-ns pv2 tl pv0-ns"><a href="/dwyl-site/app" class="white link">App
           <span class="dwyl-bg-gold pa1 br2 f7">BETA</span></a></li>
         <li class="ph5 di-ns pv2 tl pv0-ns"><a href="/dwyl-site/blog" class="dwyl-mint link">Blog</a></li>
-        <li class="ph5 di-ns pt2 pb3 tl pv0-ns"><a href="/dwyl-site/contact" class="white link">Contact</a></li>
+        <li class="ph5 di-ns pt2 pb3 tl pv0-ns"><a href="#contact" class="white link">Contact</a></li>
       </ul>
     </nav>
 
@@ -53,7 +64,7 @@
 
     <section class="pt2 pt3-ns pb3 pb3-ns ph6-ns center tc">
       <h1 class="dwyl-dark-gray f1-ns f2 fw9 tc mt4 mt3-ns mb0">Our Community</h1>
-      <h2 class="dwyl-light-gray w-90 w-50-ns center lh-copy mt4 mt2-ns f4">dwyl is a worldwide community of over 350 creative technologists that continues to grow.</h2>
+      <h2 class="dwyl-light-gray w-90 w-50-ns center lh-copy mt4 mt2-ns f4">dwyl is a worldwide community of over 400 creative technologists that continues to grow.</h2>
       <p class="dwyl-dark-gray w-80 w-40-ns center tc tl-ns fw9 lh-copy f6-ns">
         We have people contributing remotely to our open-source projects from
         Angola, Argentina, Australia, Bali, Belgium, Brazil, Canada, China,
@@ -61,8 +72,8 @@
         Africa and the USA.
       </p>
       <div class="mv4">
-        <a href="#" class="dib link mv2 pa3 dwyl-bg-dark-gray white br2 f4 shadow-4">
-          <i class="fa fa-github f3-plus pr2" aria-hidden="true"></i>
+        <a href="#" class="dib link mv2 pv2 ph3 dwyl-bg-dark-gray white br2 f5 istok-web shadow-4">
+          <i class="fa fa-github f3 pr2" aria-hidden="true"></i>
           Join Us
         </a>
       </div>
@@ -107,13 +118,13 @@
             <textarea id="message" name="message" class="br2 ba w-90 dwyl-b--dark-gray pa2" rows="10" placeholder="What problem can we solve for you?"></textarea>
           </fieldset>
 
-          <button class="bn dib link mt2 mb3 ph3 pv3 dwyl-bg-orange white br2 f4 shadow-4 pointer montserrat">
+          <button class="bn dib link mt2 mb3 ph3 pv2 dwyl-bg-orange white br2 f5 ml3 shadow-4 pointer montserrat">
             <i class="fa fa-paper-plane"></i>&nbsp; Say Hello</button>
         </form>
 
-        <div style="display:none;" id="thankyou_message">
-          <h2>
-            <em>Thanks</em> for contacting us! We will get back to you soon!</h2>
+        <div style="display:none;" class="tc pb4" id="thankyou_message">
+          <h2>Thanks for contacting us!</h2>
+          <h2>We will get back to you soon!</h2>
         </div>
 
         <!-- Submit the Form to Google Using "AJAX" -->
