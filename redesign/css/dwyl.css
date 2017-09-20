@@ -217,6 +217,14 @@ p {
   display: block;
 }
 
+#simon:checked ~ .description {
+  display: block;
+}
+
+#natalia:checked ~ .description {
+  display: block;
+}
+
 /*Accessibility*/
 
 .sr-only {
