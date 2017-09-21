@@ -185,7 +185,7 @@ p {
   display: block;
 }
 
-#jackc:checked ~ .description {
+#jack:checked ~ .description {
   display: block;
 }
 
@@ -221,7 +221,15 @@ p {
   display: block;
 }
 
-#natalia:checked ~ .description {
+#noga:checked ~ .description {
+  display: block;
+}
+
+#zooey:checked ~ .description {
+  display: block;
+}
+
+#finn:checked ~ .description {
   display: block;
 }
 
