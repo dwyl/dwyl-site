@@ -94,7 +94,27 @@ p {
   background-color: #fc865b;
 }
 
+.dwyl-teal-dark {
+  color: #1a7566;
+}
 /* Custom classes */
+
+.h6 {
+  height: 19rem;
+}
+
+@media (min-width: 60em) {
+  .h6-l {
+    height: 19rem;
+  }
+}
+
+@media (min-width: 80em) {
+  .ph5-xl {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
 
 .text-shadow {
   text-shadow: 0px 2px 0px #45535B;
@@ -119,7 +139,7 @@ p {
 
 @media (min-width: 48em) {
   .w1-plus {
-    width: 1.2rem;
+    width: 1.5rem;
   }
   .w-45-ns {
     width: 45%;
