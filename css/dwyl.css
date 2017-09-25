@@ -96,6 +96,16 @@ p {
 
 /* Custom classes */
 
+.h6 {
+  height: 19rem;
+}
+
+@media (min-width: 60em) {
+  .h6-l {
+    height: 19rem;
+  }
+}
+
 .text-shadow {
   text-shadow: 0px 2px 0px #45535B;
 }
