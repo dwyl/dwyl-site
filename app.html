@@ -11,7 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="css/dwyl.css">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="shortcut icon" href="/dwyl-site/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/dwyl-site/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/dwyl-site/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/dwyl-site/img/favicon-16x16.png">
+    <link rel="manifest" href="/dwyl-site/img/manifest.json">
+    <link rel="mask-icon" href="/dwyl-site/img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/dwyl-site/img/favicon.ico">
     <title>dwyl</title>
   </head>
   <body>
@@ -38,51 +44,54 @@
       </ul>
     </nav>
 
-    <section class="dwyl-bg-lightest-gray center pt6-ns pb5-ns">
+    <section class="dwyl-bg-lightest-gray center pt6-l pt5 pb5-l">
+      <section class="mw9 center">
 
-      <div class="dib-ns w-50-ns dtc v-top dwyl-dark-gray">
-        <div class="w-60-ns center pt4">
-          <h1 class="mt4-ns mb3 pl4-ns pl3 pl0-m f-xl fw9">Time</h1>
-          <h2 class="pl4-ns pv0 mv1 f1 pl3 pl0-m fw9 white text-shadow">Productivity</h2>
-          <h2 class="pl4-ns pv0 mv0 f1 pl3 pl0-m fw9 white text-shadow">Reimagined</h2>
-          <h3 class="pl4-ns ph3 ph0-m">Track and analyse your daily activities</h3>
-        </div>
-      </div>
-
-      <div class="dib-ns dwyl-bg-dark-gray pt4 mt4 ml4-m mb0 mt4-ns pa3 ph4 ph5-l shadow-4 w-40-ns">
-
-        <form id="appform" method="POST" class="tc tl-ns white" action="https://script.google.com/a/dwyl.com/macros/s/AKfycbz29e_hlMPvok2bmk4mXkDoPm_sUHjQme7JWio1cIPI7x011d09/exec">
-          <h3 class="white f3">Become a BETA tester!</h3>
-          <p class="dwyl-yellow f4 lh-copy istok-web">
-            Time is currently in development and needs lovely people like you to
-            put it through its paces.
-          </p>
-
-          <fieldset class="bn ph0">
-            <label for="app_name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
-            <input id="app_name" name="app_name" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" placeholder="Tim Berners-Lee" />
-          </fieldset>
-
-          <fieldset class="bn ph0">
-            <label for="app_email" class="db mb2 tl pl3 pl0-ns">Email Address</label>
-            <input id="app_email" name="app_email" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" type="email" value="" required placeholder="tim@cern.com" />
-          </fieldset>
-
-          <div class="tc">
-            <button class="bn dib link mt2 mb4 ph4 pv2 pv2-plus dwyl-bg-yellow dwyl-dark-gray br2 shadow-4 pointer montserrat">
-              I Love Productivity, Sign Me Up!
-            </button>
+        <div class="dib-l w-50-l dtc v-top dwyl-dark-gray pl4 pl0-l">
+          <div class="w-60-l fr pt4">
+            <h1 class="mt4-ns mb3 pl3 pl0-m f-xl fw9">Time</h1>
+            <h2 class="pv0 mv1 f1 pl3 pl0-m fw9 white text-shadow">Productivity</h2>
+            <h2 class="pv0 mv0 f1 pl3 pl0-m fw9 white text-shadow">Reimagined</h2>
+            <h3 class="ph3 ph0-m">Track and analyse your daily activities</h3>
           </div>
-        </form>
-
-        <div class="tc dn" id="app_thankyou_message">
-          <h3 class="white f2 w-100 center lh-copy">Thank you for expressing your interest!</h3>
-          <p class="dwyl-mint f3 lh-copy istok-web w-80 center">
-            We will be in touch when we're ready to launch!
-          </p>
-          <h1 class="f-xxl">🚀</h1>
         </div>
-      </div>
+
+        <div class="dib-l dwyl-bg-dark-gray pt4 mt4 ml4-l mb0 mt4-ns pa3 ph4 ph5-l shadow-4 w-40-l">
+
+          <form id="appform" method="POST" class="tc tl-ns white" action="https://script.google.com/a/dwyl.com/macros/s/AKfycbz29e_hlMPvok2bmk4mXkDoPm_sUHjQme7JWio1cIPI7x011d09/exec">
+            <h3 class="white f3">Become a BETA tester!</h3>
+            <p class="dwyl-yellow f4 lh-copy istok-web">
+              Time is currently in development and needs lovely people like you to
+              put it through its paces.
+            </p>
+
+            <fieldset class="bn ph0">
+              <label for="app_name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
+              <input id="app_name" name="app_name" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" placeholder="Tim Berners-Lee" />
+            </fieldset>
+
+            <fieldset class="bn ph0">
+              <label for="app_email" class="db mb2 tl pl3 pl0-ns">Email Address</label>
+              <input id="app_email" name="app_email" class="br2 ba dwyl-b--dark-gray pa2 w-100 border-box" type="email" value="" required placeholder="tim@cern.com" />
+            </fieldset>
+
+            <div class="tc">
+              <button class="bn dib link mt2 mb4 ph4 pv2 pv2-plus dwyl-bg-yellow dwyl-dark-gray br2 shadow-4 pointer montserrat">
+                I Love Productivity, Sign Me Up!
+              </button>
+            </div>
+          </form>
+
+          <div class="tc dn" id="app_thankyou_message">
+            <h3 class="white f2 w-100 center lh-copy">Thank you for expressing your interest!</h3>
+            <p class="dwyl-mint f3 lh-copy istok-web w-80 center">
+              We will be in touch when we're ready to launch!
+            </p>
+            <h1 class="f-xxl">🚀</h1>
+          </div>
+        </div>
+
+      </section>
     </section>
 
     <a id="contact"></a>
