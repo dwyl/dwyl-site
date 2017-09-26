@@ -141,6 +141,18 @@ p {
   width: 10rem;
 }
 
+@media (min-width: 60em) {
+  .w4-plus-l {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 60em) and (max-width: 70em) {
+  .w-30-ml {
+    width: 33%
+  }
+}
+
 @media (min-width: 48em) {
   .w1-plus {
     width: 1.5rem;
