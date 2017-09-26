@@ -137,6 +137,12 @@ p {
   width: 10rem;
 }
 
+@media (min-width: 60em) {
+  .w4-plus-l {
+    width: 10rem;
+  }
+}
+
 @media (min-width: 60em) and (max-width: 80em) {
   .w-30-ml {
     width: 33%
