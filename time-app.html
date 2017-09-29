@@ -112,18 +112,23 @@
 
         <div class="dib-ns bg-white pt4 pa2 shadow-4 ml3-ns ml3-m ml4-l w-40-ns">
 
-            <form id="gform" method="POST" class="tc tl-ns" action="https://script.google.com/macros/s/AKfycby5ZdD8HfCaz1tMVLw26qYQKEXkP8qdfwLek3TH_RYH3l1o1-Li/exec">
+          <form id="gform" method="POST" class="tc tl-ns" action="https://script.google.com/macros/s/AKfycby5ZdD8HfCaz1tMVLw26qYQKEXkP8qdfwLek3TH_RYH3l1o1-Li/exec">
             <!-- change the form action to your script url -->
-
-            <label for="name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
-            <input id="name" name="name" class="br2 ba dwyl-b--dark-gray pa2 w-90 border-box" placeholder="Tim Berners-Lee" />
-            <label for="email" class="db mb2 tl pl3 pl0-ns">Email Address</label>
-            <input id="email" name="email" class="br2 ba dwyl-b--dark-gray pa2 w-90 border-box" type="email" value="" required placeholder="tim@cern.com" />
-            <label for="message" class="db mb2 tl pl3 pl0-ns">Message</label>
-            <textarea id="message" name="message" class="br2 ba w-90 dwyl-b--dark-gray pa2" rows="10" placeholder="What problem can we solve for you?"></textarea>
-
-            <button class="bn dib link mt2 mb3 ph3 pv2 dwyl-bg-orange white br2 f5 ml3 shadow-4 pointer montserrat">
-              <i class="fa fa-paper-plane"></i>&nbsp; Say Hello</button>
+            <div class="mt2 ml3">
+              <label for="name" class="db mb2 tl pl3 pl0-ns">Your Name</label>
+              <input id="name" name="name" class="br2 ba dwyl-b--dark-gray pa2 w-90 border-box" placeholder="Tim Berners-Lee" />
+            </div>
+            <div class="mt3 ml3">
+              <label for="email" class="db mb2 tl pl3 pl0-ns">Email Address</label>
+              <input id="email" name="email" class="br2 ba dwyl-b--dark-gray pa2 w-90 border-box" type="email" value="" required placeholder="tim@cern.com" />
+            </div>
+            <div class="mt3 ml3">
+              <label for="message" class="db mb2 tl pl3 pl0-ns">Message</label>
+              <textarea id="message" name="message" class="br2 ba w-90 dwyl-b--dark-gray pa2" rows="10" placeholder="What problem can we solve for you?"></textarea>
+            </div>
+            <button class="bn dib link mt3 mb3 ph3 pv2 dwyl-bg-orange white br2 f5 ml3 shadow-4 pointer montserrat">
+              <i class="fa fa-paper-plane"></i>&nbsp; Say Hello
+            </button>
           </form>
 
           <div style="display:none;" class="tc pb4" id="thankyou_message">
