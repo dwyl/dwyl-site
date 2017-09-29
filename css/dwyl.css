@@ -20,6 +20,10 @@ p {
   font-family: 'Istok Web', sans-serif;
 }
 
+.f0 {
+  font-size: 0;  
+}
+
 /* COLORS */
 
 .dwyl-dark-gray {
