@@ -102,12 +102,6 @@ p {
   color: #1a7566;
 }
 /* Custom classes */
-@media (min-width: 30em) {
-  .w-31-ns {
-    width: 32%;
-  }
-}
-
 .h6 {
   height: 19rem;
 }
