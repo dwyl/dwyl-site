@@ -102,6 +102,10 @@ p {
   color: #1a7566;
 }
 /* Custom classes */
+.shadow-6 {
+  box-shadow: 0 .3rem 1rem 0 rgba(0,0,0,0.25);
+}
+
 .h6 {
   height: 19rem;
 }
