@@ -110,6 +110,9 @@ p {
   .h6-l {
     height: 19rem;
   }
+  .bg-transparent-l {
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 80em) {
@@ -183,11 +186,12 @@ p {
 .menu {
   min-height: 4rem;
   max-height: 0;
-  transition: max-height 0.4s;
+  transition: max-height 0.4s, padding-bottom 0.4s;
 }
 
 #burger:checked ~ .menu {
   max-height: 25rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
 }
 
 /*Team Descriptions*/
