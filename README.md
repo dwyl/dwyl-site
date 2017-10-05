@@ -15,15 +15,19 @@ The current site is designed by [@harrygfox]. You can see the original [Invision
 
 **Functional CSS with Tachyons :heart:**
 
-To learn how we used function css to power our website hop over to [learn-tachyons](https://github.com/dwyl/learn-tachyons).
+Hop over to [learn-tachyons](https://github.com/dwyl/learn-tachyons) to find out how we use functional css to power our website.
 
 **Serverless forms via Google scripts**
 
-The contact and app beta sign up forms were built without a back-end using [this helpful guide](https://github.com/dwyl/html-form-send-email-via-google-script-without-server).
+The contact and app beta sign up forms were built without a back-end using
+[this helpful guide](https://github.com/dwyl/html-form-send-email-via-google-script-without-server).
 
 **Javascript**
 
-We have kept JS to a minimum on the site, using it only when it is required to enhance UX, and taking every care to ensure that it [gracefully degrades](https://github.com/dwyl/learn-progressive-web-apps) for users with JavaScript disabled.
+We've kept JS to a minimum on the site, using it only when required to
+enhance UX, and taking every care to ensure that it
+[gracefully degrades](https://github.com/dwyl/learn-progressive-web-apps)
+for users with JavaScript disabled.
 
 ### Accessibility
 
