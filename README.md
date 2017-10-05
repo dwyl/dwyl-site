@@ -5,7 +5,9 @@
 
 It's as ever a work in progress, so please don't hesitate to [share your ideas](https://github.com/dwyl/dwyl-site/issues) on how to make it better!
 
-The current site is designed by [@harrygfox]. You can see the original [Invision slides here](https://projects.invisionapp.com/share/VSBOA5D8B) :sparkles:
+The current site is designed by [@harrygfox](https://github.com/harrygfox) and built by [@Cleop](https://github.com/cleop), [@ZooeyMiller](https://github.com/ZooeyMiller), [@finnhodgkin](https://github.com/finnhodgkin) and [@markwilliamfirth](https://github.com/markwilliamfirth).
+
+You can see the original [Invision slides here](https://projects.invisionapp.com/share/VSBOA5D8B) :sparkles:
 
 ## How?
 
