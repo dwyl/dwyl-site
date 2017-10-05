@@ -26,6 +26,10 @@ p {
 
 /* COLORS */
 
+.mw6-5 {
+  max-width: 34rem;
+}
+
 .dwyl-dark-gray {
   color: #45535B;
 }
@@ -102,6 +106,10 @@ p {
   color: #1a7566;
 }
 /* Custom classes */
+.mw9 {
+  max-width: 74rem;
+}
+
 .shadow-6 {
   box-shadow: 0 .3rem 1rem 0 rgba(0,0,0,0.25);
 }
@@ -128,6 +136,18 @@ p {
 
 .text-shadow {
   text-shadow: 0px 2px 0px #45535B;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 1px 1px 0 rgba(68,83,91,0.5);
+}
+.transparent {
+  color: transparent;
+}
+
+.be-make {
+  margin-top: -30px;
+  position: absolute;
 }
 
 .left-auto {
