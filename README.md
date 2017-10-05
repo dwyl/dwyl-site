@@ -15,12 +15,8 @@ The current site is designed by [@harrygfox]. You can see the original [Invision
 
 **Functional CSS with Tachyons :heart:**
 
-Hop over to [learn-tachyons](https://github.com/dwyl/learn-tachyons) to find out how we use functional css to power our website.
-
-**Serverless forms via Google scripts**
-
-The contact and app beta sign up forms were built without a back-end using
-[this helpful guide](https://github.com/dwyl/html-form-send-email-via-google-script-without-server).
+Hop over to [learn-tachyons](https://github.com/dwyl/learn-tachyons) to find out
+how we use functional css to power our website.
 
 **Javascript**
 
@@ -29,6 +25,45 @@ enhance UX, and taking every care to ensure that it
 [gracefully degrades](https://github.com/dwyl/learn-progressive-web-apps)
 for users with JavaScript disabled.
 
+**Serverless forms via Google scripts**
+
+We're using our very own set up for submitting forms without having a back end
+set up. If you're interested in learning how it works, check out out
+[html-form-send-email-via-google-script-without-server repo!](https://github.com/dwyl/html-form-send-email-via-google-script-without-server)
+
+### How do I add myself to the team page?
+
+You'll need to copy and past this block of code, replace your details where
+noted, and paste it at the bottom of the team section (just before the closing
+`<section>` tag, with a comment `<!-- END TEAM PROFILES -->`) in `team.html`.
+
+```html
+<div class="dib w-25-l w-30-ml w-90 pt5 v-top">
+  <input type="checkbox" id="YOUR-NAME" class="dn">
+  <label for="YOUR-NAME" class="pointer">
+    <img src="./img/common/team/YOUR-GITHUB-HANDLE.png" alt="YOUR-NAME" class="br-100 w5 w4-plus-l">
+    <p class="b dwyl-dark-grey f4 mb2">YOUR-NAME</p>
+    <p class="mt1">YOUR-JOB-ROLE</p>
+  </label>
+  <div class="dn description">
+    <a href="https://github.com/YOUR-GITHUB-HANDLE" class="mr3 link dwyl-bg-yellow br-100 center w2 h2 dib">
+      <span class="f0">YOUR-NAME's GitHub</span>
+      <i class="fa fa-github dwyl-dark-gray f3 v-mid pt1 center pr1" aria-hidden="true"></i>
+    </a>
+    <div class="mh1 dib"> </div>
+    <a href="https://twitter.com/YOUR-TWITTER-HANDLE" class="ml3 link dwyl-bg-yellow br-100 center w2 h2 dib">
+      <span class="f0">YOUR-NAME's Twitter</span>
+      <i class="fa fa-twitter dwyl-dark-gray f3 v-mid pt1 center pr1" aria-hidden="true"></i>
+    </a>
+    <p class="ph4 lh-copy tl">
+      YOUR-SELF-DESCRIPTION-(50-100 words)
+    </p>
+  </div>
+</div>
+```
+
 ### Accessibility
 
-The site meets WCAG 2.0 Level A for accessibility. Please [raise an issue](https://github.com/dwyl/dwyl-site/issues) if you notice any accessibility problems!
+The site meets WCAG 2.0 Level A for accessibility. Please
+[raise an issue](https://github.com/dwyl/dwyl-site/issues) if you notice any
+accessibility problems!
