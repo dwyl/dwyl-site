@@ -62,6 +62,20 @@ noted, and paste it at the bottom of the team section (just before the closing
 </div>
 ```
 
+### Viewing locally
+
+To view the site locally you'll need to clone the repo and install live-server:
+
+```
+npm i -g live-server && git clone https://github.com/dwyl/dwyl-site.git && cd dwyl-site
+```
+
+Run `live-server` inside the dwyl-site directory to view the site with
+hot-reloading enabled. Unfortunately most of the links won't work because the
+live site uses clean URLs - `/values` rather than `/values.html` - which aren't
+supported by live-server. As a short-term solution just add `.html` to the url
+after following a link.  
+
 ### Accessibility
 
 The site meets WCAG 2.0 Level A for accessibility. Please
