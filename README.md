@@ -21,6 +21,10 @@ To learn how we used function css to power our website hop over to [learn-tachyo
 
 The contact and app beta sign up forms were built without a back-end using [this helpful guide](https://github.com/dwyl/html-form-send-email-via-google-script-without-server).
 
+**Javascript**
+
+We have kept JS to a minimum on the site, using it only when it is required to enhance UX, and taking every care to ensure that it [gracefully degrades](https://github.com/dwyl/learn-progressive-web-apps) for users with JavaScript disabled.
+
 ### Accessibility
 
-The site meets WCAG 2.0 Level A for accessibility. Please [raise an issue](https://github.com/dwyl/dwyl-site/issues) if you notice any accessibility problems on the site!
+The site meets WCAG 2.0 Level A for accessibility. Please [raise an issue](https://github.com/dwyl/dwyl-site/issues) if you notice any accessibility problems!
