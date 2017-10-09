@@ -13,7 +13,7 @@ You can see the original [Invision slides here](https://projects.invisionapp.com
 
 ## Technology
 
-**Hosted on GitHub Pages**
+**Hosted on GitHub Pages with Cloudflare for SSL**
 
 **Functional CSS with Tachyons :heart:**
 
@@ -52,6 +52,50 @@ after following a link.
 The site meets WCAG 2.0 Level A for accessibility. Please
 [raise an issue](https://github.com/dwyl/dwyl-site/issues) if you notice any
 accessibility problems!
+
+### Cloudflare setup
+
+We're using the Cloudflare free tier to serve dwyl.com over https.
+
+To add your own account head over to [cloudflare.com](https://www.cloudflare.com/)
+and sign up for an account. Add your custom domain and wait while Cloudflare
+scans your domain setup. Once that's done you'll need to add the Cloudflare
+nameservers to your own DNS.
+
+Changes involving nameservers can sometime take time, so if something isn't
+working straight away just be patient and come back to it later.
+
+#### Adding SSL
+
+GitHub page don't provide https access to custom domains, so we use Cloudflare
+to reroute requests through their secure server. Hop over to the Crypto tab of
+the Cloudflare control panel and change SSL to flexible:
+
+![selection_091](https://user-images.githubusercontent.com/22300773/31335109-10765220-ace9-11e7-86ba-73d9672e3102.png)
+
+To force the site to always redirect http requests to https add a page rule:
+
+![selection_092](https://user-images.githubusercontent.com/22300773/31335231-92c3c028-ace9-11e7-8212-4a7f26a83877.png)
+
+#### Adding subdomains
+
+dwyl.com has three subdomains all set up in a slightly different way.
+
+__Google form redirect__ - one subdomain on dwyl.com just redirects to a Google
+form. First add a general CNAME record:
+![CNAME for redirect](https://user-images.githubusercontent.com/22300773/31335453-94d76634-acea-11e7-9f1d-7e247429fcf4.png)
+
+Then add a page rule to redirect to the specific URL:
+![Page rule for redirect](https://user-images.githubusercontent.com/22300773/31335567-04b79bea-aceb-11e7-9670-02cd3dd2f21f.png)
+
+__A name subdomain__ - [hits.dwyl.com](hits.dwyl.com) is added via a standard A
+name record:
+
+![A name record](https://user-images.githubusercontent.com/22300773/31335787-01c75fe6-acec-11e7-89ed-c9c6fe3fa8cf.png)
+
+__GitHub pages subdomain__ - [tachyons-bootstrap.dwyl.com](tachyons-bootstrap.dwyl.com)
+is hosted via GitHub pages. There's a slightly more complicated setup process
+for subdomains hosted in this way which is explained well in [this guide.](http://nathanw.com.au/blog/custom-github-pages-domains-with-cloudflare/)
 
 ### How do I add myself to the team page?
 
