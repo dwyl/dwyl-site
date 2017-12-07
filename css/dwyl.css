@@ -222,6 +222,10 @@ li a:hover, li a:target {
   color: #4BC0A9;
 }
 
+li a:hover span {
+  color: black;
+}
+
 /*Team Descriptions*/
 
 #ines:checked ~ .description {
