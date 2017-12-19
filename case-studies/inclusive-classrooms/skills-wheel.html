@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en-GB">
   <head>
     <!-- Google Tag Manager -->
@@ -88,17 +88,45 @@
         </div>
         <h3 class="b f5">Problem Overview</h3>
         <p class="f6">
-          Inclusive Classrooms is a small not-for-profit who help teaching
-          assistants work with and monitor children’s social aptitudes and
-          progression. Aptitudes are measured using a questionnaire that is
-          displayed visually as a wheel. Up until this point, Inclusive
-          Classrooms had manually collected their data and manually transferred
-          it to a spreadsheet for analysis.
+          Inclusive Classrooms is a non-profit helping teaching assistants (TAs)
+          monitor kids’ social aptitudes and progression.
+          <br>
+          Before we came in, the teachers filled in 'skills wheels' manually
+          and data was manually inputted into spreadsheets - so our task was to
+          make the process digital, with an output that would make life easier
+          for people analysing the results. (Lightening the load for good causes
+          is what we live for!)
         </p>
-        <h3 class="b f5">Solution Overview</h3>
+        <h3 class="b f5">Approach</h3>
         <p class="f6">
-          This was a very short project (1 sprint) enabling digital data
-          collection in a format that would be most useful to those analysing it.
+          We had to think hard about designing a system that involved a simple
+          and friendly questionnaire, super simple data collection & storage,
+          and easy-to-use analysis tools on a very small budget.
+          <br>
+          We problem-solved together to find the simplest possible MVP:
+          design, a simple data entry form and drawing the ‘skills wheel’,
+          a visual representation of the data for the TA.
+          <br>
+          When a second round of funding came in a year later we sat together
+          to workshop what the evolution of the application could be, both in
+          terms of design and features (logging in, historical skills wheels,
+          admin dashboard) based on a year’s worth of usage by TAs.
+        </p>
+        <h3 class="b f5">Solution</h3>
+        <p class="f6">
+          Others can reinvent the wheel, especially with time a factor:
+          dwyl has a wealth of open source work to draw on, so that’s where
+          we started. Using a tutorial we’d written previously, we quickly
+          developed a solution for saving data not just to our database
+          (for future use) but directly into a Google spreadsheet for access
+          until there was time and funding for an admin dashboard.
+          <br>
+          We used D3.js to create engaging “skills wheels” - visual
+          representations of the data both current and historical, and
+          everything else was done with our Elixir stack. We added PDFs for
+          download and an admin dashboard to allow specific school domains to
+          be granted access to the application and TAs to manage their students
+          & groups.
         </p>
         <h3 class="b f5">Project Length</h3>
         <p class="f6">
