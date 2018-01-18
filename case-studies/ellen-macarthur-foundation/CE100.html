@@ -74,9 +74,9 @@
 
     <section class="pt2 pb3 pv4-ns ph4 ph0-ns center mw8">
       <div class="w-40-ns dtc-ns v-top-ns">
-        <img src="../../img/common/emf-phone-1.png" alt="A phone displaying an app on a challenges page" class="w-70-ns w-100 pl5-ns center">
-        <img src="../../img/common/emf-phone-2.png" alt="A phone displaying an app on a page for selecting tags" class="w-70-ns pl5-ns dn db-ns">
-        <img src="../../img/common/emf-phone-3.png" alt="A phone displaying an on a page to create a new challenge" class="w-70-ns pl5-ns dn db-ns">
+        <img src="../../img/common/emf-phone-1.png" alt="A phone displaying the Ellen MacArthur Foundation's online membership app on a challenges page" class="w-70-ns w-100 pl5-ns center">
+        <img src="../../img/common/emf-phone-2.png" alt="A phone displaying the Ellen MacArthur Foundation's online membership app on a page for selecting tags" class="w-70-ns pl5-ns dn db-ns">
+        <img src="../../img/common/emf-phone-3.png" alt="A phone displaying the Ellen MacArthur Foundation's online membership app on a page to create a new challenge" class="w-70-ns pl5-ns dn db-ns">
       </div>
 
       <article class="w-50-ns dtc v-top istok-web lh-copy dwyl-dark-gray">
@@ -86,60 +86,48 @@
             <img src="./img/common/yellow-gray-heart.png" alt="dwyl heart logo" class="h1">
             Live App
           </a> -->
-          <a href="https://github.com/emfoundation/ce100-app" class="dib link mv2 mh1 pa2 dwyl-bg-dark-gray white br2 f6 shadow-4">
+          <a href="https://github.com/emfoundation/ce100-app" class="dib link mv2 mr1 pa2 dwyl-bg-dark-gray white br2 f6 shadow-4">
             <i class="fa fa-github pr2" aria-hidden="true"></i>
             Source Code
           </a>
         </div>
         <h3 class="b f5">Problem Overview</h3>
         <p class="f6">
-          The Ellen MacArthur Foundation’s (EMF) CE100 membership programme
-          fosters collaboration among their members to discuss challenges and
-          share insights, with the interaction among members being mostly
-          contained to three physical events a year.
+          The Ellen MacArthur Foundation’s CE100 membership Programme supports
+          a wide range of Circular Economy stakeholders to learn, innovate,
+          and generally collaborate with each other.
+          <br>
+          EMF had a very common but very broad challenge - getting busy offline
+          members to interact and engage online, as the interaction among
+          members was mostly contained to three physical events a year.
         </p>
+        <h3 class="b f5">Approach</h3>
         <p class="f6">
-          Members of the dwyl team led an initial problem workshop to help the EMF
-           team understand the pain points across the organisation and narrow down
-           the area of focus to where the most value would be added - in this case,
-           by solving the problem of lack of continuous engagement in their CE100
-           programme. This was then followed by two detailed design and technical
-           workshops.
+          dwyl’s approach involved workshopping pain points directly with the
+          EMF team to narrow down focus onto the key issue of continuous
+          engagement, resulting in a genuinely collaborative solution - a
+          platform for members to share and solve each other’s challenges (in
+          addition to standard features like a directory & intuitive admin
+          interface). This was all built over several engagements based on user
+          feedback, along with two detailed design and technical
+          workshops.
         </p>
-        <h3 class="b f5">Solution Overview</h3>
+        <h3 class="b f5">Solution</h3>
         <p class="f6">
-          A digital membership platform which allows members to share challenges
-          and respond to challenges faced by other members.
+          We were delighted to be able to use only open source technologies
+          like the powerful PostgresQL database, alongside our oft-used stack
+          of Node.js and Hapi.js.
+          <br>
+          By taking a highly modular microservices approach to designing the
+          architecture, we were able to ensure that new features could be
+          integrated quickly and easily without impact on existing
+          functionality.
+          <br>
+          In our latest set of sprints we have been working with EMF on to
+          integrate their asset management API into the application, supporting
+          its development through a series of spikes and incremental
+          integrations.
         </p>
-        <h3 class="b f5">Project Length</h3>
-        <p class="f6">
-          12+ Weeks
-          Sep 2016 - Oct 2016 (Sprint 1 - 2)<br>
-          Dec 2016 - Jan 2017 (Sprint 3 - 4)*<br>
-          Feb 2017 - Feb 2017 (Sprint 5)*<br>
-          May 2017 - May 2017 (Sprint 6)*<br>
-          <span class="i">* Additional sprints are commissioned to build
-          additional functionality based on user feedback</span>
-        </p>
-        <h3 class="b f5">Implementation Team</h3>
-        <p class="f6">
-          Scrum master<br>
-          System Architect &amp; QA<br>
-          Mid-level Developer<br>
-          Mid-level Developer<br>
-        </p>
-      </div>
-      <div class="w-80-ns">
-        <h3 class="b f5">Technologies</h3>
-        <img src="../../img/common/technologies/js-logo.png" alt="JavaScript" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/node-logo.png" alt="Node" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/hapi-logo.png" alt="Hapi" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/postgresql-logo.png" alt="PostgreSQL" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/redis-logo.png" alt="Redis" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/aws-logo.png" alt="Amazon Web Services" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/heroku-logo.png" alt="Heroku" class="h3 ph3-ns pv0 pa2">
-      </div>
-      <div>
         <h3 class="b f5">Key Functionality</h3>
         <ul class="f6">
           <li>Member organisation directory + profiles (including mission
@@ -149,15 +137,45 @@
             collaboration within the network.</li>
           <li>Ability to add tags to an organisation and its challenges,
             facilitating search functionality.</li>
-          <li>Exploration of challenges shared by other organisations.</li>
+          <li>Search and Exploration of challenges shared by other organisations
+          as well as the directory itself</li>
           <li>Administration layer, allowing the EMF team to create new members,
             adjust their permissions, tie them to specific organisations and
             upload articles and resources to be shared on the platform.</li>
           <li>Integrated email functionality for registration and password resets.</li>
+          <li>Integration with the EMF Asset Management API </li>
           <li>Highly modular architecture, ensuring new features could be added
             quickly and with minimal risk of impact on existing features.</li>
-          <li>A rigorous code review process was also put in place.</li>
         </ul>
+        <div class="w-80-ns">
+          <h3 class="b f5">Technologies</h3>
+          <img src="../../img/common/technologies/js-logo.png" alt="JavaScript" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/node-logo.png" alt="Node" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/hapi-logo.png" alt="Hapi" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/postgresql-logo.png" alt="PostgreSQL" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/redis-logo.png" alt="Redis" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/aws-logo.png" alt="Amazon Web Services" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/heroku-logo.png" alt="Heroku" class="h3 ph3-ns pv0 pa2">
+        </div>
+        <h3 class="b f5">Project Length</h3>
+        <p class="f6">
+          20+ Weeks
+          Sep 2016 - Oct 2016 (Sprint 1 - 2)<br>
+          Dec 2016 - Jan 2017 (Sprint 3 - 4)*<br>
+          Feb 2017 - Feb 2017 (Sprint 5)*<br>
+          May 2017 - May 2017 (Sprint 6)*<br>
+          Sep 2017 - Dec 2017 (Sprints 7 - 12)*<br/>
+          <span class="i">* Additional sprints commissioned to build
+          further functionality based on user feedback</span>
+        </p>
+        <h3 class="b f5">Implementation Team</h3>
+        <p class="f6">
+          System Architect &amp; QA<br>
+          2 Developers<br/>
+          Designer<br/>
+          Scrum master
+        </p>
+      </div>
       </article>
     </section>
 

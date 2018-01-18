@@ -82,52 +82,50 @@
             <img src="./img/common/yellow-gray-heart.png" alt="dwyl heart logo" class="h1">
             Live App
           </a> -->
-          <a href="https://github.com/TheScienceMuseum/collectionsonline" class="dib link mv2 mh1 pa2 dwyl-bg-dark-gray white br2 f6 shadow-4">
+          <a href="https://github.com/TheScienceMuseum/collectionsonline" class="dib link mv2 mr1 pa2 dwyl-bg-dark-gray white br2 f6 shadow-4">
             <i class="fa fa-github pr2" aria-hidden="true"></i>
             Source Code
           </a>
         </div>
         <h3 class="b f5">Problem Overview</h3>
         <p class="f6">
-          The Science Museum Group (SMG) owns a wealth of data on objects,
-          inventors and archived documents. The Group was already working to
-          clean up their data, but had no way for the public to access this
-          information. The dwyl team undertook an initial requirements transfer
-          workshop with the product owner and the SMG’s designer to understand
-          the work that the SMG designer had already carried out with users. We
-          established that the problem faced by the SMG was not just how to give
-          the public access to the data, but how to do so in a way that those
-          who wanted to use the data could do so with ease.
+          With a century and a half’s worth of data on objects, inventors,
+          and archived documents, creating a public-facing portal for the
+          Science Museum Group’s (SMG) archives was as much about making the
+          search results engaging as available.
+          <br>
+          But the real challenge was around working without control over the
+          data itself (which was still being cleansed and homogenised), or
+          direct access to the Elasticsearch database managed by a 3rd party!
         </p>
-        <h3 class="b f5">Solution Overview</h3>
+        <h3 class="b f5">Approach</h3>
         <p class="f6">
-          The dwyl team created an online records system with a simple search
-          interface and API functionality.
+          With a wealth of information to be made accessible to the public,
+          starting with a workshop with SMG and their designer was essential to
+          understanding how to give users the results they needed in a clear
+          and engaging format.
+          <br>
+          We used these insights and an iterative approach to features to
+          develop a search portal that was fast,  granular, but also contained
+          enough interactive features to keep casual users interested. We
+          learned from users and stakeholders, making improvements across
+          multiple sprints and engagements.
         </p>
-        <h3 class="b f5">Project Length</h3>
+        <h3 class="b f5">Solution</h3>
         <p class="f6">
-          22+ Weeks<br>
-          14 Jun 2016 - 31 Oct 2016 (Sprint 1 - 10)<br>
-          28 Nov 2016 - 9 Dec 2016 (Sprint 11)*<br>
-          May 2017 - May 2017 (Sprint 12)*<br>
-          <span class="i">* Additional sprints are commissioned to build
-          additional functionality based on user feedback</span>
+          Lacking access to the database meant working with and around a busy
+          3rd party, planning and replanning when their deadlines were not met.
+          This didn’t faze us! We developed a seriously fast search solution
+          that was powerful and intelligent enough to provide weighted related
+          items in addition to direct search results.
+          <br>
+          The RESTful developer API was then created and extensive
+          documentation made available in a Github Wiki. Although our API
+          development time was squeezed due to some excellent user requests for
+          the public facing site, we got excellent feedback from the community
+          at our ‘trial by fire’ at the
+          <a class="underline dwyl-dark-gray" href="https://www.eventbrite.co.uk/e/science-museum-london-digital-lab-hackathon-tickets-31125271525">Science Museum Hack Day!</a>
         </p>
-        <h3 class="b f5">Implementation Team</h3>
-        <p class="f6">
-          Scrum master<br>
-          System Architect<br>
-          2 Developers
-        </p>
-      </div>
-      <div class="w-80-ns">
-        <h3 class="b f5">Technologies</h3>
-        <img src="../../img/common/technologies/node-logo.png" alt="Node" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/hapi-logo.png" alt="Hapi" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/elasticsearch-logo.png" alt="Elasticsearch" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/aws-logo.png" alt="Amazon Web Services" class="h3 ph3-ns pv0 pa2">
-      </div>
-      <div>
         <h3 class="b f5">Key Functionality</h3>
         <ul class="f6">
           <li>A search website, making all of the Science Museum Group's data
@@ -141,6 +139,30 @@
           <li>An API enabling developers to access the data and create projects,
             as demonstrated at the Science Museum Hack Day</li>
         </ul>
+        <div class="w-80-ns">
+          <h3 class="b f5">Technologies</h3>
+          <img src="../../img/common/technologies/node-logo.png" alt="Node" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/hapi-logo.png" alt="Hapi" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/elasticsearch-logo.png" alt="Elasticsearch" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/aws-logo.png" alt="Amazon Web Services" class="h3 ph3-ns pv0 pa2">
+        </div>
+        <h3 class="b f5">Project Length</h3>
+        <p class="f6">
+          22+ Weeks<br>
+          Jun 2016 - Oct 2016 (Sprint 1 - 10)<br>
+          Nov 2016 - Dec 2016 (Sprint 11)*<br>
+          May 2017 (Sprint 12)*<br>
+          <span class="i">* Additional sprints commissioned to build
+          further functionality based on user feedback</span>
+        </p>
+        <h3 class="b f5">Implementation Team</h3>
+        <p class="f6">
+          System Architect (Security & Performance)<br>
+          QA Code Reviewer <br/>
+          2 Developers<br/>
+          Scrum Master
+        </p>
+      </div>
       </article>
     </section>
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en-GB">
   <head>
     <!-- Google Tag Manager -->
@@ -81,53 +81,55 @@
             <img src="./img/common/yellow-gray-heart.png" alt="dwyl heart logo" class="h1">
             Live App
           </a> -->
-          <a href="https://github.com/InclusiveClassrooms/skills-wheel" class="dib link mv2 mh1 pa2 dwyl-bg-dark-gray white br2 f6 shadow-4">
+          <a href="https://github.com/InclusiveClassrooms/skills-wheel" class="dib link mv2 mr1 pa2 dwyl-bg-dark-gray white br2 f6 shadow-4">
             <i class="fa fa-github pr2" aria-hidden="true"></i>
             Source Code
           </a>
         </div>
         <h3 class="b f5">Problem Overview</h3>
         <p class="f6">
-          Inclusive Classrooms is a small not-for-profit who help teaching
-          assistants work with and monitor children’s social aptitudes and
-          progression. Aptitudes are measured using a questionnaire that is
-          displayed visually as a wheel. Up until this point, Inclusive
-          Classrooms had manually collected their data and manually transferred
-          it to a spreadsheet for analysis.
+          Inclusive Classrooms is a non-profit helping teaching assistants (TAs)
+          monitor kids’ social aptitudes and progression.
+          <br>
+          Before we came in, the teachers filled in 'skills wheels' manually
+          and data was manually inputted into spreadsheets - so our task was to
+          make the process digital, with an output that would make life easier
+          for people analysing the results. (Lightening the load for good causes
+          is what we live for!)
         </p>
-        <h3 class="b f5">Solution Overview</h3>
+        <h3 class="b f5">Approach</h3>
         <p class="f6">
-          This was a very short project (1 sprint) enabling digital data
-          collection in a format that would be most useful to those analysing it.
+          We had to think hard about designing a system that involved a simple
+          and friendly questionnaire, super simple data collection & storage,
+          and easy-to-use analysis tools on a very small budget.
+          <br>
+          We problem-solved together to find the simplest possible MVP:
+          design, a simple data entry form and drawing the ‘skills wheel’,
+          a visual representation of the data for the TA.
+          <br>
+          When a second round of funding came in a year later we sat together
+          to workshop what the evolution of the application could be, both in
+          terms of design and features (logging in, historical skills wheels,
+          admin dashboard) based on a year’s worth of usage by TAs.
         </p>
-        <h3 class="b f5">Project Length</h3>
+        <h3 class="b f5">Solution</h3>
         <p class="f6">
-          6 Weeks<br>
-          Feb 2016 - Feb 2016 (Sprint 1)<br>
-          Mar 2017 - Mar 2017 (Sprint 2 - 3)*<br>
-          <span class="i">* Additional sprints are commissioned to build
-          additional functionality based on user feedback</span>
+          Others can reinvent the wheel, especially with time a factor:
+          dwyl has a wealth of open source work to draw on, so that’s where
+          we started.
+          <br/>
+          Using a tutorial we’d written previously, we quickly
+          developed a solution for saving data not just to our database
+          (for future use) but directly into a Google spreadsheet for access
+          until there was time and funding for an admin dashboard.
+          <br>
+          We used D3.js to create engaging “skills wheels” - visual
+          representations of the data both current and historical, and
+          everything else was done with our Elixir stack. We added PDFs for
+          download and an admin dashboard to allow specific school domains to
+          be granted access to the application and TAs to manage their students
+          & groups.
         </p>
-        <h3 class="b f5">Implementation Team</h3>
-        <p class="f6">
-          Scrum master<br>
-          2 Developers<br>
-          UX/UI Designer
-        </p>
-      </div>
-      <div class="w-80-ns">
-        <h3 class="b f5">Technologies</h3>
-        <img src="../../img/common/technologies/js-logo.png" alt="Javascript" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/d3-logo.png" alt="D3" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/node-logo.png" alt="Node" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/elixir-logo.png" alt="Elixir" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/phoenix-logo.png" alt="Phoenix" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/redis-logo.png" alt="Redis" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/postgresql-logo.png" alt="Postgres" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/wkhtmltopdf-logo.png" alt="wkhtmltopdf" class="h3 ph3-ns pv0 pa2">
-        <img src="../../img/common/technologies/heroku-logo.png" alt="Heroku" class="h3 ph3-ns pv0 pa2">
-      </div>
-      <div>
         <h3 class="b f5">Key Functionality</h3>
         <ul class="f6">
           <li>Data collection through intuitive and beautifully-designed
@@ -147,6 +149,34 @@
           <li>PDF downloads implemented using open source module html-pdf</li>
           <li>Deployed to Heroku during development</li>
         </ul>
+        <div class="w-80-ns">
+          <h3 class="b f5">Technologies</h3>
+          <img src="../../img/common/technologies/js-logo.png" alt="Javascript" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/d3-logo.png" alt="D3" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/node-logo.png" alt="Node" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/elixir-logo.png" alt="Elixir" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/phoenix-logo.png" alt="Phoenix" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/redis-logo.png" alt="Redis" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/postgresql-logo.png" alt="Postgres" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/wkhtmltopdf-logo.png" alt="wkhtmltopdf" class="h3 ph3-ns pv0 pa2">
+          <img src="../../img/common/technologies/heroku-logo.png" alt="Heroku" class="h3 ph3-ns pv0 pa2">
+        </div>
+        <h3 class="b f5">Project Length</h3>
+        <p class="f6">
+          6 Weeks<br>
+          Feb 2016 - Feb 2016 (Sprint 1)<br>
+          Mar 2017 - Mar 2017 (Sprint 2 - 3)*<br>
+          <span class="i">* Additional sprints are commissioned to build
+          further functionality based on user feedback</span>
+        </p>
+        <h3 class="b f5">Implementation Team</h3>
+        <p class="f6">
+          QA Code reviewer<br/>
+          2 Developers<br>
+          UX/UI Designer<br/>
+          Scrum master
+        </p>
+      </div>
       </article>
     </section>
 
