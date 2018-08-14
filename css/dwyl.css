@@ -218,6 +218,14 @@ p {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25);
 }
 
+li a:hover, li a:target {
+  color: #4BC0A9;
+}
+
+li a:hover span {
+  color: black;
+}
+
 /*Team Descriptions*/
 
 #ines:checked ~ .description {
