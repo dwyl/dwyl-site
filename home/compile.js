@@ -1,4 +1,5 @@
 var fs = require('fs');
+var path = require('path');
 var http_request = require('./http_request');
 var cheerio = require('cheerio');
 
@@ -17,10 +18,10 @@ http_request(URL, function (status, html) {
   else {
     var $ = cheerio.load(html);
     var body = $('#readme').html()
-    var css = fs.readFileSync('./style.css', 'utf8');
-    var template = fs.readFileSync('./template.html', 'utf8');
+    var css = fs.readFileSync(path.resolve(__dirname, './style.css'), 'utf8');
+    var template = fs.readFileSync(path.resolve(__dirname, './template.html'), 'utf8');
     var out = template.replace('{css}', css).replace('{content}', body);
-    fs.writeFileSync('./index.html', out, 'utf8');
+    fs.writeFileSync('./home.html', out, 'utf8');
     console.log(bgGreenBlack, 'done.', RESET);
   }
 });
