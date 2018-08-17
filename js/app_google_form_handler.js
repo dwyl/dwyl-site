@@ -46,7 +46,7 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
   }
 
   if( !validEmail(data.app_email) ) {   // if email is not valid show error
-    document.getElementById('email-invalid').style.display = 'block';
+    // document.getElementById('email-invalid').style.display = 'block';
     return false;
   } else {
     var url = event.target.action;  //
