@@ -198,6 +198,8 @@
               <label for="message" class="db mb2 tl pl3 pl0-ns">Message</label>
               <textarea id="message" name="message" class="br2 ba w-90 dwyl-b--dark-gray pa2" rows="10" placeholder="What problem can we solve for you?"></textarea>
             </div>
+            <label class="sr-only">Keep this field blank</label>
+            <input class="honeypot" type="text" name="honeypot" value="" />
             <button class="bn dib link mt3 mb3 ph3 pv2 dwyl-bg-orange white br2 f5 ml3 shadow-4 pointer montserrat">
               <i class="fa fa-paper-plane"></i>&nbsp; Say Hello
             </button>
@@ -209,7 +211,7 @@
           </div>
 
           <!-- Submit the Form to Google Using "AJAX" -->
-          <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+          <script data-cfasync="false" type="text/javascript" src="/js/app_contact_form_handler.js"></script>
           <!-- END -->
         </div>
       </div>

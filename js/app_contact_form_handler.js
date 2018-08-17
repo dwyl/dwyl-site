@@ -1,3 +1,8 @@
+function validEmail(email) {
+  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  return re.test(email);
+}
+
 // get all data in form and return object
 function getContactFormData() {
   var elements = document.getElementById("gform").elements; // all form elements
@@ -37,6 +42,15 @@ function getContactFormData() {
   return data;
 }
 
+function validateHuman(honeypot) {
+  if (honeypot) {  //if hidden form filled up
+    console.log("Robot Detected!");
+    return true;
+  } else {
+    console.log("Welcome Human!");
+  }
+}
+
 function handleBetaFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getContactFormData();         // get the values submitted in the form
@@ -46,8 +60,8 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
   }
 
 
-  if( !validEmail(data.app_email) ) {   // if email is not valid show error
-    document.getElementById('email-invalid').style.display = 'block';
+  if( !validEmail(data.email) ) {   // if email is not valid show error
+    // document.getElementById('email-invalid').style.display = 'block';
     return false;
   } else {
     var url = event.target.action;  //
@@ -59,7 +73,7 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
-        document.getElementById('app_thankyou_message').style.display = 'block';
+        document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
     // url encode form data for sending as post data
@@ -69,10 +83,12 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
     xhr.send(encoded);
   }
 }
+
 function loadedBeta() {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
   var form = document.getElementById('gform');
+
   form.addEventListener("submit", handleBetaFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loadedBeta, false);

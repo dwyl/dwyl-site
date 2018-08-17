@@ -321,3 +321,7 @@ li a:hover span {
 .yes-script {
   display: none;
 }
+
+.honeypot {
+  display: none;
+}
