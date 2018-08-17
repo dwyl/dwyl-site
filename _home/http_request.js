@@ -12,7 +12,6 @@ var RESET = '\x1b[0m'; // see: https://stackoverflow.com/a/41407246/1148249
  * @param {Function} callback - a standard callback with error & response args
  * response is a JSON Object unless there is an error.
  */
-
 module.exports = function simple_http_request (path, callback) {
 
   var options = {
@@ -29,7 +28,7 @@ module.exports = function simple_http_request (path, callback) {
     var resStr = '';
     var response;
     // console.log(res.statusCode);
-    if (res.statusCode !== 200) {
+    if (res.statusCode !== 200) { // anything other than "200" is an Error.
       console.log(bgRedBlack, ' GOT ', res.statusCode, ' for ', options, RESET);
       return callback(res.statusCode);
     }
