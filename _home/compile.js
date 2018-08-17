@@ -1,13 +1,14 @@
 var fs = require('fs');
 var path = require('path');
 var http_request = require('./http_request');
-var cheerio = require('cheerio');
+var cheerio = require('cheerio'); // Server-side JQuery. v. useful for scraping!
 
 // Adding Colors to Terminal *Without* a Library/Module
 var bgRedBlack = '\x1b[41m\x1b[30m';
 var bgGreenBlack = '\x1b[42m\x1b[30m';
 var RESET = '\x1b[0m'; // see: https://stackoverflow.com/a/41407246/1148249
-var URL = 'https://github.com/nelsonic/home/blob/master/README.md';
+
+var URL = 'https://github.com/dwyl/home/blob/master/README.md';
 
 http_request(URL, function (status, html) {
   if (status !== 200 || !html) {
