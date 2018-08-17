@@ -16,12 +16,13 @@ http_request(URL, function (status, html) {
     process.exit();
   }
   else {
-    var $ = cheerio.load(html);
-    var body = $('#readme').html()
+    var $ = cheerio.load(html); // load the HTML of the rendered markdown "page"
+    var body = $('#readme').html() // parse the contents of #readme (article)
     var css = fs.readFileSync(path.resolve(__dirname, './style.css'), 'utf8');
-    var template = fs.readFileSync(path.resolve(__dirname, './template.html'), 'utf8');
+    var template = fs.readFileSync(path.resolve(__dirname, './template.html'),
+      'utf8'); // rudimentary "template" with string subtitution.
     var out = template.replace('{css}', css).replace('{content}', body);
-    fs.writeFileSync('./home.html', out, 'utf8');
+    fs.writeFileSync('./home.html', out, 'utf8'); // save the file
     console.log(bgGreenBlack, 'done.', RESET);
   }
 });
