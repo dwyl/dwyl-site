@@ -41,7 +41,6 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
   event.preventDefault();           // we are submitting via xhr below
   var data = getBetaFormData();         // get the values submitted in the form
 
-
   if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
     return false;
   }
