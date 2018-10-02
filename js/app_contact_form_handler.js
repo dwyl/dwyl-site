@@ -1,6 +1,11 @@
+function validEmail(email) {
+  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  return re.test(email);
+}
+
 // get all data in form and return object
-function getBetaFormData() {
-  var elements = document.getElementById("appform").elements; // all form elements
+function getContactFormData() {
+  var elements = document.getElementById("gform").elements; // all form elements
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
       return elements[k].name;
@@ -37,15 +42,25 @@ function getBetaFormData() {
   return data;
 }
 
+function validateHuman(honeypot) {
+  if (honeypot) {  //if hidden form filled up
+    console.log("Robot Detected!");
+    return true;
+  } else {
+    console.log("Welcome Human!");
+  }
+}
+
 function handleBetaFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
-  var data = getBetaFormData();         // get the values submitted in the form
+  var data = getContactFormData();         // get the values submitted in the form
 
   if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
     return false;
   }
 
-  if( !validEmail(data.app_email) ) {   // if email is not valid show error
+
+  if( !validEmail(data.email) ) {   // if email is not valid show error
     // document.getElementById('email-invalid').style.display = 'block';
     return false;
   } else {
@@ -57,8 +72,8 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
-        document.getElementById('appform').style.display = 'none'; // hide form
-        document.getElementById('app_thankyou_message').style.display = 'block';
+        document.getElementById('gform').style.display = 'none'; // hide form
+        document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
     // url encode form data for sending as post data
@@ -68,10 +83,12 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
     xhr.send(encoded);
   }
 }
+
 function loadedBeta() {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
-  var form = document.getElementById('appform');
+  var form = document.getElementById('gform');
+
   form.addEventListener("submit", handleBetaFormSubmit, false);
 };
 document.addEventListener('DOMContentLoaded', loadedBeta, false);
