@@ -31,11 +31,11 @@ p {
 }
 
 .dwyl-dark-gray {
-  color: #45535B;
+  color: #232a2d;
 }
 
 .dwyl-bg-dark-gray {
-  background-color: #45535B;
+  background-color: #354046;
 }
 
 .dwyl-b--dark-gray {
@@ -58,8 +58,12 @@ p {
   color: #4BC0A9;
 }
 
+.dwyl-mint-dark {
+  color: #2e8472;
+}
+
 .dwyl-bg-mint {
-  background-color: #4BC0A9;
+  background-color: #2e8472;
 }
 
 .dwyl-b--mint {
@@ -79,7 +83,7 @@ p {
 }
 
 .dwyl-light-gray {
-  color: #717E84;
+  color: #a4aab2;
 }
 
 .dwyl-bg-yellow {
@@ -99,7 +103,7 @@ p {
 }
 
 .dwyl-bg-orange {
-  background-color: #fc865b;
+  background-color: #d83c03;
 }
 
 .dwyl-teal-dark {
@@ -175,7 +179,7 @@ p {
 
 @media (min-width: 60em) and (max-width: 80em) {
   .w-30-ml {
-    width: 33%
+    width: 33%;
   }
 }
 
