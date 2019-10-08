@@ -6,6 +6,7 @@
   "scripts": {
     "test": "tape test/*.test.js",
     "dev": "live-server --port=8000",
+    "dev:alt": "serve -l 8000",
     "test:dev": "tape ./redesign/test/*.test.js",
     "lint": "./node_modules/.bin/goodparts ."
   },
@@ -30,6 +31,7 @@
     "istanbul": "^0.4.3",
     "live-server": "^1.2.0",
     "pre-commit": "^1.2.2",
+    "serve": "^11.2.0",
     "tape": "^4.6.3"
   },
   "engines": {
