@@ -35,6 +35,8 @@ set up. If you're interested in learning how it works, check out out
 
 ### Viewing locally
 
+**With Live Reload**
+
 To view the site locally you'll need to clone the repo and install live-server:
 
 ```
@@ -45,7 +47,17 @@ Run `live-server` inside the dwyl-site directory to view the site with
 hot-reloading enabled. Unfortunately most of the links won't work because the
 live site uses clean URLs - `/values` rather than `/values.html` - which aren't
 supported by live-server. As a short-term solution just add `.html` to the url
-after following a link.  
+after following a link.
+
+**Without Live Reload**
+
+Alternatively, you can just use `serve`. This won't include live reload but you
+will be able to navigate across pages without having to add `.html` to the url.
+
+```
+git clone https://github.com/dwyl/dwyl-site.git && cd dwyl-site && yarn
+yarn dev:alt
+```
 
 ### Accessibility
 
