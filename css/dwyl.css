@@ -35,7 +35,7 @@ p {
 }
 
 .dwyl-bg-dark-gray {
-  background-color: #45535B;
+  background-color: #354046;
 }
 
 .dwyl-b--dark-gray {
@@ -56,6 +56,10 @@ p {
 
 .dwyl-mint {
   color: #4BC0A9;
+}
+
+.dwyl-mint-dark {
+  color: #2e8472;
 }
 
 .dwyl-bg-mint {
@@ -84,7 +88,7 @@ p {
 }
 
 .dwyl-light-gray {
-  color: #717E84;
+  color: #a4aab2;
 }
 
 .dwyl-bg-yellow {
@@ -180,7 +184,7 @@ p {
 
 @media (min-width: 60em) and (max-width: 80em) {
   .w-30-ml {
-    width: 33%
+    width: 33%;
   }
 }
 
