@@ -31,7 +31,7 @@ p {
 }
 
 .dwyl-dark-gray {
-  color: #232a2d;
+  color: #556A72;
 }
 
 .dwyl-bg-dark-gray {
@@ -63,15 +63,20 @@ p {
 }
 
 .dwyl-bg-mint {
-  background-color: #2e8472;
+  background-color: #D0F1E8;
 }
 
 .dwyl-b--mint {
   border-color: #4BC0A9;
 }
 
+/* MVP MINT */
+.dwyl-dark-mint {
+  color: #2E8472;
+}
+
 .dwyl-bg-gold {
-  background-color: #C6AC5C;
+  background-color: #FFE642;
 }
 
 .dwyl-bg-yellow {
@@ -103,7 +108,7 @@ p {
 }
 
 .dwyl-bg-orange {
-  background-color: #d83c03;
+  background-color: #FC5C22;
 }
 
 .dwyl-teal-dark {
