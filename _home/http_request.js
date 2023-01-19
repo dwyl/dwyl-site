@@ -1,8 +1,7 @@
 'use strict';
-
 var http = require('https'); // ALWAYS use TLS over the internets!
-var bgRedBlack = '\x1b[41m\x1b[30m';
-var RESET = '\x1b[0m'; // see: https://stackoverflow.com/a/41407246/1148249
+// var bgRedBlack = '\x1b[41m\x1b[30m';
+// var RESET = '\x1b[0m'; // see: https://stackoverflow.com/a/41407246/1148249
 /**
  * simple_http_request is a bare-bones http request using node.js core http
  * see: https://nodejs.org/api/http.html#http_http_request_options_callback
@@ -13,7 +12,6 @@ var RESET = '\x1b[0m'; // see: https://stackoverflow.com/a/41407246/1148249
  * response is a JSON Object unless there is an error.
  */
 module.exports = function simple_http_request (path, callback) {
-
   var options = {
     headers: {
       'Accept': 'text/html',
@@ -22,14 +20,14 @@ module.exports = function simple_http_request (path, callback) {
     hostname: 'github.com',
     port: '443',
     path: path
-  }
+  };
 
   http.request(options, function (res) {
     var resStr = '';
-    var response;
+    // var response;
     // console.log(res.statusCode);
     if (res.statusCode !== 200) { // anything other than "200" is an Error.
-      console.log(bgRedBlack, ' GOT ', res.statusCode, ' for ', options, RESET);
+      // console.log(bgRedBlack, 'GOT', res.statusCode, ' for', options, RESET);
       return callback(res.statusCode);
     }
 
@@ -43,5 +41,4 @@ module.exports = function simple_http_request (path, callback) {
 
     return true;
   }).end();
-
 };
