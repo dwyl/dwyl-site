@@ -1,33 +1,34 @@
+'use strict';
 // get all data in form and return object
-function getBetaFormData() {
-  var elements = document.getElementById("appform").elements; // all form elements
-  var fields = Object.keys(elements).map(function(k) {
-    if(elements[k].name !== undefined) {
+function getBetaFormData () {
+  var elements = document.getElementById('appform').elements; // all form elements
+  var fields = Object.keys(elements).map(function (k) {
+    if (elements[k].name !== undefined) {
       return elements[k].name;
     // special case for Edge's html collection
-    }else if(elements[k].length > 0){
+    } else if (elements[k].length > 0){
       return elements[k].item(0).name;
     }
-  }).filter(function(item, pos, self) {
+  }).filter(function (item, pos, self) {
     return self.indexOf(item) == pos && item;
   });
   var data = {};
-  fields.forEach(function(k){
+  fields.forEach(function (k) {
     data[k] = elements[k].value;
-    var str = ""; // declare empty string outside of loop to allow
+    var str = ''; // declare empty string outside of loop to allow
                   // it to be appended to for each item in the loop
-    if(elements[k].type === "checkbox"){ // special case for Edge's html collection
-      str = str + elements[k].checked + ", "; // take the string and append
+    if (elements[k].type === 'checkbox'){ // special case for Edge's html collection
+      str = str + elements[k].checked + ', '; // take the string and append
                                               // the current checked value to
                                               // the end of it, along with
                                               // a comma and a space
       data[k] = str.slice(0, -2); // remove the last comma and space
                                   // from the  string to make the output
                                   // prettier in the spreadsheet
-    }else if(elements[k].length){
-      for(var i = 0; i < elements[k].length; i++){
-        if(elements[k].item(i).checked){
-          str = str + elements[k].item(i).value + ", "; // same as above
+    } else if (elements[k].length) {
+      for (var i = 0; i < elements[k].length; i++) {
+        if (elements[k].item(i).checked) {
+          str = str + elements[k].item(i).value + ', '; // same as above
           data[k] = str.slice(0, -2);
         }
       }
@@ -37,7 +38,7 @@ function getBetaFormData() {
   return data;
 }
 
-function handleBetaFormSubmit(event) {  // handles form submit withtout any jquery
+function handleBetaFormSubmit(event) {  // handles form submit without any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getBetaFormData();         // get the values submitted in the form
 
@@ -68,10 +69,11 @@ function handleBetaFormSubmit(event) {  // handles form submit withtout any jque
     xhr.send(encoded);
   }
 }
-function loadedBeta() {
+function loadedBeta () {
   console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
   var form = document.getElementById('appform');
-  form.addEventListener("submit", handleBetaFormSubmit, false);
+  form.addEventListener('submit', handleBetaFormSubmit, false);
 };
+
 document.addEventListener('DOMContentLoaded', loadedBeta, false);

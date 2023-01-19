@@ -1,5 +1,4 @@
 'use strict';
-
 var http = require('https'); // ALWAYS use TLS over the internets!
 var bgRedBlack = '\x1b[41m\x1b[30m';
 var RESET = '\x1b[0m'; // see: https://stackoverflow.com/a/41407246/1148249
