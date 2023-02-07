@@ -7,8 +7,7 @@
     "test": "tape test/*.test.js",
     "dev": "live-server --port=8000",
     "serve": "serve -l 8000",
-    "test:dev": "tape ./redesign/test/*.test.js",
-    "lint": "./node_modules/.bin/goodparts ."
+    "test:dev": "tape ./redesign/test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -26,19 +25,15 @@
   "homepage": "https://github.com/dwyl/dwyl.github.io#readme",
   "dependencies": {},
   "devDependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "goodparts": "^1.2.1",
-    "istanbul": "^0.4.3",
     "live-server": "^1.2.0",
     "pre-commit": "^1.2.2",
     "serve": "^11.2.0",
     "tape": "^4.6.3"
   },
   "engines": {
-    "node": ">= 4.0"
+    "node": ">= 16.0"
   },
   "pre-commit": [
-    "lint",
     "test"
   ]
 }
