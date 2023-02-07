@@ -32,37 +32,19 @@ enhance UX, and taking every care to ensure that it
 [gracefully degrades](https://github.com/dwyl/learn-progressive-web-apps)
 for users with JavaScript disabled.
 
-**Serverless forms via Google scripts**
-
-We're using our very own set up for submitting forms without having a back end
-set up. If you're interested in learning how it works, check out out
-[html-form-send-email-via-google-script-without-server repo!](https://github.com/dwyl/html-form-send-email-via-google-script-without-server)
 
 ### Viewing locally
 
 **With Live Reload**
 
-To view the site locally you'll need to clone the repo and install live-server:
+To view the site locally, execute the following two commands:
 
+```sh
+git clone git@github.com:dwyl/dwyl-site.git & cd dwyl-site
+python3 -m http.server
 ```
-npm i -g live-server && git clone https://github.com/dwyl/dwyl-site.git && cd dwyl-site
-```
 
-Run `live-server` inside the dwyl-site directory to view the site with
-hot-reloading enabled. Unfortunately most of the links won't work because the
-live site uses clean URLs - `/values` rather than `/values.html` - which aren't
-supported by live-server. As a short-term solution just add `.html` to the url
-after following a link.
-
-**Without Live Reload**
-
-Alternatively, you can just use `serve`. This won't include live reload but you
-will be able to navigate across pages without having to add `.html` to the url.
-
-```
-git clone https://github.com/dwyl/dwyl-site.git && cd dwyl-site && yarn
-yarn dev:alt
-```
+Then open your web browser to: `http://localhost:8000`
 
 ### Accessibility
 
