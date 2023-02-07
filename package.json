@@ -2,18 +2,6 @@
   "name": "dwyl-website",
   "version": "3.0.0",
   "description": "the dwyl website",
-  "main": "index.html",
-  "scripts": {
-    "dev": "live-server --port=8000",
-    "jsonlint": "node node_modules/.bin/jsonlint package.json -q",
-    "serve": "serve -l 8000",
-    "test": "tape test/*.test.js",
-    "test:dev": "tape ./redesign/test/*.test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dwyl/dwyl.github.io.git"
-  },
   "keywords": [
     "dwyl",
     "website"
@@ -40,5 +28,16 @@
   ],
   "directories": {
     "test": "test"
+  },
+  "scripts": {
+    "dev": "live-server --port=8000",
+    "jsonlint": "node node_modules/.bin/jsonlint package.json -q",
+    "serve": "serve -l 8000",
+    "test": "tape test/*.test.js",
+    "test:dev": "tape ./redesign/test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwyl/dwyl.github.io.git"
   }
 }

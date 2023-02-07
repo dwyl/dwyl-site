@@ -1,11 +1,16 @@
-[![Build Status](https://travis-ci.org/dwyl/dwyl-site.svg?branch=master)](https://travis-ci.org/dwyl/dwyl-site)[![Dependency Status](https://david-dm.org/dwyl/dwyl-site.svg)](https://david-dm.org/dwyl/dwyl-site)
-[![devDependency Status](https://david-dm.org/dwyl/dwyl-site/dev-status.svg)](https://david-dm.org/dwyl/dwyl-site?type=dev)
+# *Welcome* to the dwyl website! 
 
-# *Welcome* to the dwyl website!
+It's as ever a work in progress, so please don't hesitate to 
+[share your ideas](https://github.com/dwyl/dwyl-site/issues) 
+on how to make it better!
 
-It's as ever a work in progress, so please don't hesitate to [share your ideas](https://github.com/dwyl/dwyl-site/issues) on how to make it better!
-
-The current site was designed by [@harrygfox](https://github.com/harrygfox) and built by [@Cleop](https://github.com/cleop), [@ZooeyMiller](https://github.com/ZooeyMiller), [@finnhodgkin](https://github.com/finnhodgkin) and [@markwilliamfirth](https://github.com/markwilliamfirth).
+The current site was designed by 
+[@harrygfox](https://github.com/harrygfox) 
+and built by 
+[@Cleop](https://github.com/cleop), 
+[@ZooeyMiller](https://github.com/ZooeyMiller)
+&
+[@finnhodgkin](https://github.com/finnhodgkin).
 
 You can see the original [Invision slides here](https://projects.invisionapp.com/share/VSBOA5D8B) :sparkles:
 
