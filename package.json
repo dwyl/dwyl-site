@@ -24,7 +24,6 @@
     "url": "https://github.com/dwyl/dwyl.github.io/issues"
   },
   "homepage": "https://github.com/dwyl/dwyl.github.io#readme",
-  "dependencies": {},
   "devDependencies": {
     "jsonlint": "^1.6.3",
     "live-server": "^1.2.0",
@@ -38,5 +37,8 @@
   "pre-commit": [
     "jsonlint",
     "test"
-  ]
+  ],
+  "directories": {
+    "test": "test"
+  }
 }
