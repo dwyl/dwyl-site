@@ -1,12 +1,13 @@
 {
   "name": "dwyl-website",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "the dwyl website",
   "main": "index.html",
   "scripts": {
-    "test": "tape test/*.test.js",
     "dev": "live-server --port=8000",
+    "jsonlint": "node node_modules/.bin/jsonlint package.json -q",
     "serve": "serve -l 8000",
+    "test": "tape test/*.test.js",
     "test:dev": "tape ./redesign/test/*.test.js"
   },
   "repository": {
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/dwyl/dwyl.github.io#readme",
   "dependencies": {},
   "devDependencies": {
+    "jsonlint": "^1.6.3",
     "live-server": "^1.2.0",
     "pre-commit": "^1.2.2",
     "serve": "^11.2.0",
@@ -34,6 +36,7 @@
     "node": ">= 16.0"
   },
   "pre-commit": [
+    "jsonlint",
     "test"
   ]
 }
