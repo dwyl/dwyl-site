@@ -16,8 +16,8 @@
     "jsonlint": "^1.6.3",
     "live-server": "^1.2.0",
     "pre-commit": "^1.2.2",
-    "tape": "^5.6.3"
-    "serve": "^14.1.2",
+    "tape": "^5.6.3",
+    "serve": "^14.1.2"
   },
   "engines": {
     "node": ">= 16.0"
