@@ -1,4 +1,4 @@
-# *Welcome* to the dwyl website! 
+# *Welcome* to the dwyl website! [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/dwyl-site/ci.yml?label=build&style=flat-square&branch=main)](https://github.com/dwyl/dwyl-site/actions)
 
 It's as ever a work in progress, so please don't hesitate to 
 [share your ideas](https://github.com/dwyl/dwyl-site/issues) 
