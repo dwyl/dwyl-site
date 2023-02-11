@@ -1,11 +1,16 @@
-[![Build Status](https://travis-ci.org/dwyl/dwyl-site.svg?branch=master)](https://travis-ci.org/dwyl/dwyl-site)[![Dependency Status](https://david-dm.org/dwyl/dwyl-site.svg)](https://david-dm.org/dwyl/dwyl-site)
-[![devDependency Status](https://david-dm.org/dwyl/dwyl-site/dev-status.svg)](https://david-dm.org/dwyl/dwyl-site?type=dev)
+# *Welcome* to the dwyl website! [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dwyl/dwyl-site/ci.yml?label=build&style=flat-square&branch=main)](https://github.com/dwyl/dwyl-site/actions)
 
-# *Welcome* to the dwyl website!
+It's as ever a work in progress, so please don't hesitate to 
+[share your ideas](https://github.com/dwyl/dwyl-site/issues) 
+on how to make it better!
 
-It's as ever a work in progress, so please don't hesitate to [share your ideas](https://github.com/dwyl/dwyl-site/issues) on how to make it better!
-
-The current site was designed by [@harrygfox](https://github.com/harrygfox) and built by [@Cleop](https://github.com/cleop), [@ZooeyMiller](https://github.com/ZooeyMiller), [@finnhodgkin](https://github.com/finnhodgkin) and [@markwilliamfirth](https://github.com/markwilliamfirth).
+The current site was designed by 
+[@harrygfox](https://github.com/harrygfox) 
+and built by 
+[@Cleop](https://github.com/cleop), 
+[@ZooeyMiller](https://github.com/ZooeyMiller)
+&
+[@finnhodgkin](https://github.com/finnhodgkin).
 
 You can see the original [Invision slides here](https://projects.invisionapp.com/share/VSBOA5D8B) :sparkles:
 
@@ -27,37 +32,19 @@ enhance UX, and taking every care to ensure that it
 [gracefully degrades](https://github.com/dwyl/learn-progressive-web-apps)
 for users with JavaScript disabled.
 
-**Serverless forms via Google scripts**
-
-We're using our very own set up for submitting forms without having a back end
-set up. If you're interested in learning how it works, check out out
-[html-form-send-email-via-google-script-without-server repo!](https://github.com/dwyl/html-form-send-email-via-google-script-without-server)
 
 ### Viewing locally
 
 **With Live Reload**
 
-To view the site locally you'll need to clone the repo and install live-server:
+To view the site locally, execute the following two commands:
 
+```sh
+git clone git@github.com:dwyl/dwyl-site.git & cd dwyl-site
+python3 -m http.server
 ```
-npm i -g live-server && git clone https://github.com/dwyl/dwyl-site.git && cd dwyl-site
-```
 
-Run `live-server` inside the dwyl-site directory to view the site with
-hot-reloading enabled. Unfortunately most of the links won't work because the
-live site uses clean URLs - `/values` rather than `/values.html` - which aren't
-supported by live-server. As a short-term solution just add `.html` to the url
-after following a link.
-
-**Without Live Reload**
-
-Alternatively, you can just use `serve`. This won't include live reload but you
-will be able to navigate across pages without having to add `.html` to the url.
-
-```
-git clone https://github.com/dwyl/dwyl-site.git && cd dwyl-site && yarn
-yarn dev:alt
-```
+Then open your web browser to: `http://localhost:8000`
 
 ### Accessibility
 
