@@ -15,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: HTML5 Validator
-          uses: Cyb3r-Jak3/html5validator-action@master
+          uses: Cyb3r-Jak3/html5validator-action
           with:
-            root: /
+              root: /
