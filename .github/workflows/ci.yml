@@ -18,4 +18,4 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action@v7.2.0
       with:
         root: ./
-        blacklist: ./_home
+        blacklist: ./_home/*
