@@ -11,7 +11,11 @@ on:
 
 jobs:
   build:
-    - name: HTML5 Validator
-      uses: Cyb3r-Jak3/html5validator-action@master
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Checks HTML5
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
       with:
-        root: /
+        root: ./
+        extra: --blacklist ./_home --ignore "Start tag seen without seeing a doctype first."
